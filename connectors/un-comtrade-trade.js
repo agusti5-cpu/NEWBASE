@@ -11,6 +11,7 @@
 const API_BASE = 'https://comtradeapi.un.org/public/v1/preview/C/A/HS';
 const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_RETRY_DELAY_MS = 1500;
+const DEFAULT_REQUEST_SPACING_MS = 1000;
 
 function finite(value) {
   const number = Number(value);
@@ -107,9 +108,7 @@ export async function fetchTradePreview({
   const retries = Math.max(0, Number(maxRetries) || 0);
 
   for (let attempt = 0; attempt <= retries; attempt += 1) {
-    const response = await fetchImpl(url, {
-      headers: { accept: 'application/json' },
-    });
+    const response = await fetchImpl(url, { headers: { accept: 'application/json' } });
 
     if (response.ok) {
       const payload = await response.json();
@@ -152,11 +151,6 @@ export function normalizeTradeRecord(payload) {
   };
 }
 
-/**
- * Combine target-market imports and origin-to-target exports for two periods.
- * This creates a transparent trade-signal candidate; it deliberately does
- * not claim retail margin or profitability.
- */
 export function buildTradeOpportunity({
   currentImports,
   previousImports,
@@ -241,21 +235,29 @@ export async function getTradeOpportunity({
   fetchImpl = globalThis.fetch,
   maxRetries,
   retryDelayMs,
-  sleepImpl,
+  requestSpacingMs = DEFAULT_REQUEST_SPACING_MS,
+  sleepImpl = sleep,
 } = {}) {
   const requestOptions = { fetchImpl, maxRetries, retryDelayMs, sleepImpl };
-  const [currentImports, previousImports, currentOriginExports, previousOriginExports] = await Promise.all([
-    fetchTradePreview({ reporterCode: targetReporterCode, period: currentPeriod, flowCode: 'M', partnerCode: targetPartnerCode, cmdCode: productCode, ...requestOptions }),
-    fetchTradePreview({ reporterCode: targetReporterCode, period: previousPeriod, flowCode: 'M', partnerCode: targetPartnerCode, cmdCode: productCode, ...requestOptions }),
-    fetchTradePreview({ reporterCode: originReporterCode, period: currentPeriod, flowCode: 'X', partnerCode: targetReporterCode, cmdCode: productCode, ...requestOptions }),
-    fetchTradePreview({ reporterCode: originReporterCode, period: previousPeriod, flowCode: 'X', partnerCode: targetReporterCode, cmdCode: productCode, ...requestOptions }),
-  ]);
+  const requests = [
+    { reporterCode: targetReporterCode, period: currentPeriod, flowCode: 'M', partnerCode: targetPartnerCode },
+    { reporterCode: targetReporterCode, period: previousPeriod, flowCode: 'M', partnerCode: targetPartnerCode },
+    { reporterCode: originReporterCode, period: currentPeriod, flowCode: 'X', partnerCode: targetReporterCode },
+    { reporterCode: originReporterCode, period: previousPeriod, flowCode: 'X', partnerCode: targetReporterCode },
+  ];
+
+  const responses = [];
+  for (const request of requests) {
+    responses.push(await fetchTradePreview({ ...request, cmdCode: productCode, ...requestOptions }));
+    const spacing = Math.max(0, Number(requestSpacingMs) || 0);
+    if (spacing > 0 && responses.length < requests.length) await sleepImpl(spacing);
+  }
 
   return buildTradeOpportunity({
-    currentImports,
-    previousImports,
-    currentOriginExports,
-    previousOriginExports,
+    currentImports: responses[0],
+    previousImports: responses[1],
+    currentOriginExports: responses[2],
+    previousOriginExports: responses[3],
     originMarket,
     targetMarket,
     productCode,
