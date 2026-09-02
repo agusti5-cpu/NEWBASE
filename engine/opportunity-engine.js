@@ -7,7 +7,7 @@
  * whether a candidate can proceed and assigns a deterministic score.
  */
 
-const DEFAULTS = Object.freeze({
+export const DEFAULTS = Object.freeze({
   minScore: 60,
   minConfidence: 0.6,
 });
@@ -40,14 +40,13 @@ function legalStatus(candidate) {
   return { allowed: true, reason: null };
 }
 
-function scoreCandidate(candidate) {
+export function scoreCandidate(candidate) {
   const demand = clamp(candidate?.signals?.demand);
   const growth = clamp(candidate?.signals?.growth);
   const marketGap = clamp(candidate?.signals?.marketGap);
   const availability = clamp(candidate?.signals?.availability);
   const confidence = confidenceToScore(candidate?.confidence ?? 0);
 
-  // Weights are intentionally explicit and easy to change as NEWBASE learns.
   const score = Math.round(
     demand * 0.25 +
     growth * 0.20 +
@@ -59,7 +58,7 @@ function scoreCandidate(candidate) {
   return clamp(score);
 }
 
-function evaluateOpportunity(candidate, options = {}) {
+export function evaluateOpportunity(candidate, options = {}) {
   const minScore = Number.isFinite(options.minScore)
     ? options.minScore
     : DEFAULTS.minScore;
@@ -68,32 +67,17 @@ function evaluateOpportunity(candidate, options = {}) {
     : DEFAULTS.minConfidence;
 
   if (!candidate || typeof candidate !== 'object') {
-    return {
-      status: 'rejected',
-      reason: 'INVALID_CANDIDATE',
-      score: 0,
-      level: 'none',
-    };
+    return { status: 'rejected', reason: 'INVALID_CANDIDATE', score: 0, level: 'none' };
   }
 
   const legal = legalStatus(candidate);
   if (!legal.allowed) {
-    return {
-      status: 'rejected',
-      reason: legal.reason,
-      score: 0,
-      level: 'none',
-    };
+    return { status: 'rejected', reason: legal.reason, score: 0, level: 'none' };
   }
 
   const confidence = Number(candidate.confidence ?? 0);
   if (!Number.isFinite(confidence) || confidence < minConfidence) {
-    return {
-      status: 'rejected',
-      reason: 'LOW_CONFIDENCE',
-      score: 0,
-      level: 'none',
-    };
+    return { status: 'rejected', reason: 'LOW_CONFIDENCE', score: 0, level: 'none' };
   }
 
   const score = scoreCandidate(candidate);
@@ -111,9 +95,3 @@ function evaluateOpportunity(candidate, options = {}) {
     level,
   };
 }
-
-module.exports = {
-  DEFAULTS,
-  evaluateOpportunity,
-  scoreCandidate,
-};
