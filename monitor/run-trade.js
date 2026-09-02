@@ -16,24 +16,33 @@ export async function runTradeDetector({
   options = {},
 } = {}) {
   const candidates = [];
+  const errors = [];
 
   for (const route of routes ?? []) {
     for (const product of route.products ?? []) {
-      const candidate = await getTradeOpportunity({
-        originReporterCode: route.originReporterCode,
-        targetReporterCode: route.targetReporterCode,
-        originMarket: route.originMarket,
-        targetMarket: route.targetMarket,
-        productCode: product.code,
-        currentPeriod,
-        previousPeriod,
-        observedAt,
-        fetchImpl,
-      });
+      try {
+        const candidate = await getTradeOpportunity({
+          originReporterCode: route.originReporterCode,
+          targetReporterCode: route.targetReporterCode,
+          originMarket: route.originMarket,
+          targetMarket: route.targetMarket,
+          productCode: product.code,
+          currentPeriod,
+          previousPeriod,
+          observedAt,
+          fetchImpl,
+        });
 
-      if (candidate) {
-        candidate.productOrService = product.name || candidate.productOrService;
-        candidates.push(candidate);
+        if (candidate) {
+          candidate.productOrService = product.name || candidate.productOrService;
+          candidates.push(candidate);
+        }
+      } catch (error) {
+        errors.push({
+          route: `${route.originMarket}-${route.targetMarket}`,
+          productCode: product.code,
+          reason: error instanceof Error ? error.message : String(error),
+        });
       }
     }
   }
@@ -42,12 +51,14 @@ export async function runTradeDetector({
 
   return {
     source: 'un-comtrade-preview',
+    status: errors.length === 0 ? 'success' : candidates.length > 0 ? 'partial' : 'unavailable',
     observedAt,
     periods: { current: currentPeriod, previous: previousPeriod },
     inputCount: result.inputCount,
     normalizedCount: result.normalizedCount,
     accepted: result.accepted,
     rejected: result.rejected,
+    errors,
   };
 }
 
