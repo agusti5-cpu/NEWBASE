@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'data/review-queue.json'
+      - 'data/latest-review-queue-run.json'
   schedule:
     - cron: '17 7 * * *'
 
