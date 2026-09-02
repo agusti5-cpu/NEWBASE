@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "rules": {
     "require_authorized_access": true,
     "prefer_official_api": true,
@@ -59,6 +59,16 @@
       "cost": 0,
       "commercial_use": "yes_subject_to_open_data_license",
       "notes": "Singapore government open-data APIs are publicly accessible; production rate limits and dataset-specific terms must be respected."
+    },
+    {
+      "id": "un-comtrade-preview",
+      "region": "WORLD",
+      "type": "official_open_data",
+      "access": "public_API_preview",
+      "status": "validated",
+      "cost": 0,
+      "commercial_use": "subject_to_UN_Comtrade_terms",
+      "notes": "Official UN Comtrade public preview API. No account or subscription key required; intentionally limited to targeted preview queries. Used for trade-flow evidence, not retail-price or profitability claims."
     }
   ]
 }
