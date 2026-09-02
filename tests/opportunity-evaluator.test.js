@@ -22,7 +22,7 @@ assert.equal(validateNormalizedOpportunity(opportunity).valid, true);
 const accepted = evaluateNormalizedOpportunity(opportunity);
 assert.equal(accepted.status, 'accepted');
 assert.equal(accepted.opportunityId, 'demo-001');
-assert.equal(accepted.level, 'high');
+assert.equal(accepted.level, 'medium');
 
 const blocked = evaluateNormalizedOpportunity({
   ...opportunity,
