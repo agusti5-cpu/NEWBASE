@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NEWBASE Opportunity",
+  "type": "object",
+  "required": ["id", "title", "source", "market", "url", "legal", "authorizedAccess"],
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "source": {"type": "string"},
+    "market": {"type": "string"},
+    "language": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "category": {"type": "string"},
+    "currency": {"type": ["string", "null"]},
+    "price": {"type": ["number", "null"]},
+    "detectedAt": {"type": "string", "format": "date-time"},
+    "legal": {"type": "boolean"},
+    "authorizedAccess": {"type": "boolean"},
+    "score": {"type": "number", "minimum": 0, "maximum": 100}
+  }
+}
