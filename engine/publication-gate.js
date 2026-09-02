@@ -1,0 +1,81 @@
+/**
+ * NEWBASE publication gate.
+ *
+ * Evaluation and publication are intentionally separate. An accepted score is
+ * not enough to publish: the candidate must retain source evidence and the
+ * evidence must be traceable to the observed source record.
+ */
+
+const REQUIRED_EVIDENCE = Object.freeze([
+  'sourceUrl',
+  'sourceName',
+  'observedAt',
+  'summary',
+]);
+
+export function validatePublicationEvidence(opportunity) {
+  const errors = [];
+  const evidence = opportunity?.evidence;
+
+  if (!evidence || typeof evidence !== 'object') {
+    return { valid: false, errors: ['MISSING_EVIDENCE'] };
+  }
+
+  for (const field of REQUIRED_EVIDENCE) {
+    if (typeof evidence[field] !== 'string' || !evidence[field].trim()) {
+      errors.push(`MISSING_EVIDENCE_${field.toUpperCase()}`);
+    }
+  }
+
+  if (typeof evidence.sourceUrl === 'string') {
+    try {
+      const url = new URL(evidence.sourceUrl);
+      if (!['http:', 'https:'].includes(url.protocol)) {
+        errors.push('INVALID_EVIDENCE_URL');
+      }
+    } catch {
+      errors.push('INVALID_EVIDENCE_URL');
+    }
+  }
+
+  if (evidence.sourceName && opportunity?.source?.name && evidence.sourceName !== opportunity.source.name) {
+    errors.push('EVIDENCE_SOURCE_MISMATCH');
+  }
+
+  if (evidence.observedAt && opportunity?.observedAt && evidence.observedAt !== opportunity.observedAt) {
+    errors.push('EVIDENCE_TIMESTAMP_MISMATCH');
+  }
+
+  return { valid: errors.length === 0, errors };
+}
+
+export function preparePublication(result) {
+  if (!result || result.status !== 'accepted') {
+    return { status: 'not_publishable', reason: 'OPPORTUNITY_NOT_ACCEPTED' };
+  }
+
+  const opportunity = result.opportunity;
+  const evidence = validatePublicationEvidence(opportunity);
+  if (!evidence.valid) {
+    return {
+      status: 'not_publishable',
+      reason: 'PUBLICATION_EVIDENCE_REQUIRED',
+      errors: evidence.errors,
+      opportunityId: opportunity?.id ?? result.opportunityId ?? null,
+    };
+  }
+
+  return {
+    status: 'publishable',
+    opportunityId: opportunity.id,
+    score: result.score,
+    level: result.level,
+    category: opportunity.category,
+    productOrService: opportunity.productOrService,
+    originMarket: opportunity.originMarket,
+    targetMarket: opportunity.targetMarket,
+    source: opportunity.source,
+    observedAt: opportunity.observedAt,
+    evidence: opportunity.evidence,
+  };
+}
