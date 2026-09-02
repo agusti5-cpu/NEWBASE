@@ -27,6 +27,7 @@ test('queues retryable rejection with deterministic delay and deduplication', ()
   const first = enqueueRejected([], rejection);
   assert.equal(first.length, 1);
   assert.equal(first[0].attempts, 0);
+  assert.equal(first[0].maxAttempts, 30);
   assert.equal(first[0].nextEligibleAt, '2026-09-03T00:00:00.000Z');
 
   const second = enqueueRejected(first, rejection);
@@ -84,4 +85,22 @@ test('keeps rejected entry and advances retry window after recheck', () => {
   assert.equal(next[0].attempts, 1);
   assert.equal(next[0].lastCheckedAt, '2026-09-03T00:00:00.000Z');
   assert.equal(next[0].nextEligibleAt, '2026-09-04T00:00:00.000Z');
+});
+
+test('stops retrying after the configured maximum attempts', () => {
+  const rejection = {
+    status: 'rejected',
+    reason: 'LEGAL_REVIEW_REQUIRED',
+    opportunity: candidate,
+  };
+  let queue = enqueueRejected([], rejection, { maxAttempts: 2 });
+  queue = markRechecked(queue, candidate.id, '2026-09-03T00:00:00.000Z', rejection, { maxAttempts: 2 });
+  assert.equal(queue[0].attempts, 1);
+  assert.equal(queue[0].exhausted, false);
+
+  queue = markRechecked(queue, candidate.id, '2026-09-04T00:00:00.000Z', rejection, { maxAttempts: 2 });
+  assert.equal(queue[0].attempts, 2);
+  assert.equal(queue[0].exhausted, true);
+  assert.equal(queue[0].nextEligibleAt, null);
+  assert.equal(getDue(queue, '2026-09-05T00:00:00.000Z').length, 0);
 });
