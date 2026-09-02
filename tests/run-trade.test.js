@@ -35,10 +35,13 @@ const fetchImpl = async (url) => {
   const reporter = Number(u.searchParams.get('reportercode'));
   const partner = Number(u.searchParams.get('partnerCode'));
 
-  if (flow === 'M' && period === 2025) return { ok: true, json: async () => payload(1200000, 2025) };
-  if (flow === 'M' && period === 2024) return { ok: true, json: async () => payload(900000, 2024) };
-  if (flow === 'X' && period === 2025) return { ok: true, json: async () => payload(300000, 2025, 'X', reporter, partner) };
-  if (flow === 'X' && period === 2024) return { ok: true, json: async () => payload(250000, 2024, 'X', reporter, partner) };
+  // 2025 is intentionally unavailable: the connector must automatically
+  // fall back to the latest consecutive period pair with complete data.
+  if (period === 2025) return { ok: true, json: async () => ({ count: 0, error: '', data: [] }) };
+  if (flow === 'M' && period === 2024) return { ok: true, json: async () => payload(1200000, 2024) };
+  if (flow === 'M' && period === 2023) return { ok: true, json: async () => payload(900000, 2023) };
+  if (flow === 'X' && period === 2024) return { ok: true, json: async () => payload(300000, 2024, 'X', reporter, partner) };
+  if (flow === 'X' && period === 2023) return { ok: true, json: async () => payload(250000, 2023, 'X', reporter, partner) };
   throw new Error('UNEXPECTED_REQUEST');
 };
 
@@ -54,17 +57,21 @@ const result = await runTradeDetector({
   previousPeriod: 2024,
   observedAt: '2026-09-02T00:00:00.000Z',
   fetchImpl,
+  options: { periodLookback: 2 },
 });
 
 assert.equal(result.source, 'un-comtrade-preview');
 assert.equal(result.inputCount, 1);
 assert.equal(result.normalizedCount, 1);
-assert.equal(calls.length, 4);
+assert.equal(calls.length, 8);
+assert.equal(calls[4].searchParams.get('period'), '2024');
+assert.equal(calls[5].searchParams.get('period'), '2023');
 assert.equal(result.accepted.length, 0);
 assert.equal(result.rejected.length, 1);
 assert.equal(result.rejected[0].reason, 'LEGAL_REVIEW_REQUIRED');
 assert.equal(result.rejected[0].opportunity.originMarket, 'CN');
 assert.equal(result.rejected[0].opportunity.targetMarket, 'ES');
+assert.equal(result.rejected[0].opportunity.id, 'comtrade-CN-ES-392690-2024');
 assert.equal(result.rejected[0].opportunity.signals.growth > 50, true);
 assert.equal(result.rejected[0].opportunity.legal.status, 'unknown');
 
