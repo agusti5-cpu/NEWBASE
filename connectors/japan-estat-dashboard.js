@@ -29,19 +29,19 @@ async function request(path, params, fetchImpl = globalThis.fetch) {
   return response.json();
 }
 
-export async function fetchData({ indicator, region, time, ...params } = {}) {
+export async function fetchData({ indicator, region, time, fetchImpl, ...params } = {}) {
   if (typeof indicator !== 'string' || !indicator.trim()) {
     throw new TypeError('INDICATOR_REQUIRED');
   }
-  return request('getData', { indicator, region, time, ...params });
+  return request('getData', { indicator, region, time, ...params }, fetchImpl);
 }
 
-export async function fetchIndicatorInfo({ category, surveyName, ...params } = {}) {
-  return request('getIndicatorInfo', { category, surveyName, ...params });
+export async function fetchIndicatorInfo({ category, surveyName, fetchImpl, ...params } = {}) {
+  return request('getIndicatorInfo', { category, surveyName, ...params }, fetchImpl);
 }
 
-export async function fetchRegionInfo({ region, ...params } = {}) {
-  return request('getRegionInfo', { region, ...params });
+export async function fetchRegionInfo({ region, fetchImpl, ...params } = {}) {
+  return request('getRegionInfo', { region, ...params }, fetchImpl);
 }
 
 export default { fetchData, fetchIndicatorInfo, fetchRegionInfo };
