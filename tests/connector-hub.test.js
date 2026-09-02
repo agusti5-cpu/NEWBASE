@@ -4,8 +4,9 @@ import { getConnector, listConnectors, runConnector } from '../connectors/connec
 
 test('connector hub exposes every configured source with an explicit status', () => {
   const sources = listConnectors();
-  assert.equal(sources.length, 5);
+  assert.equal(sources.length, 6);
   assert.ok(sources.every((source) => source.status === 'ready'));
+  assert.equal(sources.find((source) => source.id === 'jp-estat-dashboard')?.region, 'ASIA');
 });
 
 test('connector hub blocks unknown sources', () => {
