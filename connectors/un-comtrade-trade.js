@@ -3,11 +3,13 @@ const API_BASE = 'https://comtradeapi.un.org/public/v1/preview/C/A/HS';
 const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_RETRY_DELAY_MS = 1500;
 const DEFAULT_REQUEST_SPACING_MS = 1000;
+const DEFAULT_PERIOD_LOOKBACK = 5;
 
 function finite(value) { const n = Number(value); return Number.isFinite(n) ? n : null; }
 function clamp(value, min = 0, max = 100) { const n = finite(value); return n === null ? min : Math.min(max, Math.max(min, n)); }
 function tradeValue(record) { return finite(record?.primaryValue ?? record?.fobvalue ?? record?.cifvalue) ?? 0; }
 function pickRecord(payload) { const data = payload?.data; if (!Array.isArray(data) || data.length === 0) return null; return data.find((x) => x?.isAggregate === false || x?.isAggregate == null) ?? data[0]; }
+function hasData(payload) { return Array.isArray(payload?.data) && payload.data.length > 0; }
 function growthPercent(previous, current) { if (previous === null || current === null || previous === 0) return null; return ((current - previous) / Math.abs(previous)) * 100; }
 function growthSignal(previous, current) { const g = growthPercent(previous, current); return g === null ? 50 : clamp(50 + g * 2); }
 function demandSignal(value) { return value <= 0 ? 0 : clamp(20 + Math.log10(value + 1) * 8); }
@@ -36,9 +38,36 @@ export function buildTradeOpportunity({ currentImports, previousImports, current
     commercial: { importValueUSD: targetImports, originExportsToTargetUSD: originExports, importGrowthPercent: growthPercent(targetImportsPrevious, targetImports), originExportGrowthPercent: growthPercent(originExportsPrevious, originExports), price: null, currency: 'USD', knownCosts: null } };
 }
 
-export async function getTradeOpportunity({ originReporterCode, targetReporterCode, originMarket = String(originReporterCode), targetMarket = String(targetReporterCode), targetPartnerCode = 0, productCode, currentPeriod, previousPeriod, observedAt, fetchImpl = globalThis.fetch, maxRetries, retryDelayMs, requestSpacingMs = DEFAULT_REQUEST_SPACING_MS, sleepImpl = sleep } = {}) {
-  const requestOptions = { fetchImpl, maxRetries, retryDelayMs, sleepImpl }; const requests = [{ reporterCode: targetReporterCode, period: currentPeriod, flowCode: 'M', partnerCode: targetPartnerCode }, { reporterCode: targetReporterCode, period: previousPeriod, flowCode: 'M', partnerCode: targetPartnerCode }, { reporterCode: originReporterCode, period: currentPeriod, flowCode: 'X', partnerCode: targetReporterCode }, { reporterCode: originReporterCode, period: previousPeriod, flowCode: 'X', partnerCode: targetReporterCode }]; const responses = [];
-  for (const request of requests) { responses.push(await fetchTradePreview({ ...request, cmdCode: productCode, ...requestOptions })); const spacing = Math.max(0, Number(requestSpacingMs) || 0); if (spacing > 0 && responses.length < requests.length) await sleepImpl(spacing); }
-  return buildTradeOpportunity({ currentImports: responses[0], previousImports: responses[1], currentOriginExports: responses[2], previousOriginExports: responses[3], originMarket, targetMarket, productCode, observedAt });
+async function fetchPeriodPair({ originReporterCode, targetReporterCode, targetPartnerCode, productCode, currentPeriod, previousPeriod, fetchImpl, maxRetries, retryDelayMs, requestSpacingMs, sleepImpl }) {
+  const requestOptions = { fetchImpl, maxRetries, retryDelayMs, sleepImpl };
+  const requests = [
+    { reporterCode: targetReporterCode, period: currentPeriod, flowCode: 'M', partnerCode: targetPartnerCode },
+    { reporterCode: targetReporterCode, period: previousPeriod, flowCode: 'M', partnerCode: targetPartnerCode },
+    { reporterCode: originReporterCode, period: currentPeriod, flowCode: 'X', partnerCode: targetReporterCode },
+    { reporterCode: originReporterCode, period: previousPeriod, flowCode: 'X', partnerCode: targetReporterCode },
+  ];
+  const responses = [];
+  for (const request of requests) {
+    responses.push(await fetchTradePreview({ ...request, cmdCode: productCode, ...requestOptions }));
+    const spacing = Math.max(0, Number(requestSpacingMs) || 0);
+    if (spacing > 0 && responses.length < requests.length) await sleepImpl(spacing);
+  }
+  return responses;
+}
+
+export async function getTradeOpportunity({ originReporterCode, targetReporterCode, originMarket = String(originReporterCode), targetMarket = String(targetReporterCode), targetPartnerCode = 0, productCode, currentPeriod, previousPeriod, observedAt, fetchImpl = globalThis.fetch, maxRetries, retryDelayMs, requestSpacingMs = DEFAULT_REQUEST_SPACING_MS, sleepImpl = sleep, periodLookback = DEFAULT_PERIOD_LOOKBACK } = {}) {
+  if (currentPeriod == null || previousPeriod == null) throw new TypeError('TRADE_PERIODS_REQUIRED');
+  const lookback = Math.max(0, Number(periodLookback) || 0);
+  let lastResponses = null;
+  for (let offset = 0; offset <= lookback; offset += 1) {
+    const current = Number(currentPeriod) - offset;
+    const previous = Number(previousPeriod) - offset;
+    const responses = await fetchPeriodPair({ originReporterCode, targetReporterCode, targetPartnerCode, productCode, currentPeriod: current, previousPeriod: previous, fetchImpl, maxRetries, retryDelayMs, requestSpacingMs, sleepImpl });
+    lastResponses = responses;
+    if (responses.every(hasData)) {
+      return buildTradeOpportunity({ currentImports: responses[0], previousImports: responses[1], currentOriginExports: responses[2], previousOriginExports: responses[3], originMarket, targetMarket, productCode, observedAt });
+    }
+  }
+  return buildTradeOpportunity({ currentImports: lastResponses?.[0], previousImports: lastResponses?.[1], currentOriginExports: lastResponses?.[2], previousOriginExports: lastResponses?.[3], originMarket, targetMarket, productCode, observedAt });
 }
 export default { fetchTradePreview, normalizeTradeRecord, buildTradeOpportunity, getTradeOpportunity };
