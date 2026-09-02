@@ -101,6 +101,8 @@ export function validateOpportunity(candidate) {
 
 /**
  * Full decision path: validate -> legal gate -> confidence -> score.
+ * Accepted and rejected evaluations retain the normalized candidate so the
+ * publication layer never loses the evidence that produced the decision.
  */
 export function processOpportunity(candidate, options = {}) {
   const validation = validateOpportunity(candidate);
@@ -112,7 +114,8 @@ export function processOpportunity(candidate, options = {}) {
       reason: 'INVALID_OPPORTUNITY',
       errors: validation.errors,
       score: 0,
-      level: 'none'
+      level: 'none',
+      opportunity: candidate
     };
   }
 
@@ -121,7 +124,8 @@ export function processOpportunity(candidate, options = {}) {
   return {
     ...evaluation,
     stage: 'evaluation',
-    opportunityId: candidate.id
+    opportunityId: candidate.id,
+    opportunity: candidate
   };
 }
 
