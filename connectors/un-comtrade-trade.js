@@ -4,12 +4,13 @@
  * Uses only the official, unauthenticated preview endpoint. No scraping,
  * credentials, paid service or affiliate flow is required.
  *
- * The preview API is intentionally used for small, targeted queries. It is
- * not treated as a bulk-data source. Results remain evidence, not proof of
- * profitability, demand at retail level or legal eligibility.
+ * The preview API is intentionally used for small, targeted queries. Results
+ * remain evidence, not proof of profitability, retail demand or legal eligibility.
  */
 
 const API_BASE = 'https://comtradeapi.un.org/public/v1/preview/C/A/HS';
+const DEFAULT_MAX_RETRIES = 3;
+const DEFAULT_RETRY_DELAY_MS = 1500;
 
 function finite(value) {
   const number = Number(value);
@@ -68,7 +69,6 @@ function buildUrl({ reporterCode, period, flowCode, partnerCode = 0, cmdCode, ma
   }
 
   const url = new URL(API_BASE);
-  // The preview endpoint documents `reportercode` in lowercase.
   url.searchParams.set('reportercode', String(reporterCode));
   url.searchParams.set('period', String(period));
   url.searchParams.set('flowCode', String(flowCode));
@@ -79,6 +79,16 @@ function buildUrl({ reporterCode, period, flowCode, partnerCode = 0, cmdCode, ma
   return url;
 }
 
+function retryAfterMs(response, fallback) {
+  const value = response?.headers?.get?.('retry-after');
+  const seconds = Number(value);
+  return Number.isFinite(seconds) && seconds >= 0 ? seconds * 1000 : fallback;
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export async function fetchTradePreview({
   reporterCode,
   period,
@@ -87,19 +97,35 @@ export async function fetchTradePreview({
   cmdCode,
   maxRecords = 5,
   fetchImpl = globalThis.fetch,
+  maxRetries = DEFAULT_MAX_RETRIES,
+  retryDelayMs = DEFAULT_RETRY_DELAY_MS,
+  sleepImpl = sleep,
 } = {}) {
   if (typeof fetchImpl !== 'function') throw new TypeError('FETCH_IMPLEMENTATION_REQUIRED');
 
   const url = buildUrl({ reporterCode, period, flowCode, partnerCode, cmdCode, maxRecords });
-  const response = await fetchImpl(url, {
-    headers: { accept: 'application/json' },
-  });
+  const retries = Math.max(0, Number(maxRetries) || 0);
 
-  if (!response.ok) throw new Error(`COMTRADE_API_${response.status}`);
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    const response = await fetchImpl(url, {
+      headers: { accept: 'application/json' },
+    });
 
-  const payload = await response.json();
-  if (payload?.error) throw new Error(`COMTRADE_ERROR_${payload.error}`);
-  return payload;
+    if (response.ok) {
+      const payload = await response.json();
+      if (payload?.error) throw new Error(`COMTRADE_ERROR_${payload.error}`);
+      return payload;
+    }
+
+    if (response.status !== 429 || attempt === retries) {
+      throw new Error(`COMTRADE_API_${response.status}`);
+    }
+
+    const delay = retryAfterMs(response, retryDelayMs * (2 ** attempt));
+    await sleepImpl(delay);
+  }
+
+  throw new Error('COMTRADE_RETRY_EXHAUSTED');
 }
 
 export function normalizeTradeRecord(payload) {
@@ -213,40 +239,16 @@ export async function getTradeOpportunity({
   previousPeriod,
   observedAt,
   fetchImpl = globalThis.fetch,
-}) {
+  maxRetries,
+  retryDelayMs,
+  sleepImpl,
+} = {}) {
+  const requestOptions = { fetchImpl, maxRetries, retryDelayMs, sleepImpl };
   const [currentImports, previousImports, currentOriginExports, previousOriginExports] = await Promise.all([
-    fetchTradePreview({
-      reporterCode: targetReporterCode,
-      period: currentPeriod,
-      flowCode: 'M',
-      partnerCode: targetPartnerCode,
-      cmdCode: productCode,
-      fetchImpl,
-    }),
-    fetchTradePreview({
-      reporterCode: targetReporterCode,
-      period: previousPeriod,
-      flowCode: 'M',
-      partnerCode: targetPartnerCode,
-      cmdCode: productCode,
-      fetchImpl,
-    }),
-    fetchTradePreview({
-      reporterCode: originReporterCode,
-      period: currentPeriod,
-      flowCode: 'X',
-      partnerCode: targetReporterCode,
-      cmdCode: productCode,
-      fetchImpl,
-    }),
-    fetchTradePreview({
-      reporterCode: originReporterCode,
-      period: previousPeriod,
-      flowCode: 'X',
-      partnerCode: targetReporterCode,
-      cmdCode: productCode,
-      fetchImpl,
-    }),
+    fetchTradePreview({ reporterCode: targetReporterCode, period: currentPeriod, flowCode: 'M', partnerCode: targetPartnerCode, cmdCode: productCode, ...requestOptions }),
+    fetchTradePreview({ reporterCode: targetReporterCode, period: previousPeriod, flowCode: 'M', partnerCode: targetPartnerCode, cmdCode: productCode, ...requestOptions }),
+    fetchTradePreview({ reporterCode: originReporterCode, period: currentPeriod, flowCode: 'X', partnerCode: targetReporterCode, cmdCode: productCode, ...requestOptions }),
+    fetchTradePreview({ reporterCode: originReporterCode, period: previousPeriod, flowCode: 'X', partnerCode: targetReporterCode, cmdCode: productCode, ...requestOptions }),
   ]);
 
   return buildTradeOpportunity({
