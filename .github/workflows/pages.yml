@@ -25,10 +25,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Prepare public data
-        run: cp data/latest-trade-run.json web/latest-trade-run.json
+        run: |
+          cp data/latest-trade-run.json web/latest-trade-run.json
+          if [ -f data/trade-history.json ]; then cp data/trade-history.json web/trade-history.json; else printf '[]\n' > web/trade-history.json; fi
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
