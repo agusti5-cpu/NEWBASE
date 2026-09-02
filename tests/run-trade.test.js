@@ -62,8 +62,8 @@ assert.equal(result.normalizedCount, 1);
 assert.equal(calls.length, 4);
 assert.equal(result.accepted.length + result.rejected.length, 1);
 assert.equal(result.rejected.length, 0);
-assert.equal(result.accepted[0].originMarket, 'CN');
-assert.equal(result.accepted[0].targetMarket, 'ES');
-assert.equal(result.accepted[0].signals.growth > 50, true);
+assert.equal(result.accepted[0].opportunity.originMarket, 'CN');
+assert.equal(result.accepted[0].opportunity.targetMarket, 'ES');
+assert.equal(result.accepted[0].opportunity.signals.growth > 50, true);
 
 console.log('NEWBASE trade detector tests: PASS');
