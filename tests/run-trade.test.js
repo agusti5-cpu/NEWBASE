@@ -54,6 +54,7 @@ const result = await runTradeDetector({
   previousPeriod: 2024,
   observedAt: '2026-09-02T00:00:00.000Z',
   fetchImpl,
+  requestSpacingMs: 0,
 });
 
 assert.equal(result.source, 'un-comtrade-preview');
