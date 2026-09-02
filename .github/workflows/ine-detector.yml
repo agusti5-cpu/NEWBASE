@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: '17 6 * * *'
 
+concurrency:
+  group: newbase-ine-detector-main
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -16,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,7 +41,8 @@ jobs:
           git add data/latest-ine-run.json
           if git diff --cached --quiet; then
             echo 'No detector output changes.'
-          else
-            git commit -m 'Update INE detector output'
-            git push
+            exit 0
           fi
+          git commit -m 'Update INE detector output'
+          git pull --rebase origin main
+          git push origin HEAD:main
