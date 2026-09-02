@@ -9,11 +9,13 @@
 
 import sourcesConfig from '../config/sources.json' with { type: 'json' };
 import ineRetail from './ine-retail-index.js';
+import datosGobEs from './datos-gob-es.js';
 import dataGovSg from './data-gov-sg.js';
 import dataGovSgSearch from './data-gov-sg-search.js';
 import unComtrade from './un-comtrade-trade.js';
 
 const CONNECTORS = new Map([
+  ['es-datos-gob', datosGobEs],
   ['es-ine-retail-75808', ineRetail],
   ['sg-data-gov', dataGovSg],
   ['un-comtrade-preview', unComtrade],
@@ -86,9 +88,9 @@ export async function runConnector(sourceId, method, options = {}) {
   }
 }
 
-// Keep the search connector import intentionally explicit for future source
-// registration; it is not activated until its dataset-level terms are wired
-// into sources.json.
+// Auxiliary connectors are kept available for future dataset-level wiring;
+// they are not treated as activated sources until their source entry is
+// explicitly registered and validated.
 export const auxiliaryConnectors = { dataGovSgSearch };
 
 export { REQUIRED_RULES };
