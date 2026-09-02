@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "rules": {
     "require_authorized_access": true,
     "prefer_official_api": true,
@@ -28,6 +28,16 @@
       "cost": 0,
       "commercial_use": "subject_to_dataset_license",
       "notes": "National open-data catalogue with API and machine-readable formats."
+    },
+    {
+      "id": "es-ine-retail-75808",
+      "region": "ES",
+      "type": "official_open_data",
+      "access": "API",
+      "status": "validated",
+      "cost": 0,
+      "commercial_use": "subject_to_ine_legal_notice",
+      "notes": "INE Retail Trade Indices table 75808; official JSON API. Provides demand/growth signals only; supply and price remain unknown until another source supplies evidence."
     },
     {
       "id": "eu-data-europa",
