@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "newbase/opportunity.schema.json",
+  "title": "NEWBASE Opportunity",
+  "description": "Format únic intern per a oportunitats detectades per qualsevol connector de NEWBASE.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "category",
+    "productOrService",
+    "originMarket",
+    "targetMarket",
+    "source",
+    "observedAt",
+    "signals",
+    "confidence",
+    "legal"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "category": { "type": "string", "minLength": 1 },
+    "productOrService": { "type": "string", "minLength": 1 },
+    "originMarket": { "type": "string", "minLength": 1 },
+    "targetMarket": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "type": {
+          "type": "string",
+          "enum": ["official", "api", "feed", "open_data", "authorized"]
+        },
+        "url": { "type": "string", "format": "uri" },
+        "license": { "type": "string" }
+      }
+    },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "originalData": { "type": "object" },
+    "signals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["demand", "growth", "marketGap", "availability"],
+      "properties": {
+        "demand": { "type": "number", "minimum": 0, "maximum": 100 },
+        "growth": { "type": "number", "minimum": 0, "maximum": 100 },
+        "marketGap": { "type": "number", "minimum": 0, "maximum": 100 },
+        "availability": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "price": { "type": ["number", "null"], "minimum": 0 },
+    "knownCosts": { "type": "array", "items": { "type": "string" } },
+    "regulation": { "type": "array", "items": { "type": "string" } },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "legal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["allowed", "blocked", "prohibited", "unknown"]
+        },
+        "reason": { "type": "string" },
+        "checkedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["new", "evaluated", "published", "rejected", "archived"]
+    }
+  }
+}
