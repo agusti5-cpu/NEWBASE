@@ -1,13 +1,6 @@
 {
-  "name": "newbase",
-  "version": "0.1.0",
+  "name": "opvilo-clean",
   "private": true,
-  "type": "module",
-  "description": "NEWBASE automated opportunity discovery engine",
-  "scripts": {
-    "test": "node tests/opportunity-pipeline.test.js"
-  },
-  "engines": {
-    "node": ">=20"
-  }
+  "scripts": {"check": "node --check src/index.js"},
+  "engines": {"node": ">=20"}
 }
