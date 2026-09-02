@@ -63,4 +63,4 @@ function normalizeBatch(records, context = {}) {
   return records.map((record) => normalizeOpportunity(record, context));
 }
 
-module.exports = { normalizeOpportunity, normalizeBatch };
+export { normalizeOpportunity, normalizeBatch };
