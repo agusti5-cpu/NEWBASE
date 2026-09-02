@@ -14,12 +14,14 @@ import eurostat from './eurostat.js';
 import dataGovSg from './data-gov-sg.js';
 import dataGovSgSearch from './data-gov-sg-search.js';
 import unComtrade from './un-comtrade-trade.js';
+import japanEstatDashboard from './japan-estat-dashboard.js';
 
 const CONNECTORS = new Map([
   ['es-datos-gob', datosGobEs],
   ['es-ine-retail-75808', ineRetail],
   ['eu-data-europa', eurostat],
   ['sg-data-gov', dataGovSg],
+  ['jp-estat-dashboard', japanEstatDashboard],
   ['un-comtrade-preview', unComtrade],
 ]);
 
