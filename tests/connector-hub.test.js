@@ -2,13 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { getConnector, listConnectors, runConnector } from '../connectors/connector-hub.js';
 
-test('connector hub exposes registered and unregistered sources without guessing', () => {
+test('connector hub exposes every configured source with an explicit status', () => {
   const sources = listConnectors();
-  const ine = sources.find((source) => source.id === 'es-ine-retail-75808');
-  const eu = sources.find((source) => source.id === 'eu-data-europa');
-
-  assert.equal(ine?.status, 'ready');
-  assert.equal(eu?.status, 'unavailable');
+  assert.equal(sources.length, 5);
+  assert.ok(sources.every((source) => source.status === 'ready'));
 });
 
 test('connector hub blocks unknown sources', () => {
@@ -24,8 +21,8 @@ test('connector hub rejects unknown connector methods before execution', async (
   assert.equal(result.reason, 'CONNECTOR_METHOD_NOT_FOUND');
 });
 
-test('connector hub never turns a missing connector into an executable source', async () => {
+test('connector hub reports missing connector methods without network access', async () => {
   const result = await runConnector('eu-data-europa', 'fetch');
-  assert.equal(result.status, 'unavailable');
-  assert.equal(result.reason, 'CONNECTOR_NOT_IMPLEMENTED');
+  assert.equal(result.status, 'error');
+  assert.equal(result.reason, 'CONNECTOR_METHOD_NOT_FOUND');
 });
