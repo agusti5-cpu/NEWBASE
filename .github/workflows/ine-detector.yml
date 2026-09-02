@@ -1,0 +1,40 @@
+name: NEWBASE INE detector
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Run tests
+        run: npm test
+
+      - name: Run INE detector
+        run: node monitor/publish-ine.js > data/latest-ine-run.json
+
+      - name: Publish detector output
+        run: |
+          git config user.name 'NEWBASE bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/latest-ine-run.json
+          if git diff --cached --quiet; then
+            echo 'No detector output changes.'
+          else
+            git commit -m 'Update INE detector output'
+            git push
+          fi
