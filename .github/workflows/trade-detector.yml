@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'data/latest-trade-run.json'
+      - 'data/trade-history.json'
   schedule:
     - cron: '47 6 * * 1'
 
@@ -36,17 +37,20 @@ jobs:
       - name: Run trade detector
         run: node monitor/run-trade.js > data/latest-trade-run.json
 
-      - name: Publish detector output
+      - name: Build movement history
+        run: node monitor/update-trade-history.js
+
+      - name: Publish detector output and history
         run: |
           git config user.name 'NEWBASE bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           for attempt in 1 2 3; do
-            git add data/latest-trade-run.json
+            git add data/latest-trade-run.json data/trade-history.json
             if git diff --cached --quiet; then
               echo 'No trade detector output changes.'
               exit 0
             fi
-            git commit -m 'Update trade detector output'
+            git commit -m 'Update trade detector output and movement history'
             if git pull --rebase origin main; then
               if git push origin HEAD:main; then
                 exit 0
@@ -55,6 +59,7 @@ jobs:
             git rebase --abort || true
             git reset --hard origin/main
             node monitor/run-trade.js > data/latest-trade-run.json
+            node monitor/update-trade-history.js
           done
           echo 'Unable to publish trade detector output after 3 attempts.'
           exit 1
