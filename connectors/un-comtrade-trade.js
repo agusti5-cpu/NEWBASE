@@ -45,7 +45,6 @@ function growthSignal(previous, current) {
 
 function demandSignal(importValue) {
   if (importValue <= 0) return 0;
-  // Log scaling prevents very large economies from dominating the detector.
   return clamp(20 + Math.log10(importValue + 1) * 8);
 }
 
@@ -206,6 +205,8 @@ export function buildTradeOpportunity({
 export async function getTradeOpportunity({
   originReporterCode,
   targetReporterCode,
+  originMarket = String(originReporterCode),
+  targetMarket = String(targetReporterCode),
   targetPartnerCode = 0,
   productCode,
   currentPeriod,
@@ -253,8 +254,8 @@ export async function getTradeOpportunity({
     previousImports,
     currentOriginExports,
     previousOriginExports,
-    originMarket: String(originReporterCode),
-    targetMarket: String(targetReporterCode),
+    originMarket,
+    targetMarket,
     productCode,
     observedAt,
   });
