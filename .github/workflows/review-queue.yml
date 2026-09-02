@@ -1,0 +1,50 @@
+name: NEWBASE review queue
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/review-queue.json'
+  schedule:
+    - cron: '17 7 * * *'
+
+concurrency:
+  group: newbase-review-queue-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run complete test suite
+        run: npm test
+
+      - name: Re-evaluate due review queue entries
+        run: node monitor/review-queue-runner.js > data/latest-review-queue-run.json
+
+      - name: Publish review queue state
+        run: |
+          git config user.name 'NEWBASE bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/review-queue.json data/latest-review-queue-run.json
+          if git diff --cached --quiet; then
+            echo 'No review queue changes.'
+            exit 0
+          fi
+          git commit -m 'Update automatic review queue'
+          git pull --rebase origin main
+          git push origin HEAD:main
