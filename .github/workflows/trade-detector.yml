@@ -1,0 +1,39 @@
+name: NEWBASE trade detector
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 6 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run complete test suite
+        run: npm test
+
+      - name: Run trade detector
+        run: node monitor/run-trade.js > data/latest-trade-run.json
+
+      - name: Publish detector output
+        run: |
+          git config user.name 'NEWBASE bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/latest-trade-run.json
+          if git diff --cached --quiet; then
+            echo 'No trade detector output changes.'
+          else
+            git commit -m 'Update trade detector output'
+            git push
+          fi
