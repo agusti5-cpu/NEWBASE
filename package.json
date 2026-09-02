@@ -5,7 +5,7 @@
   "type": "module",
   "description": "NEWBASE automated opportunity discovery engine",
   "scripts": {
-    "test": "node tests/opportunity-pipeline.test.js"
+    "test": "node --test tests/*.test.js"
   },
   "engines": {
     "node": ">=20"
