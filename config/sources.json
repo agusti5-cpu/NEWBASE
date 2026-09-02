@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "rules": {
     "require_authorized_access": true,
     "prefer_official_api": true,
@@ -10,13 +10,7 @@
     "require_no_subscription": true,
     "require_no_affiliate": true
   },
-  "markets": [
-    "CA",
-    "ES",
-    "EU",
-    "ASIA",
-    "WORLD"
-  ],
+  "markets": ["CA", "ES", "EU", "ASIA", "WORLD"],
   "languages": ["ca", "es"],
   "sources": [
     {
@@ -59,6 +53,17 @@
       "cost": 0,
       "commercial_use": "yes_subject_to_open_data_license",
       "notes": "Singapore government open-data APIs are publicly accessible; production rate limits and dataset-specific terms must be respected."
+    },
+    {
+      "id": "jp-estat-dashboard",
+      "region": "ASIA",
+      "country": "JP",
+      "type": "official_open_data",
+      "access": "public_API",
+      "status": "validated",
+      "cost": 0,
+      "commercial_use": "subject_to_site_policy_and_source_terms",
+      "notes": "Japan Statistics Dashboard WebAPI from the Statistics Bureau. No registration required; JSON/CSV/XML supported. Published services must display the official API credit and respect rate/access rules."
     },
     {
       "id": "un-comtrade-preview",
