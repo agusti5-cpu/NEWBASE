@@ -39,6 +39,13 @@ export function enqueueRejected(queue, result, options = {}) {
 
   if (existing?.exhausted || (existing?.attempts ?? 0) >= maxAttempts) return current;
 
+  // Never postpone a queued item merely because a fresh detector run saw it
+  // again. Before the first re-check, preserve the original deadline; after a
+  // re-check, markRechecked() owns the next deadline.
+  const nextEligibleAt = existing
+    ? (existing.lastCheckedAt ? addHours(existing.lastCheckedAt, delayHours) : existing.nextEligibleAt)
+    : addHours(observedAt, delayHours);
+
   const item = {
     opportunityId: id,
     reason: result.reason,
@@ -48,7 +55,7 @@ export function enqueueRejected(queue, result, options = {}) {
     exhausted: false,
     firstQueuedAt: existing?.firstQueuedAt ?? observedAt,
     lastCheckedAt: existing?.lastCheckedAt ?? null,
-    nextEligibleAt: addHours(existing?.lastCheckedAt ?? observedAt, delayHours),
+    nextEligibleAt,
   };
 
   if (!existing) return [...current, item];
