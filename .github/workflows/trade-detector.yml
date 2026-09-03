@@ -9,7 +9,7 @@ on:
     - cron: '0 6 * * *'
 
 concurrency:
-  group: newbase-trade-detector-main
+  group: newbase-trade-detector-${{ github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -27,31 +27,45 @@ jobs:
         with:
           node-version: 24
 
-      - name: Sync main before generating data
-        run: git pull --rebase origin main
-
       - name: Run tests
         run: npm test
 
+      - name: Configure Git identity
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Sync main before generating data
+        if: github.ref == 'refs/heads/main'
+        run: git pull --rebase origin main
+
       - name: Run multi-source connector orchestration
+        if: github.ref == 'refs/heads/main'
         run: node --input-type=module -e "import('./connectors/connector-orchestrator.js').then(async ({runAllConnectors}) => { const r=await runAllConnectors(); console.log(JSON.stringify(r,null,2)); })"
 
       - name: Run trade detector
+        if: github.ref == 'refs/heads/main'
         run: node monitor/run-trade.js > data/latest-trade-run.json
 
       - name: Report publication gate result
+        if: github.ref == 'refs/heads/main'
         run: node --input-type=module -e "import('node:fs/promises').then(async ({readFile}) => { const r=JSON.parse(await readFile('data/latest-trade-run.json','utf8')); console.log(JSON.stringify({inputCount:r.inputCount,accepted:(r.accepted||[]).length,publishable:(r.publishable||[]).length,notPublishable:(r.notPublishable||[]).length,notPublishableReasons:[...new Set((r.notPublishable||[]).map(x=>x.reason))]},null,2)); })"
 
       - name: Update trade history
+        if: github.ref == 'refs/heads/main'
         run: node monitor/update-trade-history.js
 
       - name: Run automatic review queue
+        if: github.ref == 'refs/heads/main'
         run: node monitor/review-queue-runner.js
 
       - name: Generate canonical OPVILO feed
+        if: github.ref == 'refs/heads/main'
         run: node monitor/write-opvilo-output.js
 
       - name: Publish generated data
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
