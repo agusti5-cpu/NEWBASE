@@ -63,9 +63,15 @@ const result = await runTradeDetector({
 assert.equal(result.source, 'un-comtrade-preview');
 assert.equal(result.inputCount, 1);
 assert.equal(result.normalizedCount, 1);
-assert.equal(calls.length, 8);
-assert.equal(calls[4].searchParams.get('period'), '2024');
-assert.equal(calls[5].searchParams.get('period'), '2023');
+
+// runTradeDetector now also performs automatic commercial-context enrichment,
+// so the shared fetch mock records additional INE/Eurostat requests. Assert
+// only the UN Comtrade calls here so this test remains focused on period fallback.
+const tradeCalls = calls.filter((url) => url.pathname === '/public/v1/preview/C/A/HS');
+assert.equal(tradeCalls.length, 8);
+assert.equal(tradeCalls[4].searchParams.get('period'), '2024');
+assert.equal(tradeCalls[5].searchParams.get('period'), '2023');
+
 assert.equal(result.accepted.length, 1);
 assert.equal(result.rejected.length, 0);
 assert.equal(result.accepted[0].opportunity.originMarket, 'CN');
