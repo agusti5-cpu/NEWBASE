@@ -58,4 +58,10 @@ jobs:
           git add data
           git diff --cached --quiet && exit 0
           git commit -m 'chore: publish automated NEWBASE data'
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Publish attempt $attempt failed; retrying..."
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to publish generated data after 3 attempts.'
+          exit 1
