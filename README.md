@@ -25,10 +25,16 @@ El sistema no assumeix que una plataforma ofereix una API. Cada connector s'ha d
 - `config/`: fonts i configuració.
 - `connectors/`: integracions amb fonts externes.
 - `engine/`: normalització, puntuació i control legal.
-- `data/`: esquemes de dades.
-- `monitor/`: procés d'observació automatitzada.
-- `web/`: futura interfície pública.
+- `data/`: esquemes i sortides persistents.
+- `monitor/`: processos d'observació automatitzada i generació de sortida.
+- `web/`: interfície pública de NEWBASE.
+
+## Flux automàtic actual
+
+`font → connector → detecció → normalització → anàlisi → puntuació → validació → selecció → control de publicació → feed OPVILO → web`
+
+La sortida `data/opvilo-feed.json` només conté oportunitats que han superat el gate de publicació. Els candidats que requereixen revisió es mantenen fora de la sortida pública i entren a la cua automàtica de reavaluació.
 
 ## Estat
 
-Fase 1: base tècnica inicial creada. El següent treball és validar fonts i connectors reals, començant per fonts amb accés públic o mecanismes oficials gratuïts.
+Fase 2: flux automàtic operatiu amb detector de comerç internacional, historial de moviments, cua de revisió, feed OPVILO i desplegament públic. El detector de comerç s'executa automàticament cada dia i també pot executar-se manualment.
