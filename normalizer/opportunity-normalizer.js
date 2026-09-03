@@ -29,6 +29,12 @@ function normalizeOpportunity(raw, context = {}) {
 
   const source = raw.source || context.source || {};
   const legal = raw.legal || context.legal || { status: 'unknown' };
+  const observedAt = text(raw.observedAt || context.observedAt || new Date().toISOString());
+  const evidence = raw.evidence || {};
+  const summary = text(
+    evidence.summary,
+    `${text(raw.productOrService || raw.name || raw.title, 'Oportunitat')} — ${text(raw.originMarket || context.originMarket, '—')} → ${text(raw.targetMarket || context.targetMarket, '—')}`
+  );
 
   return {
     id: text(raw.id || raw.identifier),
@@ -41,7 +47,7 @@ function normalizeOpportunity(raw, context = {}) {
       type: text(source.type || context.sourceType),
       url: text(source.url),
     },
-    observedAt: text(raw.observedAt || context.observedAt || new Date().toISOString()),
+    observedAt,
     originalData: raw.originalData ?? raw,
     signals: normalizeSignals(raw.signals),
     confidence: number(raw.confidence),
@@ -54,6 +60,12 @@ function normalizeOpportunity(raw, context = {}) {
       price: number(raw.commercial?.price, null),
       currency: text(raw.commercial?.currency),
       knownCosts: number(raw.commercial?.knownCosts, null),
+    },
+    evidence: {
+      sourceUrl: text(evidence.sourceUrl, text(source.url)),
+      sourceName: text(evidence.sourceName, text(source.name)),
+      observedAt: text(evidence.observedAt, observedAt),
+      summary,
     },
   };
 }
