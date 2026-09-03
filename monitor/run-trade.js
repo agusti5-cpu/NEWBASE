@@ -1,5 +1,6 @@
 import watchlist from '../config/trade-watchlist.json' with { type: 'json' };
 import { getTradeOpportunity } from '../connectors/un-comtrade-trade.js';
+import { enrichTradeOpportunities } from '../engine/commercial-evidence-enricher.js';
 import { runNewbase } from '../engine/newbase-pipeline.js';
 
 export async function runTradeDetector({ routes = watchlist.routes, currentPeriod, previousPeriod, observedAt = new Date().toISOString(), fetchImpl = globalThis.fetch, options = {} } = {}) {
@@ -29,8 +30,25 @@ export async function runTradeDetector({ routes = watchlist.routes, currentPerio
     }
   }
 
-  const result = runNewbase(candidates, { observedAt }, options);
-  return { source: 'un-comtrade-preview', status: errors.length === 0 ? 'success' : candidates.length > 0 ? 'partial' : 'unavailable', observedAt, generatedAt: observedAt, periods: { current, previous }, inputCount: result.inputCount, normalizedCount: result.normalizedCount, accepted: result.accepted, rejected: result.rejected, publishable: result.publishable, notPublishable: result.notPublishable, provenance, errors };
+  const enrichment = await enrichTradeOpportunities(candidates, { observedAt, fetchImpl });
+  const result = runNewbase(enrichment.opportunities, { observedAt }, options);
+
+  return {
+    source: 'un-comtrade-preview',
+    status: errors.length === 0 ? 'success' : result.inputCount > 0 ? 'partial' : 'unavailable',
+    observedAt,
+    generatedAt: observedAt,
+    periods: { current, previous },
+    inputCount: result.inputCount,
+    normalizedCount: result.normalizedCount,
+    accepted: result.accepted,
+    rejected: result.rejected,
+    publishable: result.publishable,
+    notPublishable: result.notPublishable,
+    commercialEnrichment: enrichment.diagnostics,
+    provenance,
+    errors,
+  };
 }
 
 export default runTradeDetector;
