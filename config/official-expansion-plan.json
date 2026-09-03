@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "purpose": "Controlled activation plan for existing official public connectors.",
+  "costPolicy": "zero-cost-only",
+  "noScraping": true,
+  "connectors": [
+    {
+      "id": "eurostat",
+      "status": "ready-for-configuration",
+      "activation": "dataset-and-filter-validation-required"
+    },
+    {
+      "id": "japan-estat-dashboard",
+      "status": "ready-for-configuration",
+      "activation": "indicator-and-region-validation-required"
+    },
+    {
+      "id": "un-comtrade-trade",
+      "status": "ready-for-configuration",
+      "activation": "reporter-partner-period-and-hs-validation-required"
+    }
+  ],
+  "guardrails": {
+    "publishOnlyValidatedEvidence": true,
+    "doNotRelaxPublicationGate": true,
+    "doNotPublishLegalClearance": true,
+    "validateBeforeMain": true
+  }
+}
