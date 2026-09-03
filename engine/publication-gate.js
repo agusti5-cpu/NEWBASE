@@ -51,6 +51,9 @@ export function validatePublicationEvidence(opportunity) {
 export function preparePublication(result) {
   const opportunity = result?.opportunity;
 
+  // Preserve the public contract for non-accepted evaluation results. They
+  // are terminal at this gate and must never be turned into publication
+  // candidates or carry extra fields that alter downstream deep equality.
   if (!result || result.status !== 'accepted') {
     return {
       status: 'not_publishable',
