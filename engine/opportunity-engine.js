@@ -1,10 +1,10 @@
 /**
  * NEWBASE — Opportunity Engine
  *
- * Deterministic scoring engine. Missing commercial signals are not treated as
- * negative evidence: the score is calculated from the signals actually
- * supplied by the source, while publication still requires traceable evidence.
+ * Deterministic scoring engine. Missing commercial signals are neutral.
  */
+
+import { commercialEvidenceScore } from './commercial-signal.js';
 
 export const DEFAULTS = Object.freeze({
   minScore: 60,
@@ -23,15 +23,9 @@ function confidenceToScore(value) {
 
 function legalStatus(candidate) {
   const legal = candidate?.legal;
-  if (!legal || legal.status === 'unknown') {
-    return { allowed: true, reason: 'LEGAL_STATUS_UNKNOWN_INFORMATIONAL' };
-  }
-  if (legal.status === 'blocked' || legal.status === 'prohibited') {
-    return { allowed: false, reason: 'LEGAL_BLOCK' };
-  }
-  if (legal.status !== 'allowed') {
-    return { allowed: false, reason: 'LEGAL_REVIEW_REQUIRED' };
-  }
+  if (!legal || legal.status === 'unknown') return { allowed: true, reason: 'LEGAL_STATUS_UNKNOWN_INFORMATIONAL' };
+  if (legal.status === 'blocked' || legal.status === 'prohibited') return { allowed: false, reason: 'LEGAL_BLOCK' };
+  if (legal.status !== 'allowed') return { allowed: false, reason: 'LEGAL_REVIEW_REQUIRED' };
   return { allowed: true, reason: null };
 }
 
@@ -43,6 +37,7 @@ export function scoreCandidate(candidate) {
     ['marketGap', signals.marketGap, 0.20],
     ['availability', signals.availability, 0.15],
     ['confidence', confidenceToScore(candidate?.confidence ?? 0), 0.20],
+    ['commercialEvidence', commercialEvidenceScore(candidate?.commercialEvidence), 0.10],
   ];
 
   const known = values.filter(([, value]) => Number.isFinite(Number(value)) && Number(value) > 0);
@@ -56,20 +51,13 @@ export function scoreCandidate(candidate) {
 export function evaluateOpportunity(candidate, options = {}) {
   const minScore = Number.isFinite(options.minScore) ? options.minScore : DEFAULTS.minScore;
   const minConfidence = Number.isFinite(options.minConfidence) ? options.minConfidence : DEFAULTS.minConfidence;
-
-  if (!candidate || typeof candidate !== 'object') {
-    return { status: 'rejected', reason: 'INVALID_CANDIDATE', score: 0, level: 'none' };
-  }
+  if (!candidate || typeof candidate !== 'object') return { status: 'rejected', reason: 'INVALID_CANDIDATE', score: 0, level: 'none' };
 
   const legal = legalStatus(candidate);
-  if (!legal.allowed) {
-    return { status: 'rejected', reason: legal.reason, score: 0, level: 'none' };
-  }
+  if (!legal.allowed) return { status: 'rejected', reason: legal.reason, score: 0, level: 'none' };
 
   const confidence = Number(candidate.confidence ?? 0);
-  if (!Number.isFinite(confidence) || confidence < minConfidence) {
-    return { status: 'rejected', reason: 'LOW_CONFIDENCE', score: 0, level: 'none' };
-  }
+  if (!Number.isFinite(confidence) || confidence < minConfidence) return { status: 'rejected', reason: 'LOW_CONFIDENCE', score: 0, level: 'none' };
 
   const score = scoreCandidate(candidate);
   const status = score >= minScore ? 'accepted' : 'rejected';
@@ -78,13 +66,7 @@ export function evaluateOpportunity(candidate, options = {}) {
   else if (score >= 70) level = 'medium';
   else if (score >= minScore) level = 'low';
 
-  return {
-    status,
-    reason: status === 'accepted' ? 'QUALITY_THRESHOLD_MET' : 'SCORE_BELOW_THRESHOLD',
-    score,
-    level,
-    legalStatus: candidate.legal?.status ?? 'unknown',
-  };
+  return { status, reason: status === 'accepted' ? 'QUALITY_THRESHOLD_MET' : 'SCORE_BELOW_THRESHOLD', score, level, legalStatus: candidate.legal?.status ?? 'unknown' };
 }
 
 export default { scoreCandidate, evaluateOpportunity };
