@@ -1,70 +1,38 @@
-name: NEWBASE trade detector
+name: NEWBASE Trade Detector
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths-ignore:
-      - 'data/latest-trade-run.json'
-      - 'data/trade-history.json'
-      - 'data/opvilo-feed.json'
   schedule:
-    - cron: '47 6 * * *'
-
-concurrency:
-  group: newbase-trade-detector-main
-  cancel-in-progress: false
+    - cron: '0 6 * * *'
 
 permissions:
   contents: write
 
 jobs:
-  detect:
+  detect-trade:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 20
 
-      - name: Run complete test suite
+      - name: Run tests
         run: npm test
 
+      - name: Run multi-source connector orchestration
+        run: node --input-type=module -e "import('./connectors/connector-orchestrator.js').then(async ({runAllConnectors}) => { const r=await runAllConnectors({defaultMethod:'fetch'}); console.log(JSON.stringify(r,null,2)); if(r.status==='partial') process.exitCode=1; })"
+
       - name: Run trade detector
-        run: node monitor/run-trade.js > data/latest-trade-run.json
+        run: node engine/trade-detector.js
 
-      - name: Build movement history
-        run: node monitor/update-trade-history.js
-
-      - name: Build OPVILO publication feed
-        run: node monitor/write-opvilo-output.js
-
-      - name: Publish detector output, history and OPVILO feed
+      - name: Publish generated data
         run: |
-          git config user.name 'NEWBASE bot'
+          git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          for attempt in 1 2 3; do
-            git add data/latest-trade-run.json data/trade-history.json data/opvilo-feed.json
-            if git diff --cached --quiet; then
-              echo 'No trade detector output changes.'
-              exit 0
-            fi
-            git commit -m 'Update trade detector output and OPVILO feed'
-            if git pull --rebase origin main; then
-              if git push origin HEAD:main; then
-                exit 0
-              fi
-            fi
-            git rebase --abort || true
-            git reset --hard origin/main
-            node monitor/run-trade.js > data/latest-trade-run.json
-            node monitor/update-trade-history.js
-            node monitor/write-opvilo-output.js
-          done
-          echo 'Unable to publish trade detector output after 3 attempts.'
-          exit 1
+          git add data || true
+          git diff --cached --quiet || git commit -m 'chore: publish automated NEWBASE data'
+          git push
