@@ -32,15 +32,18 @@ await check('japan-indicator-discovery', () => fetchIndicatorInfo({
 }));
 
 // Official e-Stat Dashboard API documentation provides this public sample
-// indicator. Keeping the test deterministic avoids requiring secrets or
-// manually supplied environment variables in CI.
+// indicator. Keeping the test deterministic avoids secrets or manual input.
 const JAPAN_SAMPLE_INDICATOR = '0201010010000020010';
 
 await check('japan-data', () => fetchData({
   indicator: JAPAN_SAMPLE_INDICATOR,
   lang: 'EN',
   time: '2017CY00',
-  region: '00000',
+  RegionalRank: 3,
+  Cycle: 3,
+  IsSeasonalAdjustment: 1,
+  MetaGetFlg: 'Y',
+  SectionHeaderFlg: 1,
 }));
 
 for (const result of results) console.log(JSON.stringify(result));
