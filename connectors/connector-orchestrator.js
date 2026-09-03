@@ -41,6 +41,11 @@ export async function runAllConnectors(options = {}) {
       continue;
     }
 
+    if (options.dryRun === true) {
+      results.push({ id: source.id, status: 'ready', method });
+      continue;
+    }
+
     results.push({ id: source.id, ...(await runConnector(source.id, method, suppliedOptions)) });
   }
 
