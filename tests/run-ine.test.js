@@ -26,8 +26,9 @@ test('INE detector runs connector output through the canonical NEWBASE pipeline'
     assert.equal(result.inputCount, 1);
     assert.equal(result.normalizedCount, 1);
     assert.equal(result.accepted.length + result.rejected.length, 1);
-    assert.equal(result.accepted.length, 0);
-    assert.equal(result.rejected[0].reason, 'SCORE_BELOW_THRESHOLD');
+    assert.equal(result.accepted.length, 1);
+    assert.equal(result.accepted[0].reason, 'QUALITY_THRESHOLD_MET');
+    assert.equal(result.rejected.length, 0);
   } finally {
     globalThis.fetch = originalFetch;
   }
