@@ -32,9 +32,7 @@ export function validatePublicationEvidence(opportunity) {
   if (typeof evidence.sourceUrl === 'string') {
     try {
       const url = new URL(evidence.sourceUrl);
-      if (!['http:', 'https:'].includes(url.protocol)) {
-        errors.push('INVALID_EVIDENCE_URL');
-      }
+      if (!['http:', 'https:'].includes(url.protocol)) errors.push('INVALID_EVIDENCE_URL');
     } catch {
       errors.push('INVALID_EVIDENCE_URL');
     }
@@ -43,7 +41,6 @@ export function validatePublicationEvidence(opportunity) {
   if (evidence.sourceName && opportunity?.source?.name && evidence.sourceName !== opportunity.source.name) {
     errors.push('EVIDENCE_SOURCE_MISMATCH');
   }
-
   if (evidence.observedAt && opportunity?.observedAt && evidence.observedAt !== opportunity.observedAt) {
     errors.push('EVIDENCE_TIMESTAMP_MISMATCH');
   }
@@ -52,11 +49,17 @@ export function validatePublicationEvidence(opportunity) {
 }
 
 export function preparePublication(result) {
+  const opportunity = result?.opportunity;
+
   if (!result || result.status !== 'accepted') {
-    return { status: 'not_publishable', reason: 'OPPORTUNITY_NOT_ACCEPTED' };
+    return {
+      status: 'not_publishable',
+      reason: 'OPPORTUNITY_NOT_ACCEPTED',
+      opportunityId: opportunity?.id ?? result?.opportunityId ?? null,
+      opportunity: opportunity ?? null,
+    };
   }
 
-  const opportunity = result.opportunity;
   const evidence = validatePublicationEvidence(opportunity);
   if (!evidence.valid) {
     return {
@@ -64,6 +67,7 @@ export function preparePublication(result) {
       reason: 'PUBLICATION_EVIDENCE_REQUIRED',
       errors: evidence.errors,
       opportunityId: opportunity?.id ?? result.opportunityId ?? null,
+      opportunity,
     };
   }
 
@@ -74,6 +78,7 @@ export function preparePublication(result) {
       reason: 'COMMERCIAL_VALIDATION_REQUIRED',
       errors: commercial.errors,
       opportunityId: opportunity?.id ?? result.opportunityId ?? null,
+      opportunity,
     };
   }
 
@@ -90,5 +95,6 @@ export function preparePublication(result) {
     observedAt: opportunity.observedAt,
     evidence: opportunity.evidence,
     commercialValidation: opportunity.commercialValidation,
+    opportunity,
   };
 }
