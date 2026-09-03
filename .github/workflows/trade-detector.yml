@@ -27,7 +27,7 @@ jobs:
         run: node --input-type=module -e "import('./connectors/connector-orchestrator.js').then(async ({runAllConnectors}) => { const r=await runAllConnectors(); console.log(JSON.stringify(r,null,2)); })"
 
       - name: Run trade detector
-        run: node engine/trade-detector.js
+        run: node monitor/run-trade.js
 
       - name: Publish generated data
         run: |
