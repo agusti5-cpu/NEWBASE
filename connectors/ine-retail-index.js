@@ -46,31 +46,16 @@ function growthSignal(previous, latest) {
   return clamp(50 + pct * 5);
 }
 
-/**
- * Fetch the latest INE observations for table 75808.
- * `nult` controls how many recent observations are requested from INE.
- */
 export async function fetchRetailIndex({ nult = 2, fetchImpl = globalThis.fetch } = {}) {
   if (typeof fetchImpl !== 'function') throw new TypeError('FETCH_IMPLEMENTATION_REQUIRED');
-
   const url = new URL(API_BASE);
   url.searchParams.set('nult', String(Math.min(Math.max(Number(nult) || 2, 2), 24)));
   url.searchParams.set('tip', 'AM');
-
-  const response = await fetchImpl(url, {
-    headers: { accept: 'application/json' },
-  });
-
+  const response = await fetchImpl(url, { headers: { accept: 'application/json' } });
   if (!response.ok) throw new Error(`INE_API_${response.status}`);
-
   return response.json();
 }
 
-/**
- * Turn the INE response into canonical NEWBASE candidates.
- * Only observed demand/growth are scored; supply, price and market gap stay
- * explicitly unknown (0) until a source provides evidence for them.
- */
 export function toOpportunityCandidates(payload, { observedAt = new Date().toISOString() } = {}) {
   const series = Array.isArray(payload) ? payload : [];
 
@@ -110,6 +95,12 @@ export function toOpportunityCandidates(payload, { observedAt = new Date().toISO
           reason: 'Official INE public API; downstream use remains subject to INE legal notice.',
           checkedAt: observedAt,
         },
+        evidence: {
+          sourceUrl: API_BASE,
+          sourceName: 'Instituto Nacional de Estadística (INE)',
+          observedAt,
+          summary: `Official INE retail index observation for ${name}; latest observed value ${latestValue}.`,
+        },
         commercial: {
           price: null,
           currency: '',
@@ -124,8 +115,4 @@ export async function getRetailOpportunityCandidates(options = {}) {
   return toOpportunityCandidates(payload, options);
 }
 
-export default {
-  fetchRetailIndex,
-  toOpportunityCandidates,
-  getRetailOpportunityCandidates,
-};
+export default { fetchRetailIndex, toOpportunityCandidates, getRetailOpportunityCandidates };
