@@ -53,11 +53,14 @@ export async function runTradeDetector({
     source: 'un-comtrade-preview',
     status: errors.length === 0 ? 'success' : candidates.length > 0 ? 'partial' : 'unavailable',
     observedAt,
+    generatedAt: observedAt,
     periods: { current: currentPeriod, previous: previousPeriod },
     inputCount: result.inputCount,
     normalizedCount: result.normalizedCount,
     accepted: result.accepted,
     rejected: result.rejected,
+    publishable: result.publishable,
+    notPublishable: result.notPublishable,
     errors,
   };
 }
