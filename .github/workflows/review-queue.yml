@@ -1,5 +1,6 @@
 name: NEWBASE review queue
 
+# Keep CI validation attached to the current main revision.
 on:
   workflow_dispatch:
   push:
