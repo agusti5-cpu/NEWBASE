@@ -32,6 +32,7 @@ test('queues retryable rejection with deterministic delay and deduplication', ()
 
   const second = enqueueRejected(first, rejection);
   assert.equal(second.length, 1);
+  assert.equal(second[0].nextEligibleAt, '2026-09-03T00:00:00.000Z');
 });
 
 test('does not queue permanent or non-rejection outcomes', () => {
