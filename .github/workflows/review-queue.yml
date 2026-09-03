@@ -34,9 +34,6 @@ jobs:
       - name: Run complete test suite
         run: npm test
 
-      - name: Re-evaluate due review queue entries
-        run: node monitor/review-queue-runner.js > data/latest-review-queue-run.json
-
       - name: Publish review queue state
         run: |
           git config user.name 'NEWBASE bot'
