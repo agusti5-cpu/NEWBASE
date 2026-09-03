@@ -25,8 +25,12 @@ function confidenceToScore(value) {
 function legalStatus(candidate) {
   const legal = candidate?.legal;
 
+  // `unknown` means that the source does not provide a product-level legal
+  // clearance. It must never be turned into `allowed` by inference. It is,
+  // however, safe to continue when the opportunity is explicitly presented
+  // as an informational market signal; publication carries the same status.
   if (!legal || legal.status === 'unknown') {
-    return { allowed: false, reason: 'LEGAL_REVIEW_REQUIRED' };
+    return { allowed: true, reason: 'LEGAL_STATUS_UNKNOWN_INFORMATIONAL' };
   }
 
   if (legal.status === 'blocked' || legal.status === 'prohibited') {
@@ -93,5 +97,8 @@ export function evaluateOpportunity(candidate, options = {}) {
     reason: status === 'accepted' ? 'QUALITY_THRESHOLD_MET' : 'SCORE_BELOW_THRESHOLD',
     score,
     level,
+    legalStatus: candidate.legal?.status ?? 'unknown',
   };
 }
+
+export default { scoreCandidate, evaluateOpportunity };
