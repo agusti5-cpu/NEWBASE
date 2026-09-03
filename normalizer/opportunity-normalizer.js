@@ -22,6 +22,19 @@ function normalizeSignals(raw = {}) {
   };
 }
 
+function normalizeCommercialValidation(raw = {}) {
+  const evidence = Array.isArray(raw.evidence) ? raw.evidence : [];
+  return {
+    evidence: evidence.map((item) => ({
+      type: text(item?.type),
+      sourceName: text(item?.sourceName),
+      sourceUrl: text(item?.sourceUrl),
+      observedAt: text(item?.observedAt),
+      summary: text(item?.summary),
+    })),
+  };
+}
+
 function normalizeOpportunity(raw, context = {}) {
   if (!raw || typeof raw !== 'object') {
     throw new TypeError('OPPORTUNITY_MUST_BE_OBJECT');
@@ -61,6 +74,7 @@ function normalizeOpportunity(raw, context = {}) {
       currency: text(raw.commercial?.currency),
       knownCosts: number(raw.commercial?.knownCosts, null),
     },
+    commercialValidation: normalizeCommercialValidation(raw.commercialValidation),
     evidence: {
       sourceUrl: text(evidence.sourceUrl, text(source.url)),
       sourceName: text(evidence.sourceName, text(source.name)),
