@@ -44,5 +44,8 @@ jobs:
             exit 0
           fi
           git commit -m 'Update INE detector output'
-          git pull --rebase origin main
+          git fetch origin main
+          git reset --soft origin/main
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update INE detector output'
           git push origin HEAD:main
