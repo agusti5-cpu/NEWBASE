@@ -2,9 +2,11 @@
  * NEWBASE publication gate.
  *
  * Evaluation and publication are intentionally separate. An accepted score is
- * not enough to publish: the candidate must retain source evidence and the
- * evidence must be traceable to the observed source record.
+ * not enough to publish: the candidate must retain source evidence, the
+ * evidence must be traceable, and commercial claims require corroboration.
  */
+
+import { validateCommercialEvidence } from './commercial-validation.js';
 
 const REQUIRED_EVIDENCE = Object.freeze([
   'sourceUrl',
@@ -65,6 +67,16 @@ export function preparePublication(result) {
     };
   }
 
+  const commercial = validateCommercialEvidence(opportunity);
+  if (!commercial.valid) {
+    return {
+      status: 'not_publishable',
+      reason: 'COMMERCIAL_VALIDATION_REQUIRED',
+      errors: commercial.errors,
+      opportunityId: opportunity?.id ?? result.opportunityId ?? null,
+    };
+  }
+
   return {
     status: 'publishable',
     opportunityId: opportunity.id,
@@ -77,5 +89,6 @@ export function preparePublication(result) {
     source: opportunity.source,
     observedAt: opportunity.observedAt,
     evidence: opportunity.evidence,
+    commercialValidation: opportunity.commercialValidation,
   };
 }
