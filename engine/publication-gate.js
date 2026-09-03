@@ -55,8 +55,6 @@ export function preparePublication(result) {
     return {
       status: 'not_publishable',
       reason: 'OPPORTUNITY_NOT_ACCEPTED',
-      opportunityId: opportunity?.id ?? result?.opportunityId ?? null,
-      opportunity: opportunity ?? null,
     };
   }
 
