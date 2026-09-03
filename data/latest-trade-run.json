@@ -1,8 +1,8 @@
 {
   "source": "un-comtrade-preview",
   "status": "success",
-  "observedAt": "2026-09-03T10:18:21.065Z",
-  "generatedAt": "2026-09-03T10:18:21.065Z",
+  "observedAt": "2026-09-03T14:40:21.017Z",
+  "generatedAt": "2026-09-03T14:40:21.017Z",
   "periods": {
     "current": 2025,
     "previous": 2024
@@ -29,7 +29,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-03T10:18:21.065Z",
+        "observedAt": "2026-09-03T14:40:21.017Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -238,7 +238,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-03T10:18:21.065Z"
+          "checkedAt": "2026-09-03T14:40:21.017Z"
         },
         "commercial": {
           "price": 0,
@@ -251,36 +251,40 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/589816-2026",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spānija – Plastmasas izstrādājumi – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. An Spáinn – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ισπανία – Πλαστικά προϊόντα – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. España – Productos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hispaania – Plasttooted – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanje – Producten van plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanja – Muovituotteet – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hiszpania – Produkty z tworzyw sztucznych – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španjolska – Proizvodi od plastike – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španělsko – Výrobky z plastů – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spania – Produse din plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanha – Produtos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španielsko – Plastové výrobky – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espagne – Produits en plastique – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanja – Prodotti tal-plastika – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Kunststoffprodukte – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ispanija – Plastikiniai gaminiai – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spagna – Prodotti di plastica – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Иcпaния – Пластмасови продукти – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španija – Proizvodi iz plastičnih mas – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spain – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos.. Publication 589816-2026; buyer Consejería de Agricultura, Ganadería, Medio Rural y Política Ambiental de la Junta de Castilla y León; published 2026-08-26+02:00. This is procurement demand evidence, not guaranteed private-market demand or profitability."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spānija – Plastmasas izstrādājumi – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. An Spáinn – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ισπανία – Πλαστικά προϊόντα – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. España – Productos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hispaania – Plasttooted – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanje – Producten van plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanja – Muovituotteet – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hiszpania – Produkty z tworzyw sztucznych – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španjolska – Proizvodi od plastike – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španělsko – Výrobky z plastů – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spania – Produse din plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanha – Produtos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španielsko – Plastové výrobky – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espagne – Produits en plastique – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanja – Prodotti tal-plastika – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Kunststoffprodukte – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ispanija – Plastikiniai gaminiai – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spagna – Prodotti di plastica – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Иcпaния – Пластмасови продукти – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španija – Proizvodi iz plastičnih mas – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spain – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos.. Publication 589816-2026; buyer Consejería de Agricultura, Ganadería, Medio Rural y Política Ambiental de la Junta de Castilla y León; published 2026-08-26+02:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+              "evidenceLevel": "product"
             },
             {
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
             }
           ]
         },
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 392690: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -288,8 +292,8 @@
     {
       "status": "accepted",
       "reason": "QUALITY_THRESHOLD_MET",
-      "score": 86,
-      "level": "high",
+      "score": 77,
+      "level": "medium",
       "legalStatus": "unknown",
       "stage": "evaluation",
       "opportunityId": "comtrade-CN-ES-850760-2024",
@@ -304,7 +308,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-03T10:18:21.065Z",
+        "observedAt": "2026-09-03T14:40:21.017Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -321,7 +325,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 528,
+            "partner2Code": 276,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -338,19 +342,19 @@
             "motDesc": null,
             "qtyUnitCode": 5,
             "qtyUnitAbbr": null,
-            "qty": 4373,
+            "qty": 834,
             "isQtyEstimated": false,
             "altQtyUnitCode": 5,
             "altQtyUnitAbbr": null,
-            "altQty": 4373,
+            "altQty": 834,
             "isAltQtyEstimated": false,
-            "netWgt": 3635.8,
+            "netWgt": 572.854,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 275424.817,
+            "cifvalue": 38309.954,
             "fobvalue": null,
-            "primaryValue": 275424.817,
+            "primaryValue": 38309.954,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -370,7 +374,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 203,
+            "partner2Code": 380,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -387,19 +391,19 @@
             "motDesc": null,
             "qtyUnitCode": 5,
             "qtyUnitAbbr": null,
-            "qty": 148,
+            "qty": 842,
             "isQtyEstimated": false,
             "altQtyUnitCode": 5,
             "altQtyUnitAbbr": null,
-            "altQty": 148,
+            "altQty": 842,
             "isAltQtyEstimated": false,
-            "netWgt": 168.677,
+            "netWgt": 552.88,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 7102.724,
+            "cifvalue": 34679.02,
             "fobvalue": null,
-            "primaryValue": 7102.724,
+            "primaryValue": 34679.02,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -504,8 +508,8 @@
           }
         },
         "signals": {
-          "demand": 63.5200371708861,
-          "growth": 100,
+          "demand": 56.66658373359412,
+          "growth": 70.94023418193478,
           "marketGap": 0,
           "availability": 100
         },
@@ -513,7 +517,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-03T10:18:21.065Z"
+          "checkedAt": "2026-09-03T14:40:21.017Z"
         },
         "commercial": {
           "price": 0,
@@ -526,29 +530,32 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Product-level UN Comtrade trade-flow evidence for Lithium-ion accumulators: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Lithium-ion accumulators: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
             }
           ]
         },
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 850760: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -556,7 +563,7 @@
     {
       "status": "accepted",
       "reason": "QUALITY_THRESHOLD_MET",
-      "score": 74,
+      "score": 78,
       "level": "medium",
       "legalStatus": "unknown",
       "stage": "evaluation",
@@ -572,7 +579,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-03T10:18:21.065Z",
+        "observedAt": "2026-09-03T14:40:21.017Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -589,7 +596,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 276,
+            "partner2Code": 156,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -602,23 +609,23 @@
             "customsCode": "C01",
             "customsDesc": null,
             "mosCode": "0",
-            "motCode": 2100,
+            "motCode": 3100,
             "motDesc": null,
             "qtyUnitCode": 5,
             "qtyUnitAbbr": null,
-            "qty": 1156,
+            "qty": 2154,
             "isQtyEstimated": false,
             "altQtyUnitCode": 5,
             "altQtyUnitAbbr": null,
-            "altQty": 1156,
+            "altQty": 2154,
             "isAltQtyEstimated": false,
-            "netWgt": 300.1,
+            "netWgt": 6495,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 2058.812,
+            "cifvalue": 31664.655,
             "fobvalue": null,
-            "primaryValue": 2058.812,
+            "primaryValue": 31664.655,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -772,7 +779,7 @@
           }
         },
         "signals": {
-          "demand": 46.510620671347475,
+          "demand": 56.00470780625389,
           "growth": 0,
           "marketGap": 0,
           "availability": 100
@@ -781,7 +788,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-03T10:18:21.065Z"
+          "checkedAt": "2026-09-03T14:40:21.017Z"
         },
         "commercial": {
           "price": 0,
@@ -794,29 +801,32 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Product-level UN Comtrade trade-flow evidence for Other electro-thermic appliances: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Other electro-thermic appliances: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
             }
           ]
         },
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 851679: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -824,8 +834,8 @@
     {
       "status": "accepted",
       "reason": "QUALITY_THRESHOLD_MET",
-      "score": 81,
-      "level": "medium",
+      "score": 85,
+      "level": "high",
       "legalStatus": "unknown",
       "stage": "evaluation",
       "opportunityId": "comtrade-CN-ES-940360-2024",
@@ -840,7 +850,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-03T10:18:21.065Z",
+        "observedAt": "2026-09-03T14:40:21.017Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -857,7 +867,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 528,
+            "partner2Code": 826,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -870,7 +880,7 @@
             "customsCode": "C01",
             "customsDesc": null,
             "mosCode": "0",
-            "motCode": 2100,
+            "motCode": 3200,
             "motDesc": null,
             "qtyUnitCode": -1,
             "qtyUnitAbbr": null,
@@ -878,15 +888,15 @@
             "isQtyEstimated": false,
             "altQtyUnitCode": 8,
             "altQtyUnitAbbr": null,
-            "altQty": 213.84,
+            "altQty": 12086.21,
             "isAltQtyEstimated": false,
-            "netWgt": 213.84,
+            "netWgt": 12086.21,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 1651.367,
+            "cifvalue": 146496.016,
             "fobvalue": null,
-            "primaryValue": 1651.367,
+            "primaryValue": 146496.016,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -1040,7 +1050,7 @@
           }
         },
         "signals": {
-          "demand": 45.74485210355179,
+          "demand": 61.32663022903325,
           "growth": 100,
           "marketGap": 0,
           "availability": 100
@@ -1049,7 +1059,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-03T10:18:21.065Z"
+          "checkedAt": "2026-09-03T14:40:21.017Z"
         },
         "commercial": {
           "price": 0,
@@ -1062,29 +1072,32 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
             }
           ]
         },
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 940360: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -1108,7 +1121,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-03T10:18:21.065Z",
+        "observedAt": "2026-09-03T14:40:21.017Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -1317,7 +1330,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-03T10:18:21.065Z"
+          "checkedAt": "2026-09-03T14:40:21.017Z"
         },
         "commercial": {
           "price": 0,
@@ -1330,81 +1343,1448 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
             },
             {
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-03T10:18:21.065Z",
-              "summary": "Product-level UN Comtrade trade-flow evidence for Electrical machines and apparatus: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee."
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Electrical machines and apparatus: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
             }
           ]
         },
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 854370: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
     }
   ],
   "rejected": [],
-  "publishable": [],
+  "publishable": [
+    {
+      "status": "publishable",
+      "opportunityId": "comtrade-CN-ES-392690-2024",
+      "score": 85,
+      "level": "high",
+      "category": "comerç-internacional",
+      "productOrService": "Articles of plastics, other",
+      "originMarket": "CN",
+      "targetMarket": "ES",
+      "source": {
+        "name": "United Nations UN Comtrade",
+        "type": "api",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+      },
+      "observedAt": "2026-09-03T14:40:21.017Z",
+      "evidence": {
+        "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+        "sourceName": "United Nations UN Comtrade",
+        "observedAt": "2026-09-03T14:40:21.017Z",
+        "summary": "Official UN Comtrade trade-flow signal for HS 392690: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+      },
+      "commercialValidation": {
+        "evidence": [
+          {
+            "type": "demand_context",
+            "sourceName": "Instituto Nacional de Estadística (INE)",
+            "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+            "observedAt": "2026-09-03T14:40:21.017Z",
+            "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics_context",
+            "sourceName": "Eurostat",
+            "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+            "observedAt": "2026-09-03T14:40:21.017Z",
+            "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "demand",
+            "sourceName": "Tenders Electronic Daily (TED)",
+            "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/589816-2026",
+            "observedAt": "2026-09-03T14:40:21.017Z",
+            "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spānija – Plastmasas izstrādājumi – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. An Spáinn – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ισπανία – Πλαστικά προϊόντα – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. España – Productos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hispaania – Plasttooted – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanje – Producten van plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanja – Muovituotteet – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hiszpania – Produkty z tworzyw sztucznych – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španjolska – Proizvodi od plastike – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španělsko – Výrobky z plastů – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spania – Produse din plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanha – Produtos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španielsko – Plastové výrobky – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espagne – Produits en plastique – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanja – Prodotti tal-plastika – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Kunststoffprodukte – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ispanija – Plastikiniai gaminiai – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spagna – Prodotti di plastica – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Иcпaния – Пластмасови продукти – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španija – Proizvodi iz plastičnih mas – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spain – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos.. Publication 589816-2026; buyer Consejería de Agricultura, Ganadería, Medio Rural y Política Ambiental de la Junta de Castilla y León; published 2026-08-26+02:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+            "evidenceLevel": "product"
+          },
+          {
+            "type": "economics",
+            "sourceName": "United Nations UN Comtrade",
+            "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+            "observedAt": "2026-09-03T14:40:21.017Z",
+            "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+            "evidenceLevel": "product"
+          }
+        ]
+      },
+      "opportunity": {
+        "id": "comtrade-CN-ES-392690-2024",
+        "category": "comerç-internacional",
+        "productOrService": "Articles of plastics, other",
+        "originMarket": "CN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-09-03T14:40:21.017Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 757,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "392690",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C01",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 3200,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 1015.91,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": -1,
+            "altQtyUnitAbbr": null,
+            "altQty": 0,
+            "isAltQtyEstimated": false,
+            "netWgt": 1015.91,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 82969.705,
+            "fobvalue": null,
+            "primaryValue": 82969.705,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "importsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 100,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "392690",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C20",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 9200,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 1.26,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 1.26,
+            "isAltQtyEstimated": false,
+            "netWgt": 1.26,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 163.542,
+            "fobvalue": null,
+            "primaryValue": 163.542,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsToTarget": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "392690",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 44257591.083,
+            "isQtyEstimated": true,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 44257576,
+            "isAltQtyEstimated": false,
+            "netWgt": 44257591.083,
+            "isNetWgtEstimated": true,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 236359600,
+            "primaryValue": 236359600,
+            "legacyEstimationFlag": 6,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "392690",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 39825456,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 39825456,
+            "isAltQtyEstimated": false,
+            "netWgt": 39825456,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 220858551,
+            "primaryValue": 220858551,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          }
+        },
+        "signals": {
+          "demand": 59.35139824237069,
+          "growth": 100,
+          "marketGap": 0,
+          "availability": 100
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-09-03T14:40:21.017Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "demand",
+              "sourceName": "Tenders Electronic Daily (TED)",
+              "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/589816-2026",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spānija – Plastmasas izstrādājumi – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. An Spáinn – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ισπανία – Πλαστικά προϊόντα – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. España – Productos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hispaania – Plasttooted – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanje – Producten van plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanja – Muovituotteet – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hiszpania – Produkty z tworzyw sztucznych – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španjolska – Proizvodi od plastike – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španělsko – Výrobky z plastů – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spania – Produse din plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanha – Produtos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španielsko – Plastové výrobky – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espagne – Produits en plastique – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanja – Prodotti tal-plastika – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Kunststoffprodukte – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ispanija – Plastikiniai gaminiai – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spagna – Prodotti di plastica – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Иcпaния – Пластмасови продукти – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španija – Proizvodi iz plastičnih mas – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spain – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos.. Publication 589816-2026; buyer Consejería de Agricultura, Ganadería, Medio Rural y Política Ambiental de la Junta de Castilla y León; published 2026-08-26+02:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+              "evidenceLevel": "product"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-09-03T14:40:21.017Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 392690: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
+    }
+  ],
   "notPublishable": [
     {
       "status": "not_publishable",
       "reason": "COMMERCIAL_VALIDATION_REQUIRED",
       "errors": [
-        "MISSING_PRODUCT_DEMAND_EVIDENCE",
-        "MISSING_PRODUCT_ECONOMICS_EVIDENCE"
+        "MISSING_PRODUCT_DEMAND_EVIDENCE"
       ],
-      "opportunityId": "comtrade-CN-ES-392690-2024"
+      "opportunityId": "comtrade-CN-ES-850760-2024",
+      "opportunity": {
+        "id": "comtrade-CN-ES-850760-2024",
+        "category": "comerç-internacional",
+        "productOrService": "Lithium-ion accumulators",
+        "originMarket": "CN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-09-03T14:40:21.017Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 276,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "850760",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C20",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 9200,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 834,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 834,
+            "isAltQtyEstimated": false,
+            "netWgt": 572.854,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 38309.954,
+            "fobvalue": null,
+            "primaryValue": 38309.954,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "importsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 380,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "850760",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C20",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 9200,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 842,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 842,
+            "isAltQtyEstimated": false,
+            "netWgt": 552.88,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 34679.02,
+            "fobvalue": null,
+            "primaryValue": 34679.02,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsToTarget": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "850760",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 9720747,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 9720747,
+            "isAltQtyEstimated": false,
+            "netWgt": 46101397.879,
+            "isNetWgtEstimated": true,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 1170299687,
+            "primaryValue": 1170299687,
+            "legacyEstimationFlag": 4,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "850760",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 15487638,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 15487638,
+            "isAltQtyEstimated": false,
+            "netWgt": 54277160.035,
+            "isNetWgtEstimated": true,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 1864473049,
+            "primaryValue": 1864473049,
+            "legacyEstimationFlag": 4,
+            "isReported": true,
+            "isAggregate": false
+          }
+        },
+        "signals": {
+          "demand": 56.66658373359412,
+          "growth": 70.94023418193478,
+          "marketGap": 0,
+          "availability": 100
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-09-03T14:40:21.017Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Lithium-ion accumulators: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-09-03T14:40:21.017Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 850760: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
     },
     {
       "status": "not_publishable",
       "reason": "COMMERCIAL_VALIDATION_REQUIRED",
       "errors": [
-        "MISSING_PRODUCT_DEMAND_EVIDENCE",
-        "MISSING_PRODUCT_ECONOMICS_EVIDENCE"
+        "MISSING_PRODUCT_DEMAND_EVIDENCE"
       ],
-      "opportunityId": "comtrade-CN-ES-850760-2024"
+      "opportunityId": "comtrade-CN-ES-851679-2024",
+      "opportunity": {
+        "id": "comtrade-CN-ES-851679-2024",
+        "category": "comerç-internacional",
+        "productOrService": "Other electro-thermic appliances",
+        "originMarket": "CN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-09-03T14:40:21.017Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 156,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "851679",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C01",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 3100,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 2154,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 2154,
+            "isAltQtyEstimated": false,
+            "netWgt": 6495,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 31664.655,
+            "fobvalue": null,
+            "primaryValue": 31664.655,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "importsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 251,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "851679",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C20",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 9200,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 2358,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 2358,
+            "isAltQtyEstimated": false,
+            "netWgt": 8107.466,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 119212.752,
+            "fobvalue": null,
+            "primaryValue": 119212.752,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsToTarget": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "851679",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 15270784,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 15270784,
+            "isAltQtyEstimated": false,
+            "netWgt": 5327656,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 45944368,
+            "primaryValue": 45944368,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "851679",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 11639903,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 11639903,
+            "isAltQtyEstimated": false,
+            "netWgt": 4851108,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 41261923,
+            "primaryValue": 41261923,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          }
+        },
+        "signals": {
+          "demand": 56.00470780625389,
+          "growth": 0,
+          "marketGap": 0,
+          "availability": 100
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-09-03T14:40:21.017Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Other electro-thermic appliances: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-09-03T14:40:21.017Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 851679: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
     },
     {
       "status": "not_publishable",
       "reason": "COMMERCIAL_VALIDATION_REQUIRED",
       "errors": [
-        "MISSING_PRODUCT_DEMAND_EVIDENCE",
-        "MISSING_PRODUCT_ECONOMICS_EVIDENCE"
+        "MISSING_PRODUCT_DEMAND_EVIDENCE"
       ],
-      "opportunityId": "comtrade-CN-ES-851679-2024"
+      "opportunityId": "comtrade-CN-ES-940360-2024",
+      "opportunity": {
+        "id": "comtrade-CN-ES-940360-2024",
+        "category": "comerç-internacional",
+        "productOrService": "Other wooden furniture",
+        "originMarket": "CN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-09-03T14:40:21.017Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 826,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "940360",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C01",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 3200,
+            "motDesc": null,
+            "qtyUnitCode": -1,
+            "qtyUnitAbbr": null,
+            "qty": 0,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 12086.21,
+            "isAltQtyEstimated": false,
+            "netWgt": 12086.21,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 146496.016,
+            "fobvalue": null,
+            "primaryValue": 146496.016,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "importsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 826,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "940360",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C02",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 1000,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 2.386,
+            "isQtyEstimated": true,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 32.4,
+            "isAltQtyEstimated": false,
+            "netWgt": 32.4,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 228.018,
+            "fobvalue": null,
+            "primaryValue": 228.018,
+            "legacyEstimationFlag": 2,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsToTarget": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "940360",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 4123820,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 4123820,
+            "isAltQtyEstimated": false,
+            "netWgt": 57124741,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 126805241,
+            "primaryValue": 126805241,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "940360",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 2933035,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 2933035,
+            "isAltQtyEstimated": false,
+            "netWgt": 41119080,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 100675909,
+            "primaryValue": 100675909,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          }
+        },
+        "signals": {
+          "demand": 61.32663022903325,
+          "growth": 100,
+          "marketGap": 0,
+          "availability": 100
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-09-03T14:40:21.017Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-09-03T14:40:21.017Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 940360: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
     },
     {
       "status": "not_publishable",
       "reason": "COMMERCIAL_VALIDATION_REQUIRED",
       "errors": [
-        "MISSING_PRODUCT_DEMAND_EVIDENCE",
-        "MISSING_PRODUCT_ECONOMICS_EVIDENCE"
+        "MISSING_PRODUCT_DEMAND_EVIDENCE"
       ],
-      "opportunityId": "comtrade-CN-ES-940360-2024"
-    },
-    {
-      "status": "not_publishable",
-      "reason": "COMMERCIAL_VALIDATION_REQUIRED",
-      "errors": [
-        "MISSING_PRODUCT_DEMAND_EVIDENCE",
-        "MISSING_PRODUCT_ECONOMICS_EVIDENCE"
-      ],
-      "opportunityId": "comtrade-CN-ES-854370-2024"
+      "opportunityId": "comtrade-CN-ES-854370-2024",
+      "opportunity": {
+        "id": "comtrade-CN-ES-854370-2024",
+        "category": "comerç-internacional",
+        "productOrService": "Electrical machines and apparatus",
+        "originMarket": "CN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-09-03T14:40:21.017Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 826,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "854370",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C01",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 1000,
+            "motDesc": null,
+            "qtyUnitCode": -1,
+            "qtyUnitAbbr": null,
+            "qty": 0,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 2318.66,
+            "isAltQtyEstimated": false,
+            "netWgt": 2318.66,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 293390.77,
+            "fobvalue": null,
+            "primaryValue": 293390.77,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "importsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 156,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 124,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "854370",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C01",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 1000,
+            "motDesc": null,
+            "qtyUnitCode": -1,
+            "qtyUnitAbbr": null,
+            "qty": 0,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 40,
+            "isAltQtyEstimated": false,
+            "netWgt": 40,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 10842.41,
+            "fobvalue": null,
+            "primaryValue": 10842.41,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsToTarget": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "854370",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 7092785,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 7092785,
+            "isAltQtyEstimated": false,
+            "netWgt": 2562521,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 85395656,
+            "primaryValue": 85395656,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          },
+          "originExportsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 156,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "X",
+            "flowDesc": null,
+            "partnerCode": 724,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "854370",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 5,
+            "qtyUnitAbbr": null,
+            "qty": 6160477,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 5,
+            "altQtyUnitAbbr": null,
+            "altQty": 6160477,
+            "isAltQtyEstimated": false,
+            "netWgt": 2067115,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": null,
+            "fobvalue": 67489036,
+            "primaryValue": 67489036,
+            "legacyEstimationFlag": 0,
+            "isReported": true,
+            "isAggregate": false
+          }
+        },
+        "signals": {
+          "demand": 63.739583417470065,
+          "growth": 100,
+          "marketGap": 0,
+          "availability": 100
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-09-03T14:40:21.017Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-09-03T14:40:21.017Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Electrical machines and apparatus: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-09-03T14:40:21.017Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 854370: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
     }
   ],
   "commercialEnrichment": [
@@ -1416,7 +2796,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1424,7 +2804,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         },
@@ -1432,7 +2812,7 @@
           "type": "demand",
           "sourceName": "Tenders Electronic Daily (TED)",
           "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/589816-2026",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spānija – Plastmasas izstrādājumi – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. An Spáinn – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ισπανία – Πλαστικά προϊόντα – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. España – Productos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hispaania – Plasttooted – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanje – Producten van plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanja – Muovituotteet – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hiszpania – Produkty z tworzyw sztucznych – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španjolska – Proizvodi od plastike – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španělsko – Výrobky z plastů – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spania – Produse din plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanha – Produtos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španielsko – Plastové výrobky – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espagne – Produits en plastique – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanja – Prodotti tal-plastika – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Kunststoffprodukte – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ispanija – Plastikiniai gaminiai – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spagna – Prodotti di plastica – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Иcпaния – Пластмасови продукти – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španija – Proizvodi iz plastičnih mas – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spain – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos.. Publication 589816-2026; buyer Consejería de Agricultura, Ganadería, Medio Rural y Política Ambiental de la Junta de Castilla y León; published 2026-08-26+02:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
           "evidenceLevel": "product"
         },
@@ -1440,7 +2820,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1450,7 +2830,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1458,7 +2838,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         }
@@ -1468,7 +2848,7 @@
           "type": "demand",
           "sourceName": "Tenders Electronic Daily (TED)",
           "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/589816-2026",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spānija – Plastmasas izstrādājumi – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. An Spáinn – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ισπανία – Πλαστικά προϊόντα – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. España – Productos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hispaania – Plasttooted – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanje – Producten van plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanja – Muovituotteet – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Hiszpania – Produkty z tworzyw sztucznych – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španjolska – Proizvodi od plastike – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španělsko – Výrobky z plastů – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Plastprodukter – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spania – Produse din plastic – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espanha – Produtos de plástico – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španielsko – Plastové výrobky – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Espagne – Produits en plastique – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanja – Prodotti tal-plastika – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spanien – Kunststoffprodukte – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Ispanija – Plastikiniai gaminiai – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spagna – Prodotti di plastica – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Иcпaния – Пластмасови продукти – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Španija – Proizvodi iz plastičnih mas – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos. Spain – Plastic products – Adquisición de dispositivos para la identificación de los animales de las especies bovina, ovina, caprina, camélidos y cérvidos.. Publication 589816-2026; buyer Consejería de Agricultura, Ganadería, Medio Rural y Política Ambiental de la Junta de Castilla y León; published 2026-08-26+02:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
           "evidenceLevel": "product"
         },
@@ -1476,7 +2856,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1491,7 +2871,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1499,7 +2879,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         },
@@ -1507,7 +2887,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Lithium-ion accumulators: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1517,7 +2897,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1525,7 +2905,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         }
@@ -1535,7 +2915,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Lithium-ion accumulators: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1552,7 +2932,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1560,7 +2940,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         },
@@ -1568,7 +2948,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Other electro-thermic appliances: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1578,7 +2958,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1586,7 +2966,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         }
@@ -1596,7 +2976,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Other electro-thermic appliances: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1613,7 +2993,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1621,7 +3001,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         },
@@ -1629,7 +3009,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1639,7 +3019,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1647,7 +3027,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         }
@@ -1657,7 +3037,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1674,7 +3054,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1682,7 +3062,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         },
@@ -1690,7 +3070,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Electrical machines and apparatus: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
@@ -1700,7 +3080,7 @@
           "type": "demand_context",
           "sourceName": "Instituto Nacional de Estadística (INE)",
           "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
           "evidenceLevel": "context"
         },
@@ -1708,7 +3088,7 @@
           "type": "economics_context",
           "sourceName": "Eurostat",
           "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
           "evidenceLevel": "context"
         }
@@ -1718,7 +3098,7 @@
           "type": "economics",
           "sourceName": "United Nations UN Comtrade",
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "observedAt": "2026-09-03T10:18:21.065Z",
+          "observedAt": "2026-09-03T14:40:21.017Z",
           "summary": "Product-level UN Comtrade trade-flow evidence for Electrical machines and apparatus: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
           "evidenceLevel": "product"
         }
