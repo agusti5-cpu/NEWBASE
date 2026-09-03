@@ -42,7 +42,7 @@ jobs:
         run: node monitor/update-trade-history.js
 
       - name: Build OPVILO publication feed
-        run: node monitor/write-opvilo-output.js > data/opvilo-feed.json
+        run: node monitor/write-opvilo-output.js
 
       - name: Publish detector output, history and OPVILO feed
         run: |
@@ -64,7 +64,7 @@ jobs:
             git reset --hard origin/main
             node monitor/run-trade.js > data/latest-trade-run.json
             node monitor/update-trade-history.js
-            node monitor/write-opvilo-output.js > data/opvilo-feed.json
+            node monitor/write-opvilo-output.js
           done
           echo 'Unable to publish trade detector output after 3 attempts.'
           exit 1
