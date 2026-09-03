@@ -28,14 +28,16 @@ const accepted = (overrides = {}) => ({
           sourceName: 'Demand source',
           sourceUrl: 'https://example.com/demand/1',
           observedAt: '2026-09-02T18:00:00Z',
-          summary: 'Independent demand evidence.'
+          summary: 'Independent demand evidence.',
+          evidenceLevel: 'product'
         },
         {
           type: 'economics',
           sourceName: 'Economics source',
           sourceUrl: 'https://example.org/economics/1',
           observedAt: '2026-09-02T18:00:00Z',
-          summary: 'Independent economics evidence.'
+          summary: 'Independent economics evidence.',
+          evidenceLevel: 'product'
         }
       ]
     },
@@ -43,7 +45,7 @@ const accepted = (overrides = {}) => ({
   }
 });
 
-test('accepted opportunity with complete evidence and commercial corroboration is publishable', () => {
+test('accepted opportunity with complete product-level evidence and commercial corroboration is publishable', () => {
   const result = preparePublication(accepted());
   assert.equal(result.status, 'publishable');
   assert.equal(result.opportunityId, 'opp-1');
@@ -72,13 +74,15 @@ test('commercial validation requires independent demand and economics evidence',
       type: 'demand',
       sourceName: 'Same source',
       sourceUrl: 'https://example.com/demand',
-      observedAt: '2026-09-02T18:00:00Z'
+      observedAt: '2026-09-02T18:00:00Z',
+      evidenceLevel: 'product'
     },
     {
       type: 'economics',
       sourceName: 'Same source',
       sourceUrl: 'https://example.com/economics',
-      observedAt: '2026-09-02T18:00:00Z'
+      observedAt: '2026-09-02T18:00:00Z',
+      evidenceLevel: 'product'
     }
   ];
   const result = preparePublication(candidate);
