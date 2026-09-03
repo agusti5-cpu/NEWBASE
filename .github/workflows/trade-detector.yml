@@ -39,6 +39,9 @@ jobs:
       - name: Run trade detector
         run: node monitor/run-trade.js > data/latest-trade-run.json
 
+      - name: Report publication gate result
+        run: node --input-type=module -e "import('node:fs/promises').then(async ({readFile}) => { const r=JSON.parse(await readFile('data/latest-trade-run.json','utf8')); console.log(JSON.stringify({inputCount:r.inputCount,accepted:(r.accepted||[]).length,publishable:(r.publishable||[]).length,notPublishable:(r.notPublishable||[]).length,notPublishableReasons:[...new Set((r.notPublishable||[]).map(x=>x.reason))]},null,2)); })"
+
       - name: Update trade history
         run: node monitor/update-trade-history.js
 
