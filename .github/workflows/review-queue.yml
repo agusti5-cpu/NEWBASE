@@ -41,18 +41,21 @@ jobs:
         run: |
           git config user.name 'NEWBASE bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/review-queue.json data/latest-review-queue-run.json
-          if git diff --cached --quiet; then
-            echo 'No review queue changes.'
-            exit 0
-          fi
-          git commit -m 'Update automatic review queue'
-          for attempt in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && exit 0
-            echo "Concurrent update detected; retrying publication ($attempt/3)."
-            git rebase --abort || true
+          for attempt in 1 2 3 4 5; do
             git fetch origin main
-            git rebase origin/main
+            git reset --hard origin/main
+            node monitor/review-queue-runner.js > data/latest-review-queue-run.json
+            git add data/review-queue.json data/latest-review-queue-run.json
+            if git diff --cached --quiet; then
+              echo 'No review queue changes.'
+              exit 0
+            fi
+            git commit -m 'Update automatic review queue'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            git reset --hard origin/main
+            echo "Concurrent update detected; regenerating review queue ($attempt/5)."
           done
-          echo 'Unable to publish review queue state after 3 attempts.'
+          echo 'Unable to publish review queue state after 5 attempts.'
           exit 1
