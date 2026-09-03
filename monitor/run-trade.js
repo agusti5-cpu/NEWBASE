@@ -6,15 +6,27 @@ import { runNewbase } from '../engine/newbase-pipeline.js';
  * Run targeted international-trade detection through the canonical NEWBASE
  * pipeline. Trade data is evidence of commercial movement, not proof of
  * profitability, retail demand, import eligibility or product compliance.
+ *
+ * Periods advance automatically: the latest completed calendar year is used
+ * as the preferred current period, with the preceding year as comparison.
+ * The configured watchlist remains a safe fallback when an API lags.
  */
 export async function runTradeDetector({
   routes = watchlist.routes,
-  currentPeriod = watchlist.periods.current,
-  previousPeriod = watchlist.periods.previous,
+  currentPeriod,
+  previousPeriod,
   observedAt = new Date().toISOString(),
   fetchImpl = globalThis.fetch,
   options = {},
 } = {}) {
+  const year = new Date(observedAt).getUTCFullYear();
+  const automaticCurrent = year - 1;
+  const automaticPrevious = year - 2;
+  const configuredCurrent = Number(watchlist.periods?.current);
+  const configuredPrevious = Number(watchlist.periods?.previous);
+  const current = currentPeriod ?? (Number.isFinite(configuredCurrent) && configuredCurrent >= automaticCurrent - 1 ? Math.max(configuredCurrent, automaticCurrent) : automaticCurrent);
+  const previous = previousPeriod ?? (Number.isFinite(configuredPrevious) && configuredPrevious >= automaticPrevious - 1 ? Math.max(configuredPrevious, automaticPrevious) : automaticPrevious);
+
   const candidates = [];
   const errors = [];
 
@@ -27,8 +39,8 @@ export async function runTradeDetector({
           originMarket: route.originMarket,
           targetMarket: route.targetMarket,
           productCode: product.code,
-          currentPeriod,
-          previousPeriod,
+          currentPeriod: current,
+          previousPeriod: previous,
           observedAt,
           fetchImpl,
         });
@@ -54,7 +66,7 @@ export async function runTradeDetector({
     status: errors.length === 0 ? 'success' : candidates.length > 0 ? 'partial' : 'unavailable',
     observedAt,
     generatedAt: observedAt,
-    periods: { current: currentPeriod, previous: previousPeriod },
+    periods: { current, previous },
     inputCount: result.inputCount,
     normalizedCount: result.normalizedCount,
     accepted: result.accepted,
