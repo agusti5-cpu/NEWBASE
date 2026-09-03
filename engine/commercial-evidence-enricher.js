@@ -1,17 +1,18 @@
 /**
  * NEWBASE — automatic commercial-context enrichment.
  *
- * This module gathers independent official-market context without claiming that
- * macro indicators prove product-level profitability. Product-level commercial
- * evidence remains a separate publication requirement and the gate stays closed
- * unless that evidence exists.
+ * Macro indicators are context only. Product-level publication requires
+ * corroboration from a concrete procurement signal (TED) plus a product-level
+ * market-economics signal already present in the trade evidence (UN Comtrade).
  */
 
 import { fetchRetailIndex } from '../connectors/ine-retail-index.js';
 import { fetchDataset } from '../connectors/eurostat.js';
+import { searchTedProcurement } from '../connectors/ted-procurement.js';
 
 const INE_URL = 'https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808';
 const EUROSTAT_URL = 'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx';
+const TED_URL = 'https://api.ted.europa.eu/v3/notices/search';
 
 function numeric(value) {
   const n = Number(value);
@@ -44,16 +45,17 @@ function pickLatestEurostat(payload) {
   return entries.at(-1) ?? null;
 }
 
-function evidence(type, sourceName, sourceUrl, observedAt, summary) {
-  return { type, sourceName, sourceUrl, observedAt, summary };
+function evidence(type, sourceName, sourceUrl, observedAt, summary, evidenceLevel = 'context') {
+  return { type, sourceName, sourceUrl, observedAt, summary, evidenceLevel };
 }
 
 /**
- * Collect target-market context for a trade opportunity.
- * Failures are returned as diagnostics and never become fabricated evidence.
+ * Collect independent target-market context and product-level procurement
+ * evidence. Failures are diagnostics and never become fabricated evidence.
  */
-export async function collectCommercialContext({ targetMarket = 'ES', observedAt = new Date().toISOString(), fetchImpl = globalThis.fetch } = {}) {
-  const evidence = [];
+export async function collectCommercialContext({ targetMarket = 'ES', productOrService = '', tradeEvidence = null, observedAt = new Date().toISOString(), fetchImpl = globalThis.fetch } = {}) {
+  const contextEvidence = [];
+  const productEvidence = [];
   const errors = [];
 
   if (targetMarket === 'ES') {
@@ -61,7 +63,7 @@ export async function collectCommercialContext({ targetMarket = 'ES', observedAt
       const payload = await fetchRetailIndex({ nult: 2, fetchImpl });
       const latest = pickLatestIne(payload);
       if (latest) {
-        evidence.push(evidenceItem('demand_context', 'Instituto Nacional de Estadística (INE)', INE_URL, observedAt, `Official Spanish retail-index context: ${latest.name}; latest observed value ${latest.latest.value}. This is target-market context, not product-level demand proof.`));
+        contextEvidence.push(evidence('demand_context', 'Instituto Nacional de Estadística (INE)', INE_URL, observedAt, `Official Spanish retail-index context: ${latest.name}; latest observed value ${latest.latest.value}. This is target-market context, not product-level demand proof.`));
       } else {
         errors.push('INE_RETAIL_CONTEXT_NOT_FOUND');
       }
@@ -80,7 +82,7 @@ export async function collectCommercialContext({ targetMarket = 'ES', observedAt
     });
     const latest = pickLatestEurostat(payload);
     if (latest) {
-      evidence.push(evidenceItem('economics_context', 'Eurostat', EUROSTAT_URL, observedAt, `Official Eurostat HICP context for ${targetMarket}; latest returned index value ${latest.value}. This is macroeconomic context, not product-level cost or profitability proof.`));
+      contextEvidence.push(evidence('economics_context', 'Eurostat', EUROSTAT_URL, observedAt, `Official Eurostat HICP context for ${targetMarket}; latest returned index value ${latest.value}. This is macroeconomic context, not product-level cost or profitability proof.`));
     } else {
       errors.push('EUROSTAT_ECONOMIC_CONTEXT_NOT_FOUND');
     }
@@ -88,11 +90,37 @@ export async function collectCommercialContext({ targetMarket = 'ES', observedAt
     errors.push(`EUROSTAT_CONTEXT_${error instanceof Error ? error.message : String(error)}`);
   }
 
-  return { targetMarket, evidence, errors };
-}
+  try {
+    const ted = await searchTedProcurement({ productOrService, targetMarket, observedAt, fetchImpl });
+    if (ted.matches.length) {
+      const match = ted.matches[0];
+      productEvidence.push(evidence(
+        'demand',
+        'Tenders Electronic Daily (TED)',
+        match.url || TED_URL,
+        observedAt,
+        `Active EU public-procurement notice matched to the evaluated product: ${match.title || productOrService}. Publication ${match.publicationNumber || 'unknown'}; buyer ${match.buyer || 'unknown'}; published ${match.publicationDate || 'unknown'}. This is procurement demand evidence, not guaranteed private-market demand or profitability.`,
+        'product',
+      ));
+    } else {
+      errors.push('TED_PRODUCT_DEMAND_NOT_FOUND');
+    }
+  } catch (error) {
+    errors.push(`TED_CONTEXT_${error instanceof Error ? error.message : String(error)}`);
+  }
 
-function evidenceItem(type, sourceName, sourceUrl, observedAt, summary) {
-  return evidence(type, sourceName, sourceUrl, observedAt, summary);
+  if (tradeEvidence?.sourceName === 'United Nations UN Comtrade' && tradeEvidence?.sourceUrl) {
+    productEvidence.push(evidence(
+      'economics',
+      tradeEvidence.sourceName,
+      tradeEvidence.sourceUrl,
+      tradeEvidence.observedAt || observedAt,
+      `Product-level UN Comtrade trade-flow evidence for ${productOrService}: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.`,
+      'product',
+    ));
+  }
+
+  return { targetMarket, contextEvidence, productEvidence, errors };
 }
 
 export async function enrichTradeOpportunities(opportunities = [], options = {}) {
@@ -102,6 +130,8 @@ export async function enrichTradeOpportunities(opportunities = [], options = {})
   for (const opportunity of Array.isArray(opportunities) ? opportunities : []) {
     const context = await collectCommercialContext({
       targetMarket: opportunity.targetMarket,
+      productOrService: opportunity.productOrService,
+      tradeEvidence: opportunity.evidence,
       observedAt: options.observedAt ?? opportunity.observedAt,
       fetchImpl: options.fetchImpl ?? globalThis.fetch,
     });
@@ -112,7 +142,7 @@ export async function enrichTradeOpportunities(opportunities = [], options = {})
     output.push({
       ...opportunity,
       commercialValidation: {
-        evidence: [...evidenceList, ...context.evidence],
+        evidence: [...evidenceList, ...context.contextEvidence, ...context.productEvidence],
       },
     });
 
