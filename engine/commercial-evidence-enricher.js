@@ -90,23 +90,27 @@ export async function collectCommercialContext({ targetMarket = 'ES', productOrS
     errors.push(`EUROSTAT_CONTEXT_${error instanceof Error ? error.message : String(error)}`);
   }
 
-  try {
-    const ted = await searchTedProcurement({ productOrService, targetMarket, observedAt, fetchImpl });
-    if (ted.matches.length) {
-      const match = ted.matches[0];
-      productEvidence.push(evidence(
-        'demand',
-        'Tenders Electronic Daily (TED)',
-        match.url || TED_URL,
-        observedAt,
-        `Active EU public-procurement notice matched to the evaluated product: ${match.title || productOrService}. Publication ${match.publicationNumber || 'unknown'}; buyer ${match.buyer || 'unknown'}; published ${match.publicationDate || 'unknown'}. This is procurement demand evidence, not guaranteed private-market demand or profitability.`,
-        'product',
-      ));
-    } else {
-      errors.push('TED_PRODUCT_DEMAND_NOT_FOUND');
+  // TED is a product-level demand source. Do not query it when there is no
+  // product to search for; this keeps generic context calls deterministic.
+  if (String(productOrService).trim()) {
+    try {
+      const ted = await searchTedProcurement({ productOrService, targetMarket, observedAt, fetchImpl });
+      if (ted.matches.length) {
+        const match = ted.matches[0];
+        productEvidence.push(evidence(
+          'demand',
+          'Tenders Electronic Daily (TED)',
+          match.url || TED_URL,
+          observedAt,
+          `Active EU public-procurement notice matched to the evaluated product: ${match.title || productOrService}. Publication ${match.publicationNumber || 'unknown'}; buyer ${match.buyer || 'unknown'}; published ${match.publicationDate || 'unknown'}. This is procurement demand evidence, not guaranteed private-market demand or profitability.`,
+          'product',
+        ));
+      } else {
+        errors.push('TED_PRODUCT_DEMAND_NOT_FOUND');
+      }
+    } catch (error) {
+      errors.push(`TED_CONTEXT_${error instanceof Error ? error.message : String(error)}`);
     }
-  } catch (error) {
-    errors.push(`TED_CONTEXT_${error instanceof Error ? error.message : String(error)}`);
   }
 
   if (tradeEvidence?.sourceName === 'United Nations UN Comtrade' && tradeEvidence?.sourceUrl) {
@@ -120,7 +124,14 @@ export async function collectCommercialContext({ targetMarket = 'ES', productOrS
     ));
   }
 
-  return { targetMarket, contextEvidence, productEvidence, errors };
+  return {
+    targetMarket,
+    // Keep the original aggregate field for compatibility with existing callers/tests.
+    evidence: [...contextEvidence, ...productEvidence],
+    contextEvidence,
+    productEvidence,
+    errors,
+  };
 }
 
 export async function enrichTradeOpportunities(opportunities = [], options = {}) {
@@ -142,7 +153,7 @@ export async function enrichTradeOpportunities(opportunities = [], options = {})
     output.push({
       ...opportunity,
       commercialValidation: {
-        evidence: [...evidenceList, ...context.contextEvidence, ...context.productEvidence],
+        evidence: [...evidenceList, ...context.evidence],
       },
     });
 
