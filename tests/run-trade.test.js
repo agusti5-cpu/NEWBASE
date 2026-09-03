@@ -42,6 +42,26 @@ const fetchImpl = async (url) => {
   if (flow === 'M' && period === 2023) return { ok: true, json: async () => payload(900000, 2023) };
   if (flow === 'X' && period === 2024) return { ok: true, json: async () => payload(300000, 2024, 'X', reporter, partner) };
   if (flow === 'X' && period === 2023) return { ok: true, json: async () => payload(250000, 2023, 'X', reporter, partner) };
+
+  // Automatic commercial-context enrichment uses official INE and Eurostat
+  // endpoints. Return valid macro context, while deliberately not creating
+  // product-level commercial evidence that the source does not provide.
+  if (u.hostname === 'servicios.ine.es') {
+    return {
+      ok: true,
+      json: async () => [{
+        Nombre: 'Índice general. España',
+        Data: [{ Fecha: 20260101, Valor: 101 }, { Fecha: 20260201, Valor: 102 }],
+      }],
+    };
+  }
+  if (u.hostname === 'ec.europa.eu' && u.pathname.includes('/eurostat/')) {
+    return {
+      ok: true,
+      json: async () => ({ id: ['geo', 'coicop', 'unit', 'time'], size: [1, 1, 1, 1], value: { '0': 103.2 } }),
+    };
+  }
+
   throw new Error('UNEXPECTED_REQUEST');
 };
 
@@ -64,14 +84,15 @@ assert.equal(result.source, 'un-comtrade-preview');
 assert.equal(result.inputCount, 1);
 assert.equal(result.normalizedCount, 1);
 
-// runTradeDetector now also performs automatic commercial-context enrichment,
-// so the shared fetch mock records additional INE/Eurostat requests. Assert
-// only the UN Comtrade calls here so this test remains focused on period fallback.
+// The detector performs additional official INE/Eurostat enrichment. Keep
+// this assertion scoped to the eight UN Comtrade requests used by fallback.
 const tradeCalls = calls.filter((url) => url.pathname === '/public/v1/preview/C/A/HS');
 assert.equal(tradeCalls.length, 8);
 assert.equal(tradeCalls[4].searchParams.get('period'), '2024');
 assert.equal(tradeCalls[5].searchParams.get('period'), '2023');
 
+// Trade detection succeeds, but macro context is explicitly not product-level
+// demand/economics proof, so the publication gate must remain closed.
 assert.equal(result.accepted.length, 1);
 assert.equal(result.rejected.length, 0);
 assert.equal(result.accepted[0].opportunity.originMarket, 'CN');
@@ -80,7 +101,8 @@ assert.equal(result.accepted[0].opportunity.id, 'comtrade-CN-ES-392690-2024');
 assert.equal(result.accepted[0].opportunity.signals.growth > 50, true);
 assert.equal(result.accepted[0].opportunity.legal.status, 'unknown');
 assert.equal(result.accepted[0].opportunity.evidence.sourceName, 'United Nations UN Comtrade');
-assert.equal(result.publishable.length, 1);
-assert.equal(result.publishable[0].opportunityId, 'comtrade-CN-ES-392690-2024');
+assert.equal(result.publishable.length, 0);
+assert.equal(result.notPublishable.length, 1);
+assert.equal(result.notPublishable[0].reason, 'COMMERCIAL_VALIDATION_REQUIRED');
 
 console.log('NEWBASE trade detector tests: PASS');
