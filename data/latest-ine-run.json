@@ -1,10 +1,3971 @@
 {
   "schemaVersion": 1,
   "detector": "es-ine-retail-75808",
-  "observedAt": "2026-09-03T08:49:01.802Z",
+  "observedAt": "2026-09-03T09:16:00.078Z",
   "inputCount": 40,
   "normalizedCount": 40,
-  "acceptedCount": 0,
-  "rejectedCount": 40,
-  "opportunities": []
+  "acceptedCount": 40,
+  "rejectedCount": 0,
+  "opportunities": [
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 73,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-0-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-0-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM3821",
+          "Nombre": "Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 16473,
+              "T3_Variable": "Totales Territoriales",
+              "Nombre": "Total Nacional",
+              "Codigo": "00"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 120.418
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 115.569
+            }
+          ]
+        },
+        "signals": {
+          "demand": 60.209,
+          "growth": 70.97880919623776,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 74,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-1-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-1-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Total Nacional. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM3790",
+          "Nombre": "Total Nacional. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 16473,
+              "T3_Variable": "Totales Territoriales",
+              "Nombre": "Total Nacional",
+              "Codigo": "00"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 121.185
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 115.6
+            }
+          ]
+        },
+        "signals": {
+          "demand": 60.5925,
+          "growth": 74.1565743944637,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Total Nacional. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 121.185."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 74,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-2-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-2-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Andalucía. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4441",
+          "Nombre": "Andalucía. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8997,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Andalucía",
+              "Codigo": "01"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 121.654
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 116.085
+            }
+          ]
+        },
+        "signals": {
+          "demand": 60.827,
+          "growth": 73.98673385881037,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Andalucía. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 121.654."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 75,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-3-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-3-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Andalucía. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4440",
+          "Nombre": "Andalucía. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8997,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Andalucía",
+              "Codigo": "01"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 123.456
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 116.915
+            }
+          ]
+        },
+        "signals": {
+          "demand": 61.728,
+          "growth": 77.97331394602915,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Andalucía. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 123.456."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 68,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-4-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-4-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Aragón. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4439",
+          "Nombre": "Aragón. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8998,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Aragón",
+              "Codigo": "02"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 114.462
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 112.147
+            }
+          ]
+        },
+        "signals": {
+          "demand": 57.231,
+          "growth": 60.32127475545488,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Aragón. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 114.462."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 68,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-5-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-5-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Aragón. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4438",
+          "Nombre": "Aragón. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8998,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Aragón",
+              "Codigo": "02"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 113.605
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 111.059
+            }
+          ]
+        },
+        "signals": {
+          "demand": 56.8025,
+          "growth": 61.462375854275685,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Aragón. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 113.605."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 78,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-6-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-6-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Asturias, Principado de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4437",
+          "Nombre": "Asturias, Principado de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8999,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Asturias, Principado de",
+              "Codigo": "03"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 114.561
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 105.551
+            }
+          ]
+        },
+        "signals": {
+          "demand": 57.2805,
+          "growth": 92.68078938143648,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Asturias, Principado de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 114.561."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 79,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-7-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-7-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Asturias, Principado de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4436",
+          "Nombre": "Asturias, Principado de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8999,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Asturias, Principado de",
+              "Codigo": "03"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 115.266
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 105.626
+            }
+          ]
+        },
+        "signals": {
+          "demand": 57.633,
+          "growth": 95.63270406907391,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Asturias, Principado de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 115.266."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 84,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-8-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-8-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Balears, Illes. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4435",
+          "Nombre": "Balears, Illes. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9000,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Balears, Illes",
+              "Codigo": "04"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 150.464
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 139.38
+            }
+          ]
+        },
+        "signals": {
+          "demand": 75.232,
+          "growth": 89.76180226718326,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Balears, Illes. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 150.464."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 85,
+      "level": "high",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-9-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-9-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Balears, Illes. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4434",
+          "Nombre": "Balears, Illes. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9000,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Balears, Illes",
+              "Codigo": "04"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 150.206
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 138.417
+            }
+          ]
+        },
+        "signals": {
+          "demand": 75.103,
+          "growth": 92.5850870919034,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Balears, Illes. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 150.206."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 81,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-10-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-10-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Canarias. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4433",
+          "Nombre": "Canarias. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9001,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Canarias",
+              "Codigo": "05"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 130.179
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 120.351
+            }
+          ]
+        },
+        "signals": {
+          "demand": 65.0895,
+          "growth": 90.83057058105044,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Canarias. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 130.179."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 83,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-11-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-11-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Canarias. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4432",
+          "Nombre": "Canarias. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9001,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Canarias",
+              "Codigo": "05"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 134.045
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 123.082
+            }
+          ]
+        },
+        "signals": {
+          "demand": 67.0225,
+          "growth": 94.5353504167953,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Canarias. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 134.045."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 84,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-12-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-12-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Cantabria. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4431",
+          "Nombre": "Cantabria. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9002,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Cantabria",
+              "Codigo": "06"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 131.129
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 116.133
+            }
+          ]
+        },
+        "signals": {
+          "demand": 65.5645,
+          "growth": 100,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Cantabria. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 131.129."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 84,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-13-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-13-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Cantabria. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4430",
+          "Nombre": "Cantabria. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9002,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Cantabria",
+              "Codigo": "06"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 130.28
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 113.599
+            }
+          ]
+        },
+        "signals": {
+          "demand": 65.14,
+          "growth": 100,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Cantabria. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 130.28."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 73,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-14-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-14-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Castilla y León. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4429",
+          "Nombre": "Castilla y León. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9003,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Castilla y León",
+              "Codigo": "07"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 112.513
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 106.967
+            }
+          ]
+        },
+        "signals": {
+          "demand": 56.2565,
+          "growth": 75.92388306674025,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Castilla y León. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 112.513."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 73,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-15-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-15-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Castilla y León. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4428",
+          "Nombre": "Castilla y León. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9003,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Castilla y León",
+              "Codigo": "07"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 111.584
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 105.726
+            }
+          ]
+        },
+        "signals": {
+          "demand": 55.792,
+          "growth": 77.70368688875018,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Castilla y León. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 111.584."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 71,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-16-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-16-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Castilla - La Mancha. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4427",
+          "Nombre": "Castilla - La Mancha. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9004,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Castilla - La Mancha",
+              "Codigo": "08"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 115.228
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 110.874
+            }
+          ]
+        },
+        "signals": {
+          "demand": 57.614,
+          "growth": 69.63490087847467,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Castilla - La Mancha. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 115.228."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 74,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-17-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-17-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Castilla - La Mancha. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4426",
+          "Nombre": "Castilla - La Mancha. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9004,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Castilla - La Mancha",
+              "Codigo": "08"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 117.294
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 111.132
+            }
+          ]
+        },
+        "signals": {
+          "demand": 58.647,
+          "growth": 77.72378792786952,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Castilla - La Mancha. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 117.294."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 73,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-18-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-18-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Cataluña. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4425",
+          "Nombre": "Cataluña. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9005,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Cataluña",
+              "Codigo": "09"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 121.745
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 117.053
+            }
+          ]
+        },
+        "signals": {
+          "demand": 60.8725,
+          "growth": 70.0422031045766,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Cataluña. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 121.745."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 73,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-19-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-19-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Cataluña. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4424",
+          "Nombre": "Cataluña. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9005,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Cataluña",
+              "Codigo": "09"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 122.169
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 116.931
+            }
+          ]
+        },
+        "signals": {
+          "demand": 61.0845,
+          "growth": 72.39782435795469,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Cataluña. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 122.169."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 80,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-20-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-20-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Comunitat Valenciana. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4423",
+          "Nombre": "Comunitat Valenciana. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9006,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Comunitat Valenciana",
+              "Codigo": "10"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 127.368
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 118.17
+            }
+          ]
+        },
+        "signals": {
+          "demand": 63.684,
+          "growth": 88.9185072353389,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Comunitat Valenciana. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 127.368."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 81,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-21-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-21-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Comunitat Valenciana. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4422",
+          "Nombre": "Comunitat Valenciana. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9006,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Comunitat Valenciana",
+              "Codigo": "10"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 127.473
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 117.495
+            }
+          ]
+        },
+        "signals": {
+          "demand": 63.7365,
+          "growth": 92.46138133537595,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Comunitat Valenciana. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 127.473."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 68,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-22-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-22-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Extremadura. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4421",
+          "Nombre": "Extremadura. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9007,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Extremadura",
+              "Codigo": "11"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 111.554
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 109.179
+            }
+          ]
+        },
+        "signals": {
+          "demand": 55.777,
+          "growth": 60.87663378488537,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Extremadura. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 111.554."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 70,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-23-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-23-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Extremadura. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4420",
+          "Nombre": "Extremadura. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9007,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Extremadura",
+              "Codigo": "11"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 111.712
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 108.178
+            }
+          ]
+        },
+        "signals": {
+          "demand": 55.856,
+          "growth": 66.33418994619981,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Extremadura. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 111.712."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 78,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-24-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-24-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Galicia. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4419",
+          "Nombre": "Galicia. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9008,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Galicia",
+              "Codigo": "12"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 116.804
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 108.302
+            }
+          ]
+        },
+        "signals": {
+          "demand": 58.402,
+          "growth": 89.25135269893444,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Galicia. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 116.804."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 79,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-25-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-25-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Galicia. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4418",
+          "Nombre": "Galicia. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9008,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Galicia",
+              "Codigo": "12"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 116.54
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 107.008
+            }
+          ]
+        },
+        "signals": {
+          "demand": 58.27,
+          "growth": 94.53872607655508,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Galicia. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 116.54."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 62,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-26-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-26-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Madrid, Comunidad de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4417",
+          "Nombre": "Madrid, Comunidad de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9009,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Madrid, Comunidad de",
+              "Codigo": "13"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 114.654
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 117.127
+            }
+          ]
+        },
+        "signals": {
+          "demand": 57.327,
+          "growth": 39.44308314906043,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Madrid, Comunidad de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 114.654."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 63,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-27-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-27-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Madrid, Comunidad de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4416",
+          "Nombre": "Madrid, Comunidad de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9009,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Madrid, Comunidad de",
+              "Codigo": "13"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 116.756
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 118.633
+            }
+          ]
+        },
+        "signals": {
+          "demand": 58.378,
+          "growth": 42.08904773545306,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Madrid, Comunidad de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 116.756."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 76,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-28-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-28-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Murcia, Región de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4415",
+          "Nombre": "Murcia, Región de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9010,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Murcia, Región de",
+              "Codigo": "14"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 118.742
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 111.458
+            }
+          ]
+        },
+        "signals": {
+          "demand": 59.371,
+          "growth": 82.67598557304099,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Murcia, Región de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 118.742."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 77,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-29-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-29-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Murcia, Región de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4414",
+          "Nombre": "Murcia, Región de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9010,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Murcia, Región de",
+              "Codigo": "14"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 118.364
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 110.106
+            }
+          ]
+        },
+        "signals": {
+          "demand": 59.182,
+          "growth": 87.50022705392989,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Murcia, Región de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 118.364."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 66,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-30-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-30-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Navarra, Comunidad Foral de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4413",
+          "Nombre": "Navarra, Comunidad Foral de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9011,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Navarra, Comunidad Foral de",
+              "Codigo": "15"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 110.004
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 108.598
+            }
+          ]
+        },
+        "signals": {
+          "demand": 55.002,
+          "growth": 56.473415716679895,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Navarra, Comunidad Foral de. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 110.004."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 65,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-31-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-31-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Navarra, Comunidad Foral de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4412",
+          "Nombre": "Navarra, Comunidad Foral de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9011,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Navarra, Comunidad Foral de",
+              "Codigo": "15"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 105.615
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 104.84
+            }
+          ]
+        },
+        "signals": {
+          "demand": 52.8075,
+          "growth": 53.69610835558943,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Navarra, Comunidad Foral de. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 105.615."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 67,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-32-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-32-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "País Vasco. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4411",
+          "Nombre": "País Vasco. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9012,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "País Vasco",
+              "Codigo": "16"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 114.75
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 113.696
+            }
+          ]
+        },
+        "signals": {
+          "demand": 57.375,
+          "growth": 54.63516746411484,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for País Vasco. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 114.75."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 67,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-33-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-33-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "País Vasco. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4410",
+          "Nombre": "País Vasco. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9012,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "País Vasco",
+              "Codigo": "16"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 113.572
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 112.065
+            }
+          ]
+        },
+        "signals": {
+          "demand": 56.786,
+          "growth": 56.723776379779615,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for País Vasco. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 113.572."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 75,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-34-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-34-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Rioja, La. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4409",
+          "Nombre": "Rioja, La. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9013,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Rioja, La",
+              "Codigo": "17"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 117.097
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 110.392
+            }
+          ]
+        },
+        "signals": {
+          "demand": 58.5485,
+          "growth": 80.36904848177403,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Rioja, La. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 117.097."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 76,
+      "level": "medium",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-35-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-35-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Rioja, La. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4408",
+          "Nombre": "Rioja, La. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9013,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Rioja, La",
+              "Codigo": "17"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 116.225
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 108.835
+            }
+          ]
+        },
+        "signals": {
+          "demand": 58.1125,
+          "growth": 83.95047549042128,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Rioja, La. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 116.225."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 63,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-36-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-36-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Ceuta. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4407",
+          "Nombre": "Ceuta. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9015,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Ceuta",
+              "Codigo": "18"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 112.028
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 113.55
+            }
+          ]
+        },
+        "signals": {
+          "demand": 56.014,
+          "growth": 43.29810656098639,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Ceuta. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 112.028."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 62,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-37-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-37-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Ceuta. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4406",
+          "Nombre": "Ceuta. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 9015,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Ceuta",
+              "Codigo": "18"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 113.245
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 115.058
+            }
+          ]
+        },
+        "signals": {
+          "demand": 56.6225,
+          "growth": 42.12136487684471,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Ceuta. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 113.245."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 67,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-38-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-38-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Melilla. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4405",
+          "Nombre": "Melilla. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8995,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Melilla",
+              "Codigo": "19"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 17579,
+              "T3_Variable": "DIVISIONES",
+              "Nombre": "Comercio al por menor, excepto de vehículos de motor y motocicletas",
+              "Codigo": "47"
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 107.951
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 105.865
+            }
+          ]
+        },
+        "signals": {
+          "demand": 53.9755,
+          "growth": 59.852170216785524,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Melilla. Cifra de negocio a precios constantes. Comercio al por menor, excepto de vehículos de motor y motocicletas. General. Índice.; latest observed value 107.951."
+        }
+      }
+    },
+    {
+      "status": "accepted",
+      "reason": "QUALITY_THRESHOLD_MET",
+      "score": 67,
+      "level": "low",
+      "legalStatus": "allowed",
+      "stage": "evaluation",
+      "opportunityId": "ine-75808-39-2026-07-01T00:00:00.000+02:00",
+      "opportunity": {
+        "id": "ine-75808-39-2026-07-01T00:00:00.000+02:00",
+        "category": "comercio",
+        "productOrService": "Melilla. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.",
+        "originMarket": "ES",
+        "targetMarket": "ES",
+        "source": {
+          "name": "Instituto Nacional de Estadística (INE)",
+          "type": "api",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808"
+        },
+        "observedAt": "2026-09-03T09:16:00.078Z",
+        "originalData": {
+          "COD": "ICM4404",
+          "Nombre": "Melilla. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice. ",
+          "T3_Unidad": "Índice",
+          "T3_Escala": " ",
+          "MetaData": [
+            {
+              "Id": 8995,
+              "T3_Variable": "Comunidades y Ciudades Autónomas",
+              "Nombre": "Melilla",
+              "Codigo": "19"
+            },
+            {
+              "Id": 276113,
+              "T3_Variable": "Cifra de Negocio/Personal Ocupado",
+              "Nombre": "Cifra de negocio a precios constantes",
+              "Codigo": ""
+            },
+            {
+              "Id": 404671,
+              "T3_Variable": "AGRUPACIONES CNAE",
+              "Nombre": "Comercio al por menor sin Estaciones de Servicio (47 sin 473)",
+              "Codigo": ""
+            },
+            {
+              "Id": 17045,
+              "T3_Variable": "Tipo de comercio",
+              "Nombre": "General",
+              "Codigo": ""
+            },
+            {
+              "Id": 83,
+              "T3_Variable": "Índice y tasas",
+              "Nombre": "Índice",
+              "Codigo": "0"
+            }
+          ],
+          "Data": [
+            {
+              "Fecha": "2026-07-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M07",
+              "Anyo": 2026,
+              "Valor": 108.733
+            },
+            {
+              "Fecha": "2026-06-01T00:00:00.000+02:00",
+              "T3_TipoDato": "Provisional",
+              "T3_Periodo": "M06",
+              "Anyo": 2026,
+              "Valor": 106.695
+            }
+          ]
+        },
+        "signals": {
+          "demand": 54.3665,
+          "growth": 59.55058812502934,
+          "marketGap": 0,
+          "availability": 0
+        },
+        "confidence": 0.9,
+        "legal": {
+          "status": "allowed",
+          "reason": "Official INE public API; downstream use remains subject to INE legal notice.",
+          "checkedAt": "2026-09-03T09:16:00.078Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "",
+          "knownCosts": 0
+        },
+        "evidence": {
+          "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+          "sourceName": "Instituto Nacional de Estadística (INE)",
+          "observedAt": "2026-09-03T09:16:00.078Z",
+          "summary": "Official INE retail index observation for Melilla. Cifra de negocio a precios constantes. Comercio al por menor sin Estaciones de Servicio (47 sin 473). General. Índice.; latest observed value 108.733."
+        }
+      }
+    }
+  ]
 }
