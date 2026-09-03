@@ -31,6 +31,7 @@ function normalizeCommercialValidation(raw = {}) {
       sourceUrl: text(item?.sourceUrl),
       observedAt: text(item?.observedAt),
       summary: text(item?.summary),
+      evidenceLevel: text(item?.evidenceLevel, 'context'),
     })),
   };
 }
