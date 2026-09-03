@@ -19,15 +19,29 @@ function summarize(value) {
   return typeof value;
 }
 
-await check('eurostat', () => fetchDataset({ datasetCode: 'prc_hicp_midx', lang: 'en', lastTimePeriod: 1, filters: { geo: 'ES' } }));
-await check('japan-indicator-discovery', () => fetchIndicatorInfo({ lang: 'EN', category: 'economy' }));
+await check('eurostat', () => fetchDataset({
+  datasetCode: 'prc_hicp_midx',
+  lang: 'en',
+  lastTimePeriod: 1,
+  filters: { geo: 'ES' },
+}));
 
-const indicator = process.env.JAPAN_INDICATOR_CODE;
-if (indicator) {
-  await check('japan-data', () => fetchData({ indicator, lang: 'EN' }));
-} else {
-  results.push({ name: 'japan-data', ok: false, error: 'JAPAN_INDICATOR_CODE_NOT_SET' });
-}
+await check('japan-indicator-discovery', () => fetchIndicatorInfo({
+  lang: 'EN',
+  category: 'economy',
+}));
+
+// Official e-Stat Dashboard API documentation provides this public sample
+// indicator. Keeping the test deterministic avoids requiring secrets or
+// manually supplied environment variables in CI.
+const JAPAN_SAMPLE_INDICATOR = '0201010010000020010';
+
+await check('japan-data', () => fetchData({
+  indicator: JAPAN_SAMPLE_INDICATOR,
+  lang: 'EN',
+  time: '2017CY00',
+  region: '00000',
+}));
 
 for (const result of results) console.log(JSON.stringify(result));
 if (results.some((result) => !result.ok)) process.exitCode = 1;
