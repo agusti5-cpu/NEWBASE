@@ -44,8 +44,21 @@ jobs:
             exit 0
           fi
           git commit -m 'Update INE detector output'
-          git fetch origin main
-          git reset --soft origin/main
-          git diff --cached --quiet && exit 0
-          git commit -m 'Update INE detector output'
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || {
+              echo 'Rebase conflict detected; discarding generated output and regenerating from current main.'
+              git rebase --abort || true
+              git reset --hard origin/main
+              node monitor/publish-ine.js > data/latest-ine-run.json
+              git add data/latest-ine-run.json
+              git diff --cached --quiet && exit 0
+              git commit -m 'Update INE detector output'
+            }
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Concurrent push detected; retrying publication ($attempt/5)."
+          done
+          echo 'Unable to publish INE detector output after 5 attempts.'
+          exit 1
