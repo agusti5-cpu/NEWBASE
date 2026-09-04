@@ -1,7 +1,10 @@
 import watchlist from '../config/trade-watchlist.json' with { type: 'json' };
-import { getTradeOpportunity } from '../connectors/un-comtrade-trade.js';
+import { runConnector } from '../connectors/connector-hub.js';
 import { enrichTradeOpportunities } from '../engine/commercial-evidence-enricher.js';
 import { runNewbase } from '../engine/newbase-pipeline.js';
+
+const TRADE_CONNECTOR_ID = 'un-comtrade-preview';
+const TRADE_CONNECTOR_METHOD = 'getTradeOpportunity';
 
 export async function runTradeDetector({ routes = watchlist.routes, currentPeriod, previousPeriod, observedAt = new Date().toISOString(), fetchImpl = globalThis.fetch, options = {} } = {}) {
   const year = new Date(observedAt).getUTCFullYear();
@@ -18,11 +21,28 @@ export async function runTradeDetector({ routes = watchlist.routes, currentPerio
   for (const route of routes ?? []) {
     for (const product of route.products ?? []) {
       try {
-        const result = await getTradeOpportunity({ originReporterCode: route.originReporterCode, targetReporterCode: route.targetReporterCode, originMarket: route.originMarket, targetMarket: route.targetMarket, productCode: product.code, currentPeriod: current, previousPeriod: previous, observedAt, fetchImpl });
+        const connectorResult = await runConnector(TRADE_CONNECTOR_ID, TRADE_CONNECTOR_METHOD, {
+          originReporterCode: route.originReporterCode,
+          targetReporterCode: route.targetReporterCode,
+          originMarket: route.originMarket,
+          targetMarket: route.targetMarket,
+          productCode: product.code,
+          currentPeriod: current,
+          previousPeriod: previous,
+          observedAt,
+          fetchImpl,
+          ...options,
+        });
+
+        if (connectorResult.status !== 'success') {
+          throw new Error(connectorResult.error || connectorResult.reason || 'TRADE_CONNECTOR_UNAVAILABLE');
+        }
+
+        const result = connectorResult.data;
         if (result?.opportunity) {
           result.opportunity.productOrService = product.name || result.opportunity.productOrService;
           candidates.push(result.opportunity);
-          provenance.push({ opportunityId: result.opportunity.id, requestedPeriods: { current, previous }, usedPeriods: result.periods, fallback: result.fallback });
+          provenance.push({ opportunityId: result.opportunity.id, requestedPeriods: { current, previous }, usedPeriods: result.periods, fallback: result.fallback, connector: TRADE_CONNECTOR_ID });
         }
       } catch (error) {
         errors.push({ route: `${route.originMarket}-${route.targetMarket}`, productCode: product.code, reason: error instanceof Error ? error.message : String(error) });
