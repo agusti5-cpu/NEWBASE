@@ -1,5 +1,5 @@
 {
-  "now": "2026-09-04T05:49:40.855Z",
+  "now": "2026-09-04T06:21:56.663Z",
   "dueCount": 0,
   "queueCount": 5,
   "queue": [
@@ -261,7 +261,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-04T05:40:02.030Z",
+        "observedAt": "2026-09-04T06:02:38.170Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -278,7 +278,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 276,
+            "partner2Code": 156,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -288,26 +288,26 @@
             "cmdDesc": null,
             "aggrLevel": null,
             "isLeaf": null,
-            "customsCode": "C20",
+            "customsCode": "C01",
             "customsDesc": null,
             "mosCode": "0",
-            "motCode": 9200,
+            "motCode": 2100,
             "motDesc": null,
             "qtyUnitCode": 5,
             "qtyUnitAbbr": null,
-            "qty": 834,
+            "qty": 6962899,
             "isQtyEstimated": false,
             "altQtyUnitCode": 5,
             "altQtyUnitAbbr": null,
-            "altQty": 834,
+            "altQty": 6962899,
             "isAltQtyEstimated": false,
-            "netWgt": 572.854,
+            "netWgt": 12377773.3,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 38309.954,
+            "cifvalue": 283516628.276,
             "fobvalue": null,
-            "primaryValue": 38309.954,
+            "primaryValue": 283516628.276,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -327,7 +327,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 276,
+            "partner2Code": 380,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -344,19 +344,19 @@
             "motDesc": null,
             "qtyUnitCode": 5,
             "qtyUnitAbbr": null,
-            "qty": 570,
+            "qty": 842,
             "isQtyEstimated": false,
             "altQtyUnitCode": 5,
             "altQtyUnitAbbr": null,
-            "altQty": 570,
+            "altQty": 842,
             "isAltQtyEstimated": false,
-            "netWgt": 717.316,
+            "netWgt": 552.88,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 26163.186,
+            "cifvalue": 34679.02,
             "fobvalue": null,
-            "primaryValue": 26163.186,
+            "primaryValue": 34679.02,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -461,7 +461,7 @@
           }
         },
         "signals": {
-          "demand": 56.66658373359412,
+          "demand": 87.62062829534823,
           "growth": 100,
           "marketGap": 0,
           "availability": 100
@@ -470,7 +470,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-04T05:40:02.030Z"
+          "checkedAt": "2026-09-04T06:02:38.170Z"
         },
         "commercial": {
           "price": 0,
@@ -483,7 +483,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -491,7 +491,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -499,7 +499,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Lithium-ion accumulators: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -508,7 +508,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-04T05:40:02.030Z",
+          "observedAt": "2026-09-04T06:02:38.170Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 850760: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       },
@@ -533,7 +533,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-04T05:40:02.030Z",
+        "observedAt": "2026-09-04T06:02:38.170Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -550,7 +550,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 251,
+            "partner2Code": 156,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -563,23 +563,23 @@
             "customsCode": "C01",
             "customsDesc": null,
             "mosCode": "0",
-            "motCode": 2100,
+            "motCode": 9200,
             "motDesc": null,
             "qtyUnitCode": 5,
             "qtyUnitAbbr": null,
-            "qty": 8,
+            "qty": 7,
             "isQtyEstimated": false,
             "altQtyUnitCode": 5,
             "altQtyUnitAbbr": null,
-            "altQty": 8,
+            "altQty": 7,
             "isAltQtyEstimated": false,
-            "netWgt": 21.4,
+            "netWgt": 57.96,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 510.525,
+            "cifvalue": 1461.293,
             "fobvalue": null,
-            "primaryValue": 510.525,
+            "primaryValue": 1461.293,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -599,7 +599,7 @@
             "partnerCode": 156,
             "partnerISO": null,
             "partnerDesc": null,
-            "partner2Code": 208,
+            "partner2Code": 348,
             "partner2ISO": null,
             "partner2Desc": null,
             "classificationCode": "H6",
@@ -616,19 +616,19 @@
             "motDesc": null,
             "qtyUnitCode": 5,
             "qtyUnitAbbr": null,
-            "qty": 510,
+            "qty": 2360,
             "isQtyEstimated": false,
             "altQtyUnitCode": 5,
             "altQtyUnitAbbr": null,
-            "altQty": 510,
+            "altQty": 2360,
             "isAltQtyEstimated": false,
-            "netWgt": 217.95,
+            "netWgt": 8880,
             "isNetWgtEstimated": false,
             "grossWgt": 0,
             "isGrossWgtEstimated": false,
-            "cifvalue": 4315.343,
+            "cifvalue": 149582.701,
             "fobvalue": null,
-            "primaryValue": 4315.343,
+            "primaryValue": 149582.701,
             "legacyEstimationFlag": 0,
             "isReported": true,
             "isAggregate": false
@@ -733,7 +733,7 @@
           }
         },
         "signals": {
-          "demand": 41.67093491234985,
+          "demand": 45.320275208246755,
           "growth": 0,
           "marketGap": 0,
           "availability": 100
@@ -742,7 +742,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-04T05:40:02.030Z"
+          "checkedAt": "2026-09-04T06:02:38.170Z"
         },
         "commercial": {
           "price": 0,
@@ -755,7 +755,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -763,7 +763,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -771,7 +771,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Other electro-thermic appliances: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -780,7 +780,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-04T05:40:02.030Z",
+          "observedAt": "2026-09-04T06:02:38.170Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 851679: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       },
@@ -805,7 +805,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-04T05:40:02.030Z",
+        "observedAt": "2026-09-04T06:02:38.170Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -1014,7 +1014,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-04T05:40:02.030Z"
+          "checkedAt": "2026-09-04T06:02:38.170Z"
         },
         "commercial": {
           "price": 0,
@@ -1027,7 +1027,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -1035,7 +1035,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -1043,7 +1043,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -1052,7 +1052,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-04T05:40:02.030Z",
+          "observedAt": "2026-09-04T06:02:38.170Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 940360: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       },
@@ -1077,7 +1077,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-09-04T05:40:02.030Z",
+        "observedAt": "2026-09-04T06:02:38.170Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -1286,7 +1286,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-09-04T05:40:02.030Z"
+          "checkedAt": "2026-09-04T06:02:38.170Z"
         },
         "commercial": {
           "price": 0,
@@ -1299,7 +1299,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 120.418. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -1307,7 +1307,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -1315,7 +1315,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-09-04T05:40:02.030Z",
+              "observedAt": "2026-09-04T06:02:38.170Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Electrical machines and apparatus: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -1324,7 +1324,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-09-04T05:40:02.030Z",
+          "observedAt": "2026-09-04T06:02:38.170Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 854370: imports into ES from CN and corresponding origin exports were observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       },
