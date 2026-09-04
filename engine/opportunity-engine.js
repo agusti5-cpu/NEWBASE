@@ -31,13 +31,16 @@ function legalStatus(candidate) {
 
 export function scoreCandidate(candidate) {
   const signals = candidate?.signals ?? {};
+  // commercialValidation is the canonical enriched evidence shape. Keep the
+  // legacy commercialEvidence fallback for backwards compatibility.
+  const commercialEvidence = candidate?.commercialValidation ?? candidate?.commercialEvidence;
   const values = [
     ['demand', signals.demand, 0.25],
     ['growth', signals.growth, 0.20],
     ['marketGap', signals.marketGap, 0.20],
     ['availability', signals.availability, 0.15],
     ['confidence', confidenceToScore(candidate?.confidence ?? 0), 0.20],
-    ['commercialEvidence', commercialEvidenceScore(candidate?.commercialEvidence), 0.10],
+    ['commercialEvidence', commercialEvidenceScore(commercialEvidence), 0.10],
   ];
 
   const known = values.filter(([, value]) => Number.isFinite(Number(value)) && Number(value) > 0);
