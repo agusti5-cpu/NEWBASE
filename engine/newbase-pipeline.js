@@ -11,13 +11,21 @@ export function runNewbase(records, context = {}, options = {}) {
   const results = processBatch(normalized, options);
   const publication = results.map(preparePublication);
 
+  // Quality score is the canonical prioritization signal. Keep rejected items
+  // available for diagnostics, but expose accepted opportunities highest-first.
+  const prioritized = [...results]
+    .filter((item) => item.status === 'accepted')
+    .sort((a, b) => b.score - a.score || String(a.opportunityId).localeCompare(String(b.opportunityId)));
+
+  const prioritizedPublication = prioritized.map(preparePublication);
+
   return {
     inputCount: Array.isArray(records) ? records.length : 0,
     normalizedCount: normalized.length,
     results,
-    accepted: results.filter((item) => item.status === 'accepted'),
+    accepted: prioritized,
     rejected: results.filter((item) => item.status === 'rejected'),
-    publishable: publication.filter((item) => item.status === 'publishable'),
+    publishable: prioritizedPublication.filter((item) => item.status === 'publishable'),
     notPublishable: publication.filter((item) => item.status === 'not_publishable'),
   };
 }
