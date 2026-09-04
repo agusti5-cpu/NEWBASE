@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: write
 
 concurrency:
   group: pages
@@ -17,23 +18,19 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/checkout@v6
+
       - name: Prepare public data
         run: |
           cp data/latest-trade-run.json web/latest-trade-run.json
           if [ -f data/opvilo-feed.json ]; then cp data/opvilo-feed.json web/opvilo-feed.json; else printf '{"schema":"opvilo-feed/v1","generatedAt":null,"source":"NEWBASE","status":"unavailable","count":0,"opportunities":[]}\n' > web/opvilo-feed.json; fi
           if [ -f data/trade-history.json ]; then cp data/trade-history.json web/trade-history.json; else printf '[]\n' > web/trade-history.json; fi
-      - name: Upload site
-        uses: actions/upload-pages-artifact@v3
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: './web'
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy web --project-name=NEWBASE --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
