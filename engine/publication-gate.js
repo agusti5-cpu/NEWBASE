@@ -61,6 +61,17 @@ export function preparePublication(result) {
     };
   }
 
+  // Observation-only signals are evidence for internal evaluation, not public
+  // opportunities. Keep this invariant at the final publication boundary so a
+  // future scoring or review change cannot accidentally expose them.
+  if (opportunity?.observationOnly === true) {
+    return {
+      status: 'not_publishable',
+      reason: 'OBSERVATION_ONLY_NOT_PUBLISHABLE',
+      opportunityId: opportunity?.id ?? result.opportunityId ?? null,
+    };
+  }
+
   const evidence = validatePublicationEvidence(opportunity);
   if (!evidence.valid) {
     return {
