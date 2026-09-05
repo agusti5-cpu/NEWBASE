@@ -15,10 +15,11 @@ const baseCandidate = {
 };
 
 // Commercial evidence is integrated into the quality score without changing
-// the legal and confidence gates.
-assert.equal(scoreCandidate({ ...baseCandidate, commercialEvidence: { source: 'verified' } }), 82);
-assert.equal(scoreCandidate({ ...baseCandidate, commercialEvidence: { source: 'partial' } }), 77);
-assert.equal(scoreCandidate({ ...baseCandidate }), 80);
+// the legal and confidence gates. Under the locked conservative weights,
+// missing evidence contributes zero and does not renormalize other signals.
+assert.equal(scoreCandidate({ ...baseCandidate, commercialEvidence: { source: 'verified' } }), 86);
+assert.equal(scoreCandidate({ ...baseCandidate, commercialEvidence: { source: 'partial' } }), 81);
+assert.equal(scoreCandidate({ ...baseCandidate }), 76);
 
 // Strong evidence must improve an otherwise identical candidate, while
 // missing evidence remains neutral rather than penalizing the candidate.
