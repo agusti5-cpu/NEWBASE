@@ -28,6 +28,13 @@ jobs:
           if [ -f data/opvilo-feed.json ]; then cp data/opvilo-feed.json web/opvilo-feed.json; else printf '{"schema":"opvilo-feed/v1","generatedAt":null,"source":"NEWBASE","status":"unavailable","count":0,"opportunities":[]}\n' > web/opvilo-feed.json; fi
           if [ -f data/trade-history.json ]; then cp data/trade-history.json web/trade-history.json; else printf '[]\n' > web/trade-history.json; fi
 
+      - name: Prepare private admin data
+        run: |
+          mkdir -p web/admin/data
+          cp data/latest-trade-run.json web/admin/data/latest-trade-run.json
+          cp data/opvilo-feed.json web/admin/data/opvilo-feed.json
+          if [ -f data/latest-review-queue-run.json ]; then cp data/latest-review-queue-run.json web/admin/data/latest-review-queue-run.json; else printf '{}\n' > web/admin/data/latest-review-queue-run.json; fi
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v4
         with:
