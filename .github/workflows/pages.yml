@@ -33,5 +33,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 880fb60cd44a70d97ac2d07750ea42f5
-          command: pages deploy web --project-name=NEWBASE --branch=main
+          command: pages deploy web --project-name=opvilo-landing --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
