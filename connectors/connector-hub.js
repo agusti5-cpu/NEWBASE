@@ -15,6 +15,7 @@ import dataGovSg from './data-gov-sg.js';
 import dataGovSgSearch from './data-gov-sg-search.js';
 import unComtrade from './un-comtrade-trade.js';
 import japanEstatDashboard from './japan-estat-dashboard.js';
+import tedProcurement from './ted-procurement.js';
 
 const CONNECTORS = new Map([
   ['es-datos-gob', datosGobEs],
@@ -23,6 +24,7 @@ const CONNECTORS = new Map([
   ['sg-data-gov', dataGovSg],
   ['jp-estat-dashboard', japanEstatDashboard],
   ['un-comtrade-preview', unComtrade],
+  ['eu-ted-procurement', tedProcurement],
 ]);
 
 const REQUIRED_RULES = [
