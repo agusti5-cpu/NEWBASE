@@ -23,6 +23,7 @@ export function observeOpportunity({ offer, demandEvidence }) {
   const demandScore = Math.max(0, Math.min(100, Number(demand.signals.demand || 0)));
   const fitScore = calculateFitScore(offer, demand);
   const opportunityScore = Math.round((demandScore * 0.6) + (fitScore * 0.4));
+  const observationLevel = opportunityScore >= 85 ? 'high' : opportunityScore >= 70 ? 'medium' : opportunityScore >= 60 ? 'low' : 'none';
 
   return {
     mode: 'observationOnly',
@@ -34,7 +35,9 @@ export function observeOpportunity({ offer, demandEvidence }) {
     fitScore,
     demandScore,
     opportunityScore,
+    observationLevel,
     participantVerified: false,
+    priorityEligible: false,
     actionAllowed: false
   };
 }
