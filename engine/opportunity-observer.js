@@ -27,6 +27,7 @@ export function observeOpportunity({ offer, demandEvidence }) {
 
   return {
     mode: 'observationOnly',
+    observationOnly: true,
     source: 'eu-ted-procurement',
     offerId: offer.id ?? null,
     demandId: demand.entityId,
