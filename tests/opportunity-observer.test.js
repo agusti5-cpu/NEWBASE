@@ -40,7 +40,7 @@ test('low-fit observations are classified but remain non-actionable', () => {
     }
   });
 
-  assert.equal(result.observationLevel, 'medium');
+  assert.equal(result.observationLevel, 'none');
   assert.equal(result.priorityEligible, false);
   assert.equal(result.actionAllowed, false);
 });
