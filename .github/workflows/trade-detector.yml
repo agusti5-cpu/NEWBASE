@@ -6,7 +6,7 @@ on:
     paths-ignore:
       - 'data/**'
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 */6 * * *'
 
 concurrency:
   group: newbase-trade-detector-${{ github.ref }}
