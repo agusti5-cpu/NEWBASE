@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "rules": {
     "require_authorized_access": true,
     "prefer_official_api": true,
@@ -13,67 +13,12 @@
   "markets": ["CA", "ES", "EU", "ASIA", "WORLD"],
   "languages": ["ca", "es"],
   "sources": [
-    {
-      "id": "es-datos-gob",
-      "region": "ES",
-      "type": "official_open_data",
-      "access": "API",
-      "status": "validated",
-      "cost": 0,
-      "commercial_use": "subject_to_dataset_license",
-      "notes": "National open-data catalogue with API and machine-readable formats."
-    },
-    {
-      "id": "es-ine-retail-75808",
-      "region": "ES",
-      "type": "official_open_data",
-      "access": "API",
-      "status": "validated",
-      "cost": 0,
-      "commercial_use": "subject_to_ine_legal_notice",
-      "notes": "INE Retail Trade Indices table 75808; official JSON API. Provides demand/growth signals only; supply and price remain unknown until another source supplies evidence."
-    },
-    {
-      "id": "eu-data-europa",
-      "region": "EU",
-      "type": "official_open_data",
-      "access": "API_or_download",
-      "status": "validated",
-      "cost": 0,
-      "commercial_use": "yes_subject_to_source_license",
-      "notes": "EU open-data portal states data is available free of charge and can be used for business."
-    },
-    {
-      "id": "sg-data-gov",
-      "region": "ASIA",
-      "country": "SG",
-      "type": "official_open_data",
-      "access": "API",
-      "status": "validated",
-      "cost": 0,
-      "commercial_use": "yes_subject_to_open_data_license",
-      "notes": "Singapore government open-data APIs are publicly accessible; production rate limits and dataset-specific terms must be respected."
-    },
-    {
-      "id": "jp-estat-dashboard",
-      "region": "ASIA",
-      "country": "JP",
-      "type": "official_open_data",
-      "access": "public_API",
-      "status": "validated",
-      "cost": 0,
-      "commercial_use": "subject_to_site_policy_and_source_terms",
-      "notes": "Japan Statistics Dashboard WebAPI from the Statistics Bureau. No registration required; JSON/CSV/XML supported. Published services must display the official API credit and respect rate/access rules."
-    },
-    {
-      "id": "un-comtrade-preview",
-      "region": "WORLD",
-      "type": "official_open_data",
-      "access": "public_API_preview",
-      "status": "validated",
-      "cost": 0,
-      "commercial_use": "subject_to_UN_Comtrade_terms",
-      "notes": "Official UN Comtrade public preview API. No account or subscription key required; intentionally limited to targeted preview queries. Used for trade-flow evidence, not retail-price or profitability claims."
-    }
+    {"id":"es-datos-gob","region":"ES","type":"official_open_data","access":"API","status":"validated","cost":0,"commercial_use":"subject_to_dataset_license","notes":"National open-data catalogue with API and machine-readable formats."},
+    {"id":"es-ine-retail-75808","region":"ES","type":"official_open_data","access":"API","status":"validated","cost":0,"commercial_use":"subject_to_ine_legal_notice","notes":"INE Retail Trade Indices table 75808; official JSON API. Provides demand/growth signals only; supply and price remain unknown until another source supplies evidence."},
+    {"id":"eu-data-europa","region":"EU","type":"official_open_data","access":"API_or_download","status":"validated","cost":0,"commercial_use":"yes_subject_to_source_license","notes":"EU open-data portal states data is available free of charge and can be used for business."},
+    {"id":"eu-ted-procurement","region":"EU","type":"official_public_procurement","access":"anonymous_API","status":"validated","cost":0,"commercial_use":"subject_to_TED_terms","notes":"Official TED public procurement Search API. Used only as product-level demand evidence from active procurement notices; not proof of profitability or buyer intent beyond the published notice."},
+    {"id":"sg-data-gov","region":"ASIA","country":"SG","type":"official_open_data","access":"API","status":"validated","cost":0,"commercial_use":"yes_subject_to_open_data_license","notes":"Singapore government open-data APIs are publicly accessible; production rate limits and dataset-specific terms must be respected."},
+    {"id":"jp-estat-dashboard","region":"ASIA","country":"JP","type":"official_open_data","access":"public_API","status":"validated","cost":0,"commercial_use":"subject_to_site_policy_and_source_terms","notes":"Japan Statistics Dashboard WebAPI from the Statistics Bureau. No registration required; JSON/CSV/XML supported. Published services must display the official API credit and respect rate/access rules."},
+    {"id":"un-comtrade-preview","region":"WORLD","type":"official_open_data","access":"public_API_preview","status":"validated","cost":0,"commercial_use":"subject_to_UN_Comtrade_terms","notes":"Official UN Comtrade public preview API. No account or subscription key required; intentionally limited to targeted preview queries. Used for trade-flow evidence, not retail-price or profitability claims."}
   ]
 }
