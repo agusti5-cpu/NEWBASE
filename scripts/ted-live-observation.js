@@ -24,6 +24,9 @@ if (result.observationOnly !== true) {
 if (result.demand?.participantVerified !== false) {
   throw new Error('TED observation must never verify a commercial participant');
 }
+if (!Number.isInteger(result.demand?.evidenceCount) || result.demand.evidenceCount < 1) {
+  throw new Error('TED live observation returned no matching procurement evidence');
+}
 
 const summary = {
   status: result.status,
@@ -33,6 +36,13 @@ const summary = {
   productOrService: result.demand.productOrService,
   evidenceCount: result.demand.evidenceCount,
   classification: result.evaluation.classification,
+  evidence: result.demand.evidence.map(({ publicationNumber, title, buyer, publicationDate, url }) => ({
+    publicationNumber,
+    title,
+    buyer,
+    publicationDate,
+    url,
+  })),
   query: result.query,
 };
 
