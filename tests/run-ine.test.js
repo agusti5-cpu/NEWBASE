@@ -26,9 +26,14 @@ test('INE detector runs connector output through the canonical NEWBASE pipeline'
     assert.equal(result.inputCount, 1);
     assert.equal(result.normalizedCount, 1);
     assert.equal(result.accepted.length + result.rejected.length, 1);
-    assert.equal(result.accepted.length, 1);
-    assert.equal(result.accepted[0].reason, 'QUALITY_THRESHOLD_MET');
-    assert.equal(result.rejected.length, 0);
+
+    // INE supplies demand/growth observations but not product-level market-gap,
+    // availability or commercial evidence. The conservative pipeline must
+    // therefore keep this observation out of the actionable accepted set.
+    assert.equal(result.accepted.length, 0);
+    assert.equal(result.rejected.length, 1);
+    assert.equal(result.rejected[0].reason, 'SCORE_BELOW_THRESHOLD');
+    assert.equal(result.rejected[0].score, 45);
   } finally {
     globalThis.fetch = originalFetch;
   }
