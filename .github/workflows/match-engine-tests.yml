@@ -5,13 +5,15 @@ on:
     branches: [main]
     paths:
       - 'src/match-engine/**'
-      - 'tests/match-engine-**'
+      - 'engine/**'
+      - 'tests/**'
       - '.github/workflows/match-engine-tests.yml'
       - 'package.json'
   pull_request:
     paths:
       - 'src/match-engine/**'
-      - 'tests/match-engine-**'
+      - 'engine/**'
+      - 'tests/**'
       - '.github/workflows/match-engine-tests.yml'
       - 'package.json'
 
@@ -25,5 +27,5 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Run isolated Match Engine tests
-        run: node --test tests/match-engine-contract.test.js
+      - name: Run Match Engine and integration tests
+        run: npm test
