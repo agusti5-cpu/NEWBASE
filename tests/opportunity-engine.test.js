@@ -19,6 +19,11 @@ const withoutCommercial = scoreCandidate({ ...base });
 const withCommercial = scoreCandidate({ ...base, commercialValidation: strongCommercial });
 assert.ok(withCommercial > withoutCommercial);
 
+// Missing commercial evidence must remain a real zero contribution; the other
+// signals must not be renormalized upward to compensate for it.
+assert.equal(withoutCommercial, 76);
+assert.equal(withCommercial, 86);
+
 // Context-only evidence must not receive product-level commercial credit.
 const contextOnly = {
   evidence: [
