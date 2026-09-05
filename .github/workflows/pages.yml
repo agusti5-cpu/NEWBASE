@@ -33,5 +33,13 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 880fb60cd44a70d97ac2d07750ea42f5
+          command: pages project create opvilo-landing --production-branch=main || true
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 880fb60cd44a70d97ac2d07750ea42f5
           command: pages deploy web --project-name=opvilo-landing --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
