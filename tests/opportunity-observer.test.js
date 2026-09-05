@@ -1,6 +1,6 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const { observeOpportunity } = require('../engine/opportunity-observer');
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { observeOpportunity } from '../engine/opportunity-observer.js';
 
 test('scores an independent TED demand observation without enabling action', () => {
   const result = observeOpportunity({
@@ -10,13 +10,11 @@ test('scores an independent TED demand observation without enabling action', () 
       description: 'Furniture for an office'
     },
     demandEvidence: {
-      id: 'ted-1',
-      source: 'eu-ted-procurement',
+      publicationNumber: 'ted-1',
+      country: 'ES',
       title: 'Supply of office furniture',
-      description: 'Office desks and chairs',
-      keywords: ['office', 'furniture'],
-      score: 80,
-      participantVerified: false
+      productOrService: 'office furniture',
+      demandScore: 80
     }
   });
 
@@ -27,17 +25,10 @@ test('scores an independent TED demand observation without enabling action', () 
   assert.ok(result.opportunityScore >= 0 && result.opportunityScore <= 100);
 });
 
-test('rejects verified demand from the observation-only path', () => {
+test('returns null when independent demand evidence is incomplete', () => {
   const result = observeOpportunity({
     offer: { id: 'offer-2', title: 'Office furniture' },
-    demandEvidence: {
-      id: 'demand-2',
-      source: 'eu-ted-procurement',
-      title: 'Office furniture tender',
-      keywords: ['office'],
-      score: 50,
-      participantVerified: true
-    }
+    demandEvidence: { country: 'ES', title: 'Office furniture tender' }
   });
 
   assert.equal(result, null);
