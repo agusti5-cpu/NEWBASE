@@ -20,6 +20,7 @@ test('classifies a strong independent TED demand observation without enabling ac
   });
 
   assert.equal(result.mode, 'observationOnly');
+  assert.equal(result.observationOnly, true);
   assert.equal(result.source, 'eu-ted-procurement');
   assert.equal(result.participantVerified, false);
   assert.equal(result.priorityEligible, false);
@@ -40,6 +41,7 @@ test('low-fit observations are classified but remain non-actionable', () => {
     }
   });
 
+  assert.equal(result.observationOnly, true);
   assert.equal(result.observationLevel, 'none');
   assert.equal(result.priorityEligible, false);
   assert.equal(result.actionAllowed, false);
