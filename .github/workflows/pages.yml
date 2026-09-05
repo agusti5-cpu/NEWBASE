@@ -33,7 +33,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 880fb60cd44a70d97ac2d07750ea42f5
-          command: pages project create opvilo-landing --production-branch=main || true
+          command: pages project create opvilo-landing --production-branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to Cloudflare Pages
