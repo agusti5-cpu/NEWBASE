@@ -32,5 +32,6 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 880fb60cd44a70d97ac2d07750ea42f5
           command: pages deploy web --project-name=NEWBASE --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
