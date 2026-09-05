@@ -28,14 +28,6 @@ jobs:
           if [ -f data/opvilo-feed.json ]; then cp data/opvilo-feed.json web/opvilo-feed.json; else printf '{"schema":"opvilo-feed/v1","generatedAt":null,"source":"NEWBASE","status":"unavailable","count":0,"opportunities":[]}\n' > web/opvilo-feed.json; fi
           if [ -f data/trade-history.json ]; then cp data/trade-history.json web/trade-history.json; else printf '[]\n' > web/trade-history.json; fi
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v4
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 880fb60cd44a70d97ac2d07750ea42f5
-          command: pages project create opvilo-landing --production-branch=main
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v4
         with:
