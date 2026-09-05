@@ -1,0 +1,27 @@
+name: TED Live Observation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/ted-live-observation.js'
+      - 'engine/ted-demand-observation.js'
+      - 'connectors/ted-procurement.js'
+      - 'connectors/connector-hub.js'
+      - 'config/sources.json'
+      - '.github/workflows/ted-live-observation.yml'
+      - 'package.json'
+  workflow_dispatch:
+
+jobs:
+  observe-ted:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run live TED observation
+        run: node scripts/ted-live-observation.js
