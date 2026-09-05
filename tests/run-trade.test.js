@@ -81,7 +81,6 @@ const result = await runTradeDetector({
 });
 
 assert.equal(result.source, 'un-comtrade-preview');
-console.error('DEBUG RUN-TRADE', JSON.stringify({ inputCount: result.inputCount, normalizedCount: result.normalizedCount, accepted: result.accepted.length, rejected: result.rejected.length, errors: result.errors, calls: calls.map((url) => String(url)) }, null, 2));
 assert.equal(result.inputCount, 1);
 assert.equal(result.normalizedCount, 1);
 
