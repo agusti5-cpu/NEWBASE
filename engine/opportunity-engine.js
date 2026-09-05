@@ -39,7 +39,7 @@ export function scoreCandidate(candidate) {
     ['demand', signals.demand, 0.25],
     ['growth', signals.growth, 0.20],
     ['marketGap', signals.marketGap, 0.20],
-    ['availability', signals.availability, 0.15],
+    ['availability', signals.availability, 0.10],
     ['confidence', confidenceToScore(candidate?.confidence ?? 0), 0.20],
     ['commercialEvidence', commercialEvidenceScore(commercialEvidence), 0.10],
   ];
