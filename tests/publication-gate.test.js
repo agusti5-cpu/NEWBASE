@@ -98,6 +98,17 @@ test('evidence source mismatch blocks publication', () => {
   assert.ok(result.errors.includes('EVIDENCE_SOURCE_MISMATCH'));
 });
 
+test('observation-only opportunity can never enter public publication', () => {
+  const candidate = accepted();
+  candidate.opportunity.observationOnly = true;
+  const result = preparePublication(candidate);
+  assert.deepEqual(result, {
+    status: 'not_publishable',
+    reason: 'OBSERVATION_ONLY_NOT_PUBLISHABLE',
+    opportunityId: 'opp-1'
+  });
+});
+
 test('rejected opportunity can never enter publication', () => {
   const result = preparePublication({ status: 'rejected', opportunityId: 'opp-2' });
   assert.deepEqual(result, { status: 'not_publishable', reason: 'OPPORTUNITY_NOT_ACCEPTED' });
