@@ -1,7 +1,8 @@
 /**
  * NEWBASE — Opportunity Engine
  *
- * Deterministic scoring engine. Missing commercial signals are neutral.
+ * Deterministic scoring engine. Missing commercial signals are neutral (zero
+ * contribution) and never cause the remaining weights to be renormalized.
  */
 
 import { commercialEvidenceScore } from './commercial-signal.js';
@@ -43,12 +44,16 @@ export function scoreCandidate(candidate) {
     ['commercialEvidence', commercialEvidenceScore(commercialEvidence), 0.10],
   ];
 
-  const known = values.filter(([, value]) => Number.isFinite(Number(value)) && Number(value) > 0);
-  if (!known.length) return 0;
+  // Keep the configured weights fixed. A missing/zero signal contributes zero;
+  // it must not increase the influence of the other signals by renormalizing
+  // the denominator. This makes the score conservative and comparable across
+  // candidates with different evidence completeness.
+  const weighted = values.reduce((sum, [, value, weight]) => {
+    const numeric = Number(value);
+    return sum + (Number.isFinite(numeric) && numeric > 0 ? clamp(numeric) : 0) * weight;
+  }, 0);
 
-  const weightTotal = known.reduce((sum, [, , weight]) => sum + weight, 0);
-  const weighted = known.reduce((sum, [, value, weight]) => sum + clamp(value) * weight, 0);
-  return clamp(Math.round(weighted / weightTotal));
+  return clamp(Math.round(weighted));
 }
 
 export function evaluateOpportunity(candidate, options = {}) {
