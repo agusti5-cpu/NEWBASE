@@ -1,4 +1,4 @@
-import { calculateScores, classify, stableMatchId } from '../src/match-engine/index.js';
+import { calculateScores, classify, stableMatchId } from '../src/match-engine/scoring.js';
 
 /**
  * Controlled NEWBASE adapter for the isolated OPVILO Match Engine.
