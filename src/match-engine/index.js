@@ -31,7 +31,6 @@ export function calculateScores({
   const safeViability = clamp(viability);
   const safeRisk = clamp(risk);
 
-  // High match cannot become exceptional when confidence/viability are weak or risk is high.
   let opportunity = clamp((match * 0.45) + (confidence * 0.20) + (safeViability * 0.25) - (safeRisk * 0.10));
   if (confidence < 70 || safeViability < 70) opportunity = Math.min(opportunity, 79);
   if (safeRisk >= 70) opportunity = Math.min(opportunity, 69);
@@ -58,3 +57,5 @@ export function stableMatchId(offer, demand) {
     demand.productOrService
   ].map(value => String(value ?? '').trim().toLowerCase()).join('|');
 }
+
+export { generateMatchCandidates, normalizeProduct } from './matcher.js';
