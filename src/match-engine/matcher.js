@@ -1,4 +1,4 @@
-import { evaluateMatch } from '../../engine/match-engine-adapter.js';
+import { calculateScores, classify, stableMatchId } from './scoring.js';
 
 const ALIASES = new Map([
   ['solar panel', 'solar-panels'],
@@ -55,20 +55,32 @@ export function generateMatchCandidates(offers = [], demands = [], options = {})
       const offer = { ...rawOffer, productOrService: normalizeProduct(rawOffer.productOrService) };
       const demand = { ...rawDemand, productOrService: normalizeProduct(rawDemand.productOrService) };
       const geographyFit = options.geographyFit ?? geographyScore(offer, demand);
-      const evaluation = evaluateMatch(offer, demand, {
-        ...options,
+      const scores = calculateScores({
+        productFit: options.productFit ?? offer?.signals?.productFit ?? offer?.signals?.marketGap ?? 0,
+        demandStrength: options.demandStrength ?? demand?.signals?.demand ?? 0,
+        supplyStrength: options.supplyStrength ?? offer?.signals?.availability ?? 0,
+        demandGrowth: options.demandGrowth ?? demand?.signals?.growth ?? 0,
         geographyFit,
+        commercialEvidence: options.commercialEvidence ?? offer?.signals?.commercialEvidence ?? 0,
+        freshness: options.freshness ?? offer?.signals?.freshness ?? 0,
+        sourceQuality: options.sourceQuality ?? offer?.signals?.sourceQuality ?? 0,
+        viability: options.viability ?? offer?.viability ?? 0,
+        risk: options.risk ?? offer?.risk ?? 100
+      });
+      const classification = classify(scores, {
+        hasEvidence: options.hasEvidence ?? Boolean(rawOffer && rawDemand),
         participantVerified: options.participantVerified ?? false
       });
+      const matchId = stableMatchId(offer, demand);
 
-      if (seen.has(evaluation.matchId)) continue;
-      seen.add(evaluation.matchId);
+      if (seen.has(matchId)) continue;
+      seen.add(matchId);
       candidates.push({
-        matchId: evaluation.matchId,
+        matchId,
         offer,
         demand,
-        scores: evaluation.scores,
-        classification: evaluation.classification,
+        scores,
+        classification,
         status: 'candidate',
         reasons: [
           'Normalized product/service is compatible.',
