@@ -13477,7 +13477,7 @@
   },
   {
     "opportunityId": "comtrade-TR-ES-420292-2020",
-    "reason": "COMMERCIAL_VALIDATION_REQUIRED",
+    "reason": "QUALITY_THRESHOLD_MET",
     "candidate": {
       "id": "comtrade-TR-ES-420292-2020",
       "category": "comerç-internacional",
@@ -13489,7 +13489,7 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-10-08T03:24:49.989Z",
+      "observedAt": "2026-10-10T03:10:43.775Z",
       "originalData": {
         "imports": {
           "typeCode": "C",
@@ -13542,25 +13542,102 @@
         },
         "importsPrevious": null,
         "originExportsToTarget": null,
-        "originExportsPrevious": {
+        "originExportsPrevious": null
+      },
+      "signals": {
+        "demand": 70.05005375396038,
+        "growth": 50,
+        "marketGap": 80,
+        "availability": 50
+      },
+      "confidence": 0.65,
+      "legal": {
+        "status": "unknown",
+        "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+        "checkedAt": "2026-10-10T03:10:43.775Z"
+      },
+      "commercial": {
+        "price": 0,
+        "currency": "USD",
+        "knownCosts": 0
+      },
+      "commercialValidation": {
+        "evidence": [
+          {
+            "type": "demand_context",
+            "sourceName": "Instituto Nacional de Estadística (INE)",
+            "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+            "observedAt": "2026-10-10T03:10:43.775Z",
+            "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.539. This is target-market context, not product-level demand proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics_context",
+            "sourceName": "Eurostat",
+            "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+            "observedAt": "2026-10-10T03:10:43.775Z",
+            "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics",
+            "sourceName": "United Nations UN Comtrade",
+            "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+            "observedAt": "2026-10-10T03:10:43.775Z",
+            "summary": "Product-level UN Comtrade trade-flow evidence for Travel, sports and similar bags: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+            "evidenceLevel": "product"
+          }
+        ]
+      },
+      "evidence": {
+        "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+        "sourceName": "United Nations UN Comtrade",
+        "observedAt": "2026-10-10T03:10:43.775Z",
+        "summary": "Official UN Comtrade trade-flow signal for HS 420292: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+      }
+    },
+    "attempts": 1,
+    "maxAttempts": 30,
+    "exhausted": false,
+    "firstQueuedAt": "2026-10-08T03:24:49.989Z",
+    "lastCheckedAt": "2026-10-10T03:21:14.374Z",
+    "nextEligibleAt": "2026-10-11T03:21:14.374Z"
+  },
+  {
+    "opportunityId": "comtrade-VN-ES-420292-2024",
+    "reason": "COMMERCIAL_VALIDATION_REQUIRED",
+    "candidate": {
+      "id": "comtrade-VN-ES-420292-2024",
+      "category": "comerç-internacional",
+      "productOrService": "Travel, sports and similar bags",
+      "originMarket": "VN",
+      "targetMarket": "ES",
+      "source": {
+        "name": "United Nations UN Comtrade",
+        "type": "api",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+      },
+      "observedAt": "2026-10-10T03:10:43.775Z",
+      "originalData": {
+        "imports": {
           "typeCode": "C",
           "freqCode": "A",
-          "refPeriodId": 20190101,
-          "refYear": 2019,
+          "refPeriodId": 20240101,
+          "refYear": 2024,
           "refMonth": 52,
-          "period": "2019",
-          "reporterCode": 792,
+          "period": "2024",
+          "reporterCode": 724,
           "reporterISO": null,
           "reporterDesc": null,
-          "flowCode": "X",
+          "flowCode": "M",
           "flowDesc": null,
-          "partnerCode": 724,
+          "partnerCode": 704,
           "partnerISO": null,
           "partnerDesc": null,
           "partner2Code": 0,
           "partner2ISO": null,
           "partner2Desc": null,
-          "classificationCode": "H5",
+          "classificationCode": "H6",
           "classificationSearchCode": "HS",
           "isOriginalClassification": true,
           "cmdCode": "420292",
@@ -13574,26 +13651,29 @@
           "motDesc": null,
           "qtyUnitCode": 8,
           "qtyUnitAbbr": null,
-          "qty": 101680,
+          "qty": 10486742.883,
           "isQtyEstimated": false,
           "altQtyUnitCode": 8,
           "altQtyUnitAbbr": null,
-          "altQty": 101680,
+          "altQty": 10486742.883,
           "isAltQtyEstimated": false,
-          "netWgt": 101680,
+          "netWgt": 10486742.883,
           "isNetWgtEstimated": false,
           "grossWgt": 0,
           "isGrossWgtEstimated": false,
-          "cifvalue": 0,
-          "fobvalue": 1406063,
-          "primaryValue": 1406063,
+          "cifvalue": 72243268.115,
+          "fobvalue": null,
+          "primaryValue": 72243268.115,
           "legacyEstimationFlag": 0,
           "isReported": false,
           "isAggregate": true
-        }
+        },
+        "importsPrevious": null,
+        "originExportsToTarget": null,
+        "originExportsPrevious": null
       },
       "signals": {
-        "demand": 70.05005375396038,
+        "demand": 82.87037912175275,
         "growth": 50,
         "marketGap": 80,
         "availability": 50
@@ -13602,7 +13682,7 @@
       "legal": {
         "status": "unknown",
         "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-        "checkedAt": "2026-10-08T03:24:49.989Z"
+        "checkedAt": "2026-10-10T03:10:43.775Z"
       },
       "commercial": {
         "price": 0,
@@ -13615,7 +13695,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-10-08T03:24:49.989Z",
+            "observedAt": "2026-10-10T03:10:43.775Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.539. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -13623,7 +13703,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-10-08T03:24:49.989Z",
+            "observedAt": "2026-10-10T03:10:43.775Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -13631,7 +13711,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-10-08T03:24:49.989Z",
+            "observedAt": "2026-10-10T03:10:43.775Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Travel, sports and similar bags: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -13640,15 +13720,15 @@
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-10-08T03:24:49.989Z",
+        "observedAt": "2026-10-10T03:10:43.775Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 420292: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       }
     },
     "attempts": 0,
     "maxAttempts": 30,
     "exhausted": false,
-    "firstQueuedAt": "2026-10-08T03:24:49.989Z",
+    "firstQueuedAt": "2026-10-10T03:10:43.775Z",
     "lastCheckedAt": null,
-    "nextEligibleAt": "2026-10-09T03:24:49.989Z"
+    "nextEligibleAt": "2026-10-11T03:10:43.775Z"
   }
 ]
