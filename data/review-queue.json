@@ -6236,12 +6236,12 @@
         "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       }
     },
-    "attempts": 28,
+    "attempts": 29,
     "maxAttempts": 30,
     "exhausted": false,
     "firstQueuedAt": "2026-09-05T06:04:36.238Z",
-    "lastCheckedAt": "2026-10-13T00:04:52.816Z",
-    "nextEligibleAt": "2026-10-14T00:04:52.816Z"
+    "lastCheckedAt": "2026-10-14T21:13:14.940Z",
+    "nextEligibleAt": "2026-10-15T21:13:14.940Z"
   },
   {
     "opportunityId": "comtrade-TR-ES-940360-2025",
@@ -12305,7 +12305,7 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-10-12T23:55:24.740Z",
+      "observedAt": "2026-10-14T21:04:41.968Z",
       "originalData": {
         "imports": {
           "typeCode": "C",
@@ -12356,61 +12356,13 @@
           "isReported": false,
           "isAggregate": true
         },
-        "importsPrevious": {
-          "typeCode": "C",
-          "freqCode": "A",
-          "refPeriodId": 20240101,
-          "refYear": 2024,
-          "refMonth": 52,
-          "period": "2024",
-          "reporterCode": 724,
-          "reporterISO": null,
-          "reporterDesc": null,
-          "flowCode": "M",
-          "flowDesc": null,
-          "partnerCode": 704,
-          "partnerISO": null,
-          "partnerDesc": null,
-          "partner2Code": 0,
-          "partner2ISO": null,
-          "partner2Desc": null,
-          "classificationCode": "H6",
-          "classificationSearchCode": "HS",
-          "isOriginalClassification": true,
-          "cmdCode": "950300",
-          "cmdDesc": null,
-          "aggrLevel": null,
-          "isLeaf": null,
-          "customsCode": "C00",
-          "customsDesc": null,
-          "mosCode": "0",
-          "motCode": 0,
-          "motDesc": null,
-          "qtyUnitCode": 8,
-          "qtyUnitAbbr": null,
-          "qty": 2914591.745,
-          "isQtyEstimated": false,
-          "altQtyUnitCode": 8,
-          "altQtyUnitAbbr": null,
-          "altQty": 2914591.745,
-          "isAltQtyEstimated": false,
-          "netWgt": 2914591.745,
-          "isNetWgtEstimated": false,
-          "grossWgt": 0,
-          "isGrossWgtEstimated": false,
-          "cifvalue": 44403832.422,
-          "fobvalue": null,
-          "primaryValue": 44403832.422,
-          "legacyEstimationFlag": 0,
-          "isReported": false,
-          "isAggregate": true
-        },
+        "importsPrevious": null,
         "originExportsToTarget": null,
         "originExportsPrevious": null
       },
       "signals": {
         "demand": 81.53189367803773,
-        "growth": 71.35851956621008,
+        "growth": 50,
         "marketGap": 80,
         "availability": 50
       },
@@ -12418,7 +12370,7 @@
       "legal": {
         "status": "unknown",
         "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-        "checkedAt": "2026-10-12T23:55:24.740Z"
+        "checkedAt": "2026-10-14T21:04:41.968Z"
       },
       "commercial": {
         "price": 0,
@@ -12431,7 +12383,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-10-12T23:55:24.740Z",
+            "observedAt": "2026-10-14T21:04:41.968Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.539. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -12439,7 +12391,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-10-12T23:55:24.740Z",
+            "observedAt": "2026-10-14T21:04:41.968Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -12447,7 +12399,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-10-12T23:55:24.740Z",
+            "observedAt": "2026-10-14T21:04:41.968Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Toys, games and puzzles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -12456,16 +12408,16 @@
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-10-12T23:55:24.740Z",
+        "observedAt": "2026-10-14T21:04:41.968Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 950300: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       }
     },
-    "attempts": 29,
+    "attempts": 30,
     "maxAttempts": 30,
-    "exhausted": false,
+    "exhausted": true,
     "firstQueuedAt": "2026-09-05T09:00:19.178Z",
-    "lastCheckedAt": "2026-10-13T00:04:52.816Z",
-    "nextEligibleAt": "2026-10-14T00:04:52.816Z"
+    "lastCheckedAt": "2026-10-14T21:13:14.940Z",
+    "nextEligibleAt": null
   },
   {
     "opportunityId": "comtrade-CN-ES-392690-2025",
