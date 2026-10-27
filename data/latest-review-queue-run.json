@@ -1,6 +1,6 @@
 {
-  "now": "2026-10-26T14:16:10.974Z",
-  "dueCount": 30,
+  "now": "2026-10-27T13:12:45.562Z",
+  "dueCount": 29,
   "queueCount": 62,
   "queue": [
     {
@@ -13705,7 +13705,7 @@
     },
     {
       "opportunityId": "comtrade-VN-ES-420292-2024",
-      "reason": "COMMERCIAL_VALIDATION_REQUIRED",
+      "reason": "QUALITY_THRESHOLD_MET",
       "candidate": {
         "id": "comtrade-VN-ES-420292-2024",
         "category": "comerç-internacional",
@@ -13717,7 +13717,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-10-10T03:10:43.775Z",
+        "observedAt": "2026-10-26T22:02:01.881Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -13782,7 +13782,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-10-10T03:10:43.775Z"
+          "checkedAt": "2026-10-26T22:02:01.881Z"
         },
         "commercial": {
           "price": 0,
@@ -13795,7 +13795,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-10-10T03:10:43.775Z",
+              "observedAt": "2026-10-26T22:02:01.881Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.539. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -13803,7 +13803,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-10-10T03:10:43.775Z",
+              "observedAt": "2026-10-26T22:02:01.881Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -13811,7 +13811,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-10-10T03:10:43.775Z",
+              "observedAt": "2026-10-26T22:02:01.881Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Travel, sports and similar bags: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -13820,16 +13820,16 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-10-10T03:10:43.775Z",
+          "observedAt": "2026-10-26T22:02:01.881Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 420292: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       },
-      "attempts": 0,
+      "attempts": 1,
       "maxAttempts": 30,
       "exhausted": false,
       "firstQueuedAt": "2026-10-10T03:10:43.775Z",
-      "lastCheckedAt": null,
-      "nextEligibleAt": "2026-10-11T03:10:43.775Z"
+      "lastCheckedAt": "2026-10-26T22:11:24.853Z",
+      "nextEligibleAt": "2026-10-27T22:11:24.853Z"
     },
     {
       "opportunityId": "comtrade-VN-ES-940360-2022",
