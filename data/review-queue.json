@@ -13189,7 +13189,7 @@
   },
   {
     "opportunityId": "comtrade-VN-ES-940360-2024",
-    "reason": "COMMERCIAL_VALIDATION_REQUIRED",
+    "reason": "QUALITY_THRESHOLD_MET",
     "candidate": {
       "id": "comtrade-VN-ES-940360-2024",
       "category": "comerç-internacional",
@@ -13201,7 +13201,7 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-10-08T12:24:40.252Z",
+      "observedAt": "2026-10-28T11:47:45.386Z",
       "originalData": {
         "imports": {
           "typeCode": "C",
@@ -13266,7 +13266,7 @@
       "legal": {
         "status": "unknown",
         "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-        "checkedAt": "2026-10-08T12:24:40.252Z"
+        "checkedAt": "2026-10-28T11:47:45.386Z"
       },
       "commercial": {
         "price": 0,
@@ -13279,7 +13279,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-10-08T12:24:40.252Z",
+            "observedAt": "2026-10-28T11:47:45.386Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.539. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -13287,7 +13287,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-10-08T12:24:40.252Z",
+            "observedAt": "2026-10-28T11:47:45.386Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -13295,7 +13295,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-10-08T12:24:40.252Z",
+            "observedAt": "2026-10-28T11:47:45.386Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -13304,16 +13304,16 @@
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-10-08T12:24:40.252Z",
+        "observedAt": "2026-10-28T11:47:45.386Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 940360: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       }
     },
-    "attempts": 2,
+    "attempts": 3,
     "maxAttempts": 30,
     "exhausted": false,
     "firstQueuedAt": "2026-09-26T00:03:22.655Z",
-    "lastCheckedAt": "2026-10-08T12:35:17.335Z",
-    "nextEligibleAt": "2026-10-09T12:35:17.335Z"
+    "lastCheckedAt": "2026-10-28T11:57:39.771Z",
+    "nextEligibleAt": "2026-10-29T11:57:39.771Z"
   },
   {
     "opportunityId": "comtrade-TR-ES-420292-2024",
