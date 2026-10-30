@@ -14610,5 +14610,133 @@
     "firstQueuedAt": "2026-10-29T03:19:32.638Z",
     "lastCheckedAt": "2026-10-30T03:32:13.588Z",
     "nextEligibleAt": "2026-10-31T03:32:13.588Z"
+  },
+  {
+    "opportunityId": "comtrade-IN-ES-940360-2022",
+    "reason": "COMMERCIAL_VALIDATION_REQUIRED",
+    "candidate": {
+      "id": "comtrade-IN-ES-940360-2022",
+      "category": "comerç-internacional",
+      "productOrService": "Other wooden furniture",
+      "originMarket": "IN",
+      "targetMarket": "ES",
+      "source": {
+        "name": "United Nations UN Comtrade",
+        "type": "api",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+      },
+      "observedAt": "2026-10-30T21:45:52.447Z",
+      "originalData": {
+        "imports": {
+          "typeCode": "C",
+          "freqCode": "A",
+          "refPeriodId": 20220101,
+          "refYear": 2022,
+          "refMonth": 52,
+          "period": "2022",
+          "reporterCode": 724,
+          "reporterISO": null,
+          "reporterDesc": null,
+          "flowCode": "M",
+          "flowDesc": null,
+          "partnerCode": 699,
+          "partnerISO": null,
+          "partnerDesc": null,
+          "partner2Code": 0,
+          "partner2ISO": null,
+          "partner2Desc": null,
+          "classificationCode": "H6",
+          "classificationSearchCode": "HS",
+          "isOriginalClassification": true,
+          "cmdCode": "940360",
+          "cmdDesc": null,
+          "aggrLevel": null,
+          "isLeaf": null,
+          "customsCode": "C00",
+          "customsDesc": null,
+          "mosCode": "0",
+          "motCode": 0,
+          "motDesc": null,
+          "qtyUnitCode": 5,
+          "qtyUnitAbbr": null,
+          "qty": 252047.088,
+          "isQtyEstimated": true,
+          "altQtyUnitCode": 8,
+          "altQtyUnitAbbr": null,
+          "altQty": 6001080.785,
+          "isAltQtyEstimated": false,
+          "netWgt": 6001080.785,
+          "isNetWgtEstimated": false,
+          "grossWgt": 0,
+          "isGrossWgtEstimated": false,
+          "cifvalue": 25818047.421,
+          "fobvalue": null,
+          "primaryValue": 25818047.421,
+          "legacyEstimationFlag": 2,
+          "isReported": false,
+          "isAggregate": true
+        },
+        "importsPrevious": null,
+        "originExportsToTarget": null,
+        "originExportsPrevious": null
+      },
+      "signals": {
+        "demand": 79.2953872877892,
+        "growth": 50,
+        "marketGap": 80,
+        "availability": 50
+      },
+      "confidence": 0.65,
+      "legal": {
+        "status": "unknown",
+        "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+        "checkedAt": "2026-10-30T21:45:52.447Z"
+      },
+      "commercial": {
+        "price": 0,
+        "currency": "USD",
+        "knownCosts": 0
+      },
+      "commercialValidation": {
+        "evidence": [
+          {
+            "type": "demand_context",
+            "sourceName": "Instituto Nacional de Estadística (INE)",
+            "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+            "observedAt": "2026-10-30T21:45:52.447Z",
+            "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics_context",
+            "sourceName": "Eurostat",
+            "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+            "observedAt": "2026-10-30T21:45:52.447Z",
+            "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics",
+            "sourceName": "United Nations UN Comtrade",
+            "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+            "observedAt": "2026-10-30T21:45:52.447Z",
+            "summary": "Product-level UN Comtrade trade-flow evidence for Other wooden furniture: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+            "evidenceLevel": "product"
+          }
+        ]
+      },
+      "evidence": {
+        "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+        "sourceName": "United Nations UN Comtrade",
+        "observedAt": "2026-10-30T21:45:52.447Z",
+        "summary": "Official UN Comtrade trade-flow signal for HS 940360: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+      }
+    },
+    "attempts": 0,
+    "maxAttempts": 30,
+    "exhausted": false,
+    "firstQueuedAt": "2026-10-30T21:45:52.447Z",
+    "lastCheckedAt": null,
+    "nextEligibleAt": "2026-10-31T21:45:52.447Z"
   }
 ]
