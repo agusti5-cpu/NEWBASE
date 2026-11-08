@@ -1,9 +1,9 @@
 {
   "schema": "opvilo-feed/v1",
-  "generatedAt": "2026-11-08T12:23:21.222Z",
+  "generatedAt": "2026-11-08T21:26:52.576Z",
   "source": "NEWBASE",
   "status": "success",
-  "count": 5,
+  "count": 4,
   "opportunities": [
     {
       "status": "publishable",
@@ -19,11 +19,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-08T12:23:21.222Z",
+      "observedAt": "2026-11-08T21:26:52.576Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -32,7 +32,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -40,7 +40,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -48,7 +48,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -56,7 +56,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -73,7 +73,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -282,7 +282,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-08T12:23:21.222Z"
+          "checkedAt": "2026-11-08T21:26:52.576Z"
         },
         "commercial": {
           "price": 0,
@@ -295,7 +295,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -303,7 +303,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -311,7 +311,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -319,7 +319,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -328,7 +328,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-08T12:23:21.222Z",
+          "observedAt": "2026-11-08T21:26:52.576Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -347,11 +347,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-08T12:23:21.222Z",
+      "observedAt": "2026-11-08T21:26:52.576Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -360,7 +360,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -368,7 +368,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -376,7 +376,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/747953-2026",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Suministro de PVC Spānija – Plastmasas izstrādājumi – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC An Spáinn – Plastic products – Suministro de PVC Ισπανία – Πλαστικά προϊόντα – Suministro de PVC España – Productos de plástico – Suministro de PVC Hispaania – Plasttooted – Suministro de PVC Spanje – Producten van plastic – Suministro de PVC Espanja – Muovituotteet – Suministro de PVC Hiszpania – Produkty z tworzyw sztucznych – Suministro de PVC Španjolska – Proizvodi od plastike – Suministro de PVC Španělsko – Výrobky z plastů – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC Spania – Produse din plastic – Suministro de PVC Espanha – Produtos de plástico – Suministro de PVC Španielsko – Plastové výrobky – Suministro de PVC Espagne – Produits en plastique – Suministro de PVC Spanja – Prodotti tal-plastika – Suministro de PVC Spanien – Kunststoffprodukte – Suministro de PVC Ispanija – Plastikiniai gaminiai – Suministro de PVC Spagna – Prodotti di plastica – Suministro de PVC Иcпaния – Пластмасови продукти – Suministro de PVC Španija – Proizvodi iz plastičnih mas – Suministro de PVC Spain – Plastic products – Suministro de PVC. Publication 747953-2026; buyer INDESA 2010 S.L. - INDESA 2010 S.L.; published 2026-10-28+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -384,7 +384,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -401,7 +401,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -610,7 +610,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-08T12:23:21.222Z"
+          "checkedAt": "2026-11-08T21:26:52.576Z"
         },
         "commercial": {
           "price": 0,
@@ -623,7 +623,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -631,7 +631,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -639,7 +639,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/747953-2026",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Suministro de PVC Spānija – Plastmasas izstrādājumi – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC An Spáinn – Plastic products – Suministro de PVC Ισπανία – Πλαστικά προϊόντα – Suministro de PVC España – Productos de plástico – Suministro de PVC Hispaania – Plasttooted – Suministro de PVC Spanje – Producten van plastic – Suministro de PVC Espanja – Muovituotteet – Suministro de PVC Hiszpania – Produkty z tworzyw sztucznych – Suministro de PVC Španjolska – Proizvodi od plastike – Suministro de PVC Španělsko – Výrobky z plastů – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC Spania – Produse din plastic – Suministro de PVC Espanha – Produtos de plástico – Suministro de PVC Španielsko – Plastové výrobky – Suministro de PVC Espagne – Produits en plastique – Suministro de PVC Spanja – Prodotti tal-plastika – Suministro de PVC Spanien – Kunststoffprodukte – Suministro de PVC Ispanija – Plastikiniai gaminiai – Suministro de PVC Spagna – Prodotti di plastica – Suministro de PVC Иcпaния – Пластмасови продукти – Suministro de PVC Španija – Proizvodi iz plastičnih mas – Suministro de PVC Spain – Plastic products – Suministro de PVC. Publication 747953-2026; buyer INDESA 2010 S.L. - INDESA 2010 S.L.; published 2026-10-28+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -647,7 +647,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -656,192 +656,8 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-08T12:23:21.222Z",
+          "observedAt": "2026-11-08T21:26:52.576Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
-        }
-      }
-    },
-    {
-      "status": "publishable",
-      "opportunityId": "comtrade-IN-ES-630790-2025",
-      "score": 73,
-      "level": "medium",
-      "category": "comerç-internacional",
-      "productOrService": "Other made-up textile articles",
-      "originMarket": "IN",
-      "targetMarket": "ES",
-      "source": {
-        "name": "United Nations UN Comtrade",
-        "type": "api",
-        "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
-      },
-      "observedAt": "2026-11-08T12:23:21.222Z",
-      "evidence": {
-        "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-        "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-08T12:23:21.222Z",
-        "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
-      },
-      "commercialValidation": {
-        "evidence": [
-          {
-            "type": "demand_context",
-            "sourceName": "Instituto Nacional de Estadística (INE)",
-            "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-08T12:23:21.222Z",
-            "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
-            "evidenceLevel": "context"
-          },
-          {
-            "type": "economics_context",
-            "sourceName": "Eurostat",
-            "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-08T12:23:21.222Z",
-            "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
-            "evidenceLevel": "context"
-          },
-          {
-            "type": "demand",
-            "sourceName": "Tenders Electronic Daily (TED)",
-            "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-            "observedAt": "2026-11-08T12:23:21.222Z",
-            "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
-            "evidenceLevel": "product"
-          },
-          {
-            "type": "economics",
-            "sourceName": "United Nations UN Comtrade",
-            "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-08T12:23:21.222Z",
-            "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
-            "evidenceLevel": "product"
-          }
-        ]
-      },
-      "opportunity": {
-        "id": "comtrade-IN-ES-630790-2025",
-        "category": "comerç-internacional",
-        "productOrService": "Other made-up textile articles",
-        "originMarket": "IN",
-        "targetMarket": "ES",
-        "source": {
-          "name": "United Nations UN Comtrade",
-          "type": "api",
-          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
-        },
-        "observedAt": "2026-11-08T12:23:21.222Z",
-        "originalData": {
-          "imports": {
-            "typeCode": "C",
-            "freqCode": "A",
-            "refPeriodId": 20250101,
-            "refYear": 2025,
-            "refMonth": 52,
-            "period": "2025",
-            "reporterCode": 724,
-            "reporterISO": null,
-            "reporterDesc": null,
-            "flowCode": "M",
-            "flowDesc": null,
-            "partnerCode": 699,
-            "partnerISO": null,
-            "partnerDesc": null,
-            "partner2Code": 0,
-            "partner2ISO": null,
-            "partner2Desc": null,
-            "classificationCode": "H6",
-            "classificationSearchCode": "HS",
-            "isOriginalClassification": true,
-            "cmdCode": "630790",
-            "cmdDesc": null,
-            "aggrLevel": null,
-            "isLeaf": null,
-            "customsCode": "C00",
-            "customsDesc": null,
-            "mosCode": "0",
-            "motCode": 0,
-            "motDesc": null,
-            "qtyUnitCode": 8,
-            "qtyUnitAbbr": null,
-            "qty": 678010.509,
-            "isQtyEstimated": false,
-            "altQtyUnitCode": -1,
-            "altQtyUnitAbbr": null,
-            "altQty": 0,
-            "isAltQtyEstimated": false,
-            "netWgt": 678010.509,
-            "isNetWgtEstimated": false,
-            "grossWgt": 0,
-            "isGrossWgtEstimated": false,
-            "cifvalue": 6323223.093,
-            "fobvalue": null,
-            "primaryValue": 6323223.093,
-            "legacyEstimationFlag": 0,
-            "isReported": false,
-            "isAggregate": true
-          },
-          "importsPrevious": null,
-          "originExportsToTarget": null,
-          "originExportsPrevious": null
-        },
-        "signals": {
-          "demand": 74.40750858672624,
-          "growth": 50,
-          "marketGap": 80,
-          "availability": 50
-        },
-        "confidence": 0.65,
-        "legal": {
-          "status": "unknown",
-          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-08T12:23:21.222Z"
-        },
-        "commercial": {
-          "price": 0,
-          "currency": "USD",
-          "knownCosts": 0
-        },
-        "commercialValidation": {
-          "evidence": [
-            {
-              "type": "demand_context",
-              "sourceName": "Instituto Nacional de Estadística (INE)",
-              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-08T12:23:21.222Z",
-              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
-              "evidenceLevel": "context"
-            },
-            {
-              "type": "economics_context",
-              "sourceName": "Eurostat",
-              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-08T12:23:21.222Z",
-              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
-              "evidenceLevel": "context"
-            },
-            {
-              "type": "demand",
-              "sourceName": "Tenders Electronic Daily (TED)",
-              "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-              "observedAt": "2026-11-08T12:23:21.222Z",
-              "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
-              "evidenceLevel": "product"
-            },
-            {
-              "type": "economics",
-              "sourceName": "United Nations UN Comtrade",
-              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-08T12:23:21.222Z",
-              "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
-              "evidenceLevel": "product"
-            }
-          ]
-        },
-        "evidence": {
-          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-          "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-08T12:23:21.222Z",
-          "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
     },
@@ -859,11 +675,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-08T12:23:21.222Z",
+      "observedAt": "2026-11-08T21:26:52.576Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -872,7 +688,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -880,7 +696,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -888,7 +704,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/747953-2026",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Suministro de PVC Spānija – Plastmasas izstrādājumi – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC An Spáinn – Plastic products – Suministro de PVC Ισπανία – Πλαστικά προϊόντα – Suministro de PVC España – Productos de plástico – Suministro de PVC Hispaania – Plasttooted – Suministro de PVC Spanje – Producten van plastic – Suministro de PVC Espanja – Muovituotteet – Suministro de PVC Hiszpania – Produkty z tworzyw sztucznych – Suministro de PVC Španjolska – Proizvodi od plastike – Suministro de PVC Španělsko – Výrobky z plastů – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC Spania – Produse din plastic – Suministro de PVC Espanha – Produtos de plástico – Suministro de PVC Španielsko – Plastové výrobky – Suministro de PVC Espagne – Produits en plastique – Suministro de PVC Spanja – Prodotti tal-plastika – Suministro de PVC Spanien – Kunststoffprodukte – Suministro de PVC Ispanija – Plastikiniai gaminiai – Suministro de PVC Spagna – Prodotti di plastica – Suministro de PVC Иcпaния – Пластмасови продукти – Suministro de PVC Španija – Proizvodi iz plastičnih mas – Suministro de PVC Spain – Plastic products – Suministro de PVC. Publication 747953-2026; buyer INDESA 2010 S.L. - INDESA 2010 S.L.; published 2026-10-28+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -896,7 +712,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -913,7 +729,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -1122,7 +938,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-08T12:23:21.222Z"
+          "checkedAt": "2026-11-08T21:26:52.576Z"
         },
         "commercial": {
           "price": 0,
@@ -1135,7 +951,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -1143,7 +959,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -1151,7 +967,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/747953-2026",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Műanyag termékek – Suministro de PVC Spānija – Plastmasas izstrādājumi – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC An Spáinn – Plastic products – Suministro de PVC Ισπανία – Πλαστικά προϊόντα – Suministro de PVC España – Productos de plástico – Suministro de PVC Hispaania – Plasttooted – Suministro de PVC Spanje – Producten van plastic – Suministro de PVC Espanja – Muovituotteet – Suministro de PVC Hiszpania – Produkty z tworzyw sztucznych – Suministro de PVC Španjolska – Proizvodi od plastike – Suministro de PVC Španělsko – Výrobky z plastů – Suministro de PVC Spanien – Plastprodukter – Suministro de PVC Spania – Produse din plastic – Suministro de PVC Espanha – Produtos de plástico – Suministro de PVC Španielsko – Plastové výrobky – Suministro de PVC Espagne – Produits en plastique – Suministro de PVC Spanja – Prodotti tal-plastika – Suministro de PVC Spanien – Kunststoffprodukte – Suministro de PVC Ispanija – Plastikiniai gaminiai – Suministro de PVC Spagna – Prodotti di plastica – Suministro de PVC Иcпaния – Пластмасови продукти – Suministro de PVC Španija – Proizvodi iz plastičnih mas – Suministro de PVC Spain – Plastic products – Suministro de PVC. Publication 747953-2026; buyer INDESA 2010 S.L. - INDESA 2010 S.L.; published 2026-10-28+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -1159,7 +975,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -1168,7 +984,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-08T12:23:21.222Z",
+          "observedAt": "2026-11-08T21:26:52.576Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -1176,7 +992,7 @@
     {
       "status": "publishable",
       "opportunityId": "comtrade-TR-ES-630790-2025",
-      "score": 62,
+      "score": 63,
       "level": "low",
       "category": "comerç-internacional",
       "productOrService": "Other made-up textile articles",
@@ -1187,11 +1003,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-08T12:23:21.222Z",
+      "observedAt": "2026-11-08T21:26:52.576Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -1200,7 +1016,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -1208,7 +1024,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -1216,7 +1032,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -1224,7 +1040,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-08T12:23:21.222Z",
+            "observedAt": "2026-11-08T21:26:52.576Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -1241,7 +1057,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-08T12:23:21.222Z",
+        "observedAt": "2026-11-08T21:26:52.576Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -1341,116 +1157,20 @@
             "isReported": false,
             "isAggregate": true
           },
-          "originExportsToTarget": {
-            "typeCode": "C",
-            "freqCode": "A",
-            "refPeriodId": 20250101,
-            "refYear": 2025,
-            "refMonth": 52,
-            "period": "2025",
-            "reporterCode": 792,
-            "reporterISO": null,
-            "reporterDesc": null,
-            "flowCode": "X",
-            "flowDesc": null,
-            "partnerCode": 724,
-            "partnerISO": null,
-            "partnerDesc": null,
-            "partner2Code": 0,
-            "partner2ISO": null,
-            "partner2Desc": null,
-            "classificationCode": "H6",
-            "classificationSearchCode": "HS",
-            "isOriginalClassification": true,
-            "cmdCode": "630790",
-            "cmdDesc": null,
-            "aggrLevel": null,
-            "isLeaf": null,
-            "customsCode": "C00",
-            "customsDesc": null,
-            "mosCode": "0",
-            "motCode": 0,
-            "motDesc": null,
-            "qtyUnitCode": 8,
-            "qtyUnitAbbr": null,
-            "qty": 1214739,
-            "isQtyEstimated": false,
-            "altQtyUnitCode": -1,
-            "altQtyUnitAbbr": null,
-            "altQty": 0,
-            "isAltQtyEstimated": false,
-            "netWgt": 1268032,
-            "isNetWgtEstimated": false,
-            "grossWgt": 0,
-            "isGrossWgtEstimated": false,
-            "cifvalue": null,
-            "fobvalue": 7396856,
-            "primaryValue": 7396856,
-            "legacyEstimationFlag": 0,
-            "isReported": false,
-            "isAggregate": true
-          },
-          "originExportsPrevious": {
-            "typeCode": "C",
-            "freqCode": "A",
-            "refPeriodId": 20240101,
-            "refYear": 2024,
-            "refMonth": 52,
-            "period": "2024",
-            "reporterCode": 792,
-            "reporterISO": null,
-            "reporterDesc": null,
-            "flowCode": "X",
-            "flowDesc": null,
-            "partnerCode": 724,
-            "partnerISO": null,
-            "partnerDesc": null,
-            "partner2Code": 0,
-            "partner2ISO": null,
-            "partner2Desc": null,
-            "classificationCode": "H6",
-            "classificationSearchCode": "HS",
-            "isOriginalClassification": true,
-            "cmdCode": "630790",
-            "cmdDesc": null,
-            "aggrLevel": null,
-            "isLeaf": null,
-            "customsCode": "C00",
-            "customsDesc": null,
-            "mosCode": "0",
-            "motCode": 0,
-            "motDesc": null,
-            "qtyUnitCode": 8,
-            "qtyUnitAbbr": null,
-            "qty": 1251054,
-            "isQtyEstimated": false,
-            "altQtyUnitCode": -1,
-            "altQtyUnitAbbr": null,
-            "altQty": 0,
-            "isAltQtyEstimated": false,
-            "netWgt": 1251054,
-            "isNetWgtEstimated": false,
-            "grossWgt": 0,
-            "isGrossWgtEstimated": false,
-            "cifvalue": null,
-            "fobvalue": 6972745,
-            "primaryValue": 6972745,
-            "legacyEstimationFlag": 0,
-            "isReported": false,
-            "isAggregate": true
-          }
+          "originExportsToTarget": null,
+          "originExportsPrevious": null
         },
         "signals": {
           "demand": 76.18695411887299,
           "growth": 0,
-          "marketGap": 37.943881206860084,
-          "availability": 100
+          "marketGap": 80,
+          "availability": 50
         },
-        "confidence": 0.75,
+        "confidence": 0.65,
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-08T12:23:21.222Z"
+          "checkedAt": "2026-11-08T21:26:52.576Z"
         },
         "commercial": {
           "price": 0,
@@ -1463,7 +1183,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -1471,7 +1191,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -1479,7 +1199,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -1487,7 +1207,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-08T12:23:21.222Z",
+              "observedAt": "2026-11-08T21:26:52.576Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -1496,7 +1216,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-08T12:23:21.222Z",
+          "observedAt": "2026-11-08T21:26:52.576Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
