@@ -1,7 +1,7 @@
 {
-  "now": "2026-11-08T14:17:22.805Z",
-  "dueCount": 31,
-  "queueCount": 67,
+  "now": "2026-11-09T17:29:22.893Z",
+  "dueCount": 34,
+  "queueCount": 68,
   "queue": [
     {
       "opportunityId": "comtrade-CN-ES-392690-2024",
@@ -14512,12 +14512,12 @@
           "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       },
-      "attempts": 9,
+      "attempts": 10,
       "maxAttempts": 30,
       "exhausted": false,
       "firstQueuedAt": "2026-10-29T03:19:32.638Z",
-      "lastCheckedAt": "2026-11-08T03:19:54.713Z",
-      "nextEligibleAt": "2026-11-09T03:19:54.713Z"
+      "lastCheckedAt": "2026-11-09T03:40:28.973Z",
+      "nextEligibleAt": "2026-11-10T03:40:28.973Z"
     },
     {
       "opportunityId": "comtrade-IN-ES-940360-2022",
@@ -15030,6 +15030,134 @@
       "firstQueuedAt": "2026-11-08T12:23:21.222Z",
       "lastCheckedAt": null,
       "nextEligibleAt": "2026-11-09T12:23:21.222Z"
+    },
+    {
+      "opportunityId": "comtrade-TR-ES-420292-2023",
+      "reason": "COMMERCIAL_VALIDATION_REQUIRED",
+      "candidate": {
+        "id": "comtrade-TR-ES-420292-2023",
+        "category": "comerç-internacional",
+        "productOrService": "Travel, sports and similar bags",
+        "originMarket": "TR",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-11-09T03:30:16.225Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20230101,
+            "refYear": 2023,
+            "refMonth": 52,
+            "period": "2023",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 792,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "420292",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 97955.904,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 97955.904,
+            "isAltQtyEstimated": false,
+            "netWgt": 97955.904,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 1184320.969,
+            "fobvalue": null,
+            "primaryValue": 1184320.969,
+            "legacyEstimationFlag": 0,
+            "isReported": false,
+            "isAggregate": true
+          },
+          "importsPrevious": null,
+          "originExportsToTarget": null,
+          "originExportsPrevious": null
+        },
+        "signals": {
+          "demand": 68.58775828363144,
+          "growth": 50,
+          "marketGap": 80,
+          "availability": 50
+        },
+        "confidence": 0.65,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-11-09T03:30:16.225Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-11-09T03:30:16.225Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 109.173. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-11-09T03:30:16.225Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-11-09T03:30:16.225Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Travel, sports and similar bags: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-11-09T03:30:16.225Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 420292: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      },
+      "attempts": 0,
+      "maxAttempts": 30,
+      "exhausted": false,
+      "firstQueuedAt": "2026-11-09T03:30:16.225Z",
+      "lastCheckedAt": null,
+      "nextEligibleAt": "2026-11-10T03:30:16.225Z"
     }
   ]
 }
