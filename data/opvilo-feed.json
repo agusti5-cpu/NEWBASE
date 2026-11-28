@@ -1,9 +1,9 @@
 {
   "schema": "opvilo-feed/v1",
-  "generatedAt": "2026-11-27T15:46:22.596Z",
+  "generatedAt": "2026-11-28T00:48:13.697Z",
   "source": "NEWBASE",
   "status": "success",
-  "count": 5,
+  "count": 8,
   "opportunities": [
     {
       "status": "publishable",
@@ -19,11 +19,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-27T15:46:22.596Z",
+      "observedAt": "2026-11-28T00:48:13.697Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -32,7 +32,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -40,7 +40,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -48,7 +48,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -56,7 +56,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -73,7 +73,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -282,7 +282,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-27T15:46:22.596Z"
+          "checkedAt": "2026-11-28T00:48:13.697Z"
         },
         "commercial": {
           "price": 0,
@@ -295,7 +295,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -303,7 +303,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -311,7 +311,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -319,7 +319,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -328,7 +328,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-27T15:46:22.596Z",
+          "observedAt": "2026-11-28T00:48:13.697Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -347,11 +347,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-27T15:46:22.596Z",
+      "observedAt": "2026-11-28T00:48:13.697Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 841459: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -360,7 +360,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -368,7 +368,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -376,7 +376,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/797200-2026",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Ventilátorok és légkondicionáló készülékek – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spānija – Ventilatori un gaisa kondicionēšanas ierīces – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanien – Fläktar och luftkonditioneringsapparater – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto An Spáinn – Fans and air-conditioning appliances – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Ισπανία – Ανεμιστήρες και συσκευές κλιματισμού – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto España – Ventiladores y aparatos de aire acondicionado – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Hispaania – Ventilaatorid ja kliimaseadmed – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanje – Ventilatoren en klimaatregelingsapparaten – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Espanja – Tuulettimet ja ilmastointilaitteet – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Hiszpania – Wentylatory i urządzenia klimatyzacyjne – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španjolska – Ventilatori i naprave za klimatizaciju – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španělsko – Větráky a klimatizační zařízení – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanien – Blæsere og klimaanlæg – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spania – Ventilatoare şi aparate de aer condiţionat – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Espanha – Ventoinhas e aparelhos de ar condicionado – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španielsko – Ventilátory a klimatizačné spotrebiče – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Espagne – Ventilateurs et appareils de conditionnement d'air – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanja – Apparat ta' fannijiet u kkundizzjonar ta' l-arja – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanien – Ventilatoren und Klimageräte – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Ispanija – Ventiliatoriai ir oro kondicionavimo prietaisai – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spagna – Ventilatori e apparecchi per il condizionamento dell'aria – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Иcпaния – Вентилатори и климатици – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španija – Ventilatorji in klimatske naprave – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spain – Fans and air-conditioning appliances – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto. Publication 797200-2026; buyer Servicio Cántabro de Salud; published 2026-11-17+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -384,7 +384,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Other air or gas fans: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -401,7 +401,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -610,7 +610,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-27T15:46:22.596Z"
+          "checkedAt": "2026-11-28T00:48:13.697Z"
         },
         "commercial": {
           "price": 0,
@@ -623,7 +623,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -631,7 +631,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -639,7 +639,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/797200-2026",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Ventilátorok és légkondicionáló készülékek – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spānija – Ventilatori un gaisa kondicionēšanas ierīces – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanien – Fläktar och luftkonditioneringsapparater – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto An Spáinn – Fans and air-conditioning appliances – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Ισπανία – Ανεμιστήρες και συσκευές κλιματισμού – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto España – Ventiladores y aparatos de aire acondicionado – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Hispaania – Ventilaatorid ja kliimaseadmed – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanje – Ventilatoren en klimaatregelingsapparaten – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Espanja – Tuulettimet ja ilmastointilaitteet – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Hiszpania – Wentylatory i urządzenia klimatyzacyjne – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španjolska – Ventilatori i naprave za klimatizaciju – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španělsko – Větráky a klimatizační zařízení – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanien – Blæsere og klimaanlæg – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spania – Ventilatoare şi aparate de aer condiţionat – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Espanha – Ventoinhas e aparelhos de ar condicionado – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španielsko – Ventilátory a klimatizačné spotrebiče – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Espagne – Ventilateurs et appareils de conditionnement d'air – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanja – Apparat ta' fannijiet u kkundizzjonar ta' l-arja – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spanien – Ventilatoren und Klimageräte – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Ispanija – Ventiliatoriai ir oro kondicionavimo prietaisai – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spagna – Ventilatori e apparecchi per il condizionamento dell'aria – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Иcпaния – Вентилатори и климатици – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Španija – Ventilatorji in klimatske naprave – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto Spain – Fans and air-conditioning appliances – Acuerdo Marco para el Suministro de equipos de climatizacion, ventilacion y soluciones de proteccion solar para los centros dependientes del Servicio Cantabro de Salud mediante Procedimiento Abierto. Publication 797200-2026; buyer Servicio Cántabro de Salud; published 2026-11-17+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -647,7 +647,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Other air or gas fans: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -656,7 +656,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-27T15:46:22.596Z",
+          "observedAt": "2026-11-28T00:48:13.697Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 841459: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -675,11 +675,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-27T15:46:22.596Z",
+      "observedAt": "2026-11-28T00:48:13.697Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -688,7 +688,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -696,7 +696,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -704,7 +704,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/826889-2026",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Laboratóriumi reagensek – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spānija – Laboratorijas reaģenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. An Spáinn – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ισπανία – Αντιδραστήρια εργαστηρίων – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. España – Reactivos de laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hispaania – Laboratooriumireaktiivid – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanje – Laboratoriumreagentia – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanja – Laboratorioreagenssit – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hiszpania – Odczynniki laboratoryjne – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španjolska – Laboratorijski reagensi – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španělsko – Laboratorní činidla – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spania – Reactivi de laborator – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanha – Reagentes de laboratório – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španielsko – Laboratórne činidlá – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espagne – Réactifs de laboratoire – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanja – Reaġenti tal-laboratorju – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laborreagenzien – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ispanija – Laboratoriniai reagentai – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spagna – Reattivi per laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Иcпaния – Лабораторни реактиви – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španija – Laboratorijski reagenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spain – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes.. Publication 826889-2026; buyer Gerencia de la Empresa Municipal de Aguas y Saneamiento de Murcia S.A.; published 2026-11-27+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -712,7 +712,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -729,7 +729,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -938,7 +938,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-27T15:46:22.596Z"
+          "checkedAt": "2026-11-28T00:48:13.697Z"
         },
         "commercial": {
           "price": 0,
@@ -951,7 +951,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -959,7 +959,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -967,7 +967,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/826889-2026",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Laboratóriumi reagensek – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spānija – Laboratorijas reaģenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. An Spáinn – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ισπανία – Αντιδραστήρια εργαστηρίων – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. España – Reactivos de laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hispaania – Laboratooriumireaktiivid – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanje – Laboratoriumreagentia – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanja – Laboratorioreagenssit – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hiszpania – Odczynniki laboratoryjne – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španjolska – Laboratorijski reagensi – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španělsko – Laboratorní činidla – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spania – Reactivi de laborator – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanha – Reagentes de laboratório – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španielsko – Laboratórne činidlá – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espagne – Réactifs de laboratoire – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanja – Reaġenti tal-laboratorju – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laborreagenzien – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ispanija – Laboratoriniai reagentai – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spagna – Reattivi per laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Иcпaния – Лабораторни реактиви – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španija – Laboratorijski reagenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spain – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes.. Publication 826889-2026; buyer Gerencia de la Empresa Municipal de Aguas y Saneamiento de Murcia S.A.; published 2026-11-27+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -975,7 +975,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -984,8 +984,608 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-27T15:46:22.596Z",
+          "observedAt": "2026-11-28T00:48:13.697Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
+    },
+    {
+      "status": "publishable",
+      "opportunityId": "comtrade-VN-ES-630790-2025",
+      "score": 79,
+      "level": "medium",
+      "category": "comerç-internacional",
+      "productOrService": "Other made-up textile articles",
+      "originMarket": "VN",
+      "targetMarket": "ES",
+      "source": {
+        "name": "United Nations UN Comtrade",
+        "type": "api",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+      },
+      "observedAt": "2026-11-28T00:48:13.697Z",
+      "evidence": {
+        "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+        "sourceName": "United Nations UN Comtrade",
+        "observedAt": "2026-11-28T00:48:13.697Z",
+        "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+      },
+      "commercialValidation": {
+        "evidence": [
+          {
+            "type": "demand_context",
+            "sourceName": "Instituto Nacional de Estadística (INE)",
+            "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics_context",
+            "sourceName": "Eurostat",
+            "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "demand",
+            "sourceName": "Tenders Electronic Daily (TED)",
+            "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+            "evidenceLevel": "product"
+          },
+          {
+            "type": "economics",
+            "sourceName": "United Nations UN Comtrade",
+            "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+            "evidenceLevel": "product"
+          }
+        ]
+      },
+      "opportunity": {
+        "id": "comtrade-VN-ES-630790-2025",
+        "category": "comerç-internacional",
+        "productOrService": "Other made-up textile articles",
+        "originMarket": "VN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-11-28T00:48:13.697Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20250101,
+            "refYear": 2025,
+            "refMonth": 52,
+            "period": "2025",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 704,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "630790",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 5926642.495,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": 8,
+            "altQtyUnitAbbr": null,
+            "altQty": 5926642.495,
+            "isAltQtyEstimated": false,
+            "netWgt": 5926642.495,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 23642639.778,
+            "fobvalue": null,
+            "primaryValue": 23642639.778,
+            "legacyEstimationFlag": 0,
+            "isReported": false,
+            "isAggregate": true
+          },
+          "importsPrevious": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 704,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "630790",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 5330527.87,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": -1,
+            "altQtyUnitAbbr": null,
+            "altQty": 0,
+            "isAltQtyEstimated": false,
+            "netWgt": 5330527.87,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 20974595.641,
+            "fobvalue": null,
+            "primaryValue": 20974595.641,
+            "legacyEstimationFlag": 0,
+            "isReported": false,
+            "isAggregate": true
+          },
+          "originExportsToTarget": null,
+          "originExportsPrevious": null
+        },
+        "signals": {
+          "demand": 78.98956786947087,
+          "growth": 75.44072059996861,
+          "marketGap": 80,
+          "availability": 50
+        },
+        "confidence": 0.65,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-11-28T00:48:13.697Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "demand",
+              "sourceName": "Tenders Electronic Daily (TED)",
+              "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+              "evidenceLevel": "product"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-11-28T00:48:13.697Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
+    },
+    {
+      "status": "publishable",
+      "opportunityId": "comtrade-IN-ES-392690-2025",
+      "score": 73,
+      "level": "medium",
+      "category": "comerç-internacional",
+      "productOrService": "Articles of plastics, other",
+      "originMarket": "IN",
+      "targetMarket": "ES",
+      "source": {
+        "name": "United Nations UN Comtrade",
+        "type": "api",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+      },
+      "observedAt": "2026-11-28T00:48:13.697Z",
+      "evidence": {
+        "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+        "sourceName": "United Nations UN Comtrade",
+        "observedAt": "2026-11-28T00:48:13.697Z",
+        "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+      },
+      "commercialValidation": {
+        "evidence": [
+          {
+            "type": "demand_context",
+            "sourceName": "Instituto Nacional de Estadística (INE)",
+            "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics_context",
+            "sourceName": "Eurostat",
+            "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "demand",
+            "sourceName": "Tenders Electronic Daily (TED)",
+            "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/826889-2026",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Laboratóriumi reagensek – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spānija – Laboratorijas reaģenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. An Spáinn – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ισπανία – Αντιδραστήρια εργαστηρίων – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. España – Reactivos de laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hispaania – Laboratooriumireaktiivid – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanje – Laboratoriumreagentia – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanja – Laboratorioreagenssit – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hiszpania – Odczynniki laboratoryjne – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španjolska – Laboratorijski reagensi – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španělsko – Laboratorní činidla – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spania – Reactivi de laborator – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanha – Reagentes de laboratório – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španielsko – Laboratórne činidlá – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espagne – Réactifs de laboratoire – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanja – Reaġenti tal-laboratorju – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laborreagenzien – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ispanija – Laboratoriniai reagentai – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spagna – Reattivi per laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Иcпaния – Лабораторни реактиви – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španija – Laboratorijski reagenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spain – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes.. Publication 826889-2026; buyer Gerencia de la Empresa Municipal de Aguas y Saneamiento de Murcia S.A.; published 2026-11-27+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+            "evidenceLevel": "product"
+          },
+          {
+            "type": "economics",
+            "sourceName": "United Nations UN Comtrade",
+            "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+            "evidenceLevel": "product"
+          }
+        ]
+      },
+      "opportunity": {
+        "id": "comtrade-IN-ES-392690-2025",
+        "category": "comerç-internacional",
+        "productOrService": "Articles of plastics, other",
+        "originMarket": "IN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-11-28T00:48:13.697Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20250101,
+            "refYear": 2025,
+            "refMonth": 52,
+            "period": "2025",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 699,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "392690",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 3617457.502,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": -1,
+            "altQtyUnitAbbr": null,
+            "altQty": 0,
+            "isAltQtyEstimated": false,
+            "netWgt": 3617457.502,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 16373890.241,
+            "fobvalue": null,
+            "primaryValue": 16373890.241,
+            "legacyEstimationFlag": 0,
+            "isReported": false,
+            "isAggregate": true
+          },
+          "importsPrevious": null,
+          "originExportsToTarget": null,
+          "originExportsPrevious": null
+        },
+        "signals": {
+          "demand": 77.71321521106644,
+          "growth": 50,
+          "marketGap": 80,
+          "availability": 50
+        },
+        "confidence": 0.65,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-11-28T00:48:13.697Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "demand",
+              "sourceName": "Tenders Electronic Daily (TED)",
+              "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/826889-2026",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Laboratóriumi reagensek – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spānija – Laboratorijas reaģenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. An Spáinn – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ισπανία – Αντιδραστήρια εργαστηρίων – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. España – Reactivos de laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hispaania – Laboratooriumireaktiivid – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanje – Laboratoriumreagentia – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanja – Laboratorioreagenssit – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hiszpania – Odczynniki laboratoryjne – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španjolska – Laboratorijski reagensi – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španělsko – Laboratorní činidla – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spania – Reactivi de laborator – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanha – Reagentes de laboratório – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španielsko – Laboratórne činidlá – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espagne – Réactifs de laboratoire – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanja – Reaġenti tal-laboratorju – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laborreagenzien – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ispanija – Laboratoriniai reagentai – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spagna – Reattivi per laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Иcпaния – Лабораторни реактиви – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španija – Laboratorijski reagenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spain – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes.. Publication 826889-2026; buyer Gerencia de la Empresa Municipal de Aguas y Saneamiento de Murcia S.A.; published 2026-11-27+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+              "evidenceLevel": "product"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-11-28T00:48:13.697Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+        }
+      }
+    },
+    {
+      "status": "publishable",
+      "opportunityId": "comtrade-IN-ES-630790-2024",
+      "score": 73,
+      "level": "medium",
+      "category": "comerç-internacional",
+      "productOrService": "Other made-up textile articles",
+      "originMarket": "IN",
+      "targetMarket": "ES",
+      "source": {
+        "name": "United Nations UN Comtrade",
+        "type": "api",
+        "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+      },
+      "observedAt": "2026-11-28T00:48:13.697Z",
+      "evidence": {
+        "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+        "sourceName": "United Nations UN Comtrade",
+        "observedAt": "2026-11-28T00:48:13.697Z",
+        "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
+      },
+      "commercialValidation": {
+        "evidence": [
+          {
+            "type": "demand_context",
+            "sourceName": "Instituto Nacional de Estadística (INE)",
+            "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "economics_context",
+            "sourceName": "Eurostat",
+            "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+            "evidenceLevel": "context"
+          },
+          {
+            "type": "demand",
+            "sourceName": "Tenders Electronic Daily (TED)",
+            "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+            "evidenceLevel": "product"
+          },
+          {
+            "type": "economics",
+            "sourceName": "United Nations UN Comtrade",
+            "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+            "observedAt": "2026-11-28T00:48:13.697Z",
+            "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+            "evidenceLevel": "product"
+          }
+        ]
+      },
+      "opportunity": {
+        "id": "comtrade-IN-ES-630790-2024",
+        "category": "comerç-internacional",
+        "productOrService": "Other made-up textile articles",
+        "originMarket": "IN",
+        "targetMarket": "ES",
+        "source": {
+          "name": "United Nations UN Comtrade",
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
+        },
+        "observedAt": "2026-11-28T00:48:13.697Z",
+        "originalData": {
+          "imports": {
+            "typeCode": "C",
+            "freqCode": "A",
+            "refPeriodId": 20240101,
+            "refYear": 2024,
+            "refMonth": 52,
+            "period": "2024",
+            "reporterCode": 724,
+            "reporterISO": null,
+            "reporterDesc": null,
+            "flowCode": "M",
+            "flowDesc": null,
+            "partnerCode": 699,
+            "partnerISO": null,
+            "partnerDesc": null,
+            "partner2Code": 0,
+            "partner2ISO": null,
+            "partner2Desc": null,
+            "classificationCode": "H6",
+            "classificationSearchCode": "HS",
+            "isOriginalClassification": true,
+            "cmdCode": "630790",
+            "cmdDesc": null,
+            "aggrLevel": null,
+            "isLeaf": null,
+            "customsCode": "C00",
+            "customsDesc": null,
+            "mosCode": "0",
+            "motCode": 0,
+            "motDesc": null,
+            "qtyUnitCode": 8,
+            "qtyUnitAbbr": null,
+            "qty": 623982.989,
+            "isQtyEstimated": false,
+            "altQtyUnitCode": -1,
+            "altQtyUnitAbbr": null,
+            "altQty": 0,
+            "isAltQtyEstimated": false,
+            "netWgt": 623982.989,
+            "isNetWgtEstimated": false,
+            "grossWgt": 0,
+            "isGrossWgtEstimated": false,
+            "cifvalue": 5774494.814,
+            "fobvalue": null,
+            "primaryValue": 5774494.814,
+            "legacyEstimationFlag": 0,
+            "isReported": false,
+            "isAggregate": true
+          },
+          "importsPrevious": null,
+          "originExportsToTarget": null,
+          "originExportsPrevious": null
+        },
+        "signals": {
+          "demand": 74.09211256685933,
+          "growth": 50,
+          "marketGap": 80,
+          "availability": 50
+        },
+        "confidence": 0.65,
+        "legal": {
+          "status": "unknown",
+          "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
+          "checkedAt": "2026-11-28T00:48:13.697Z"
+        },
+        "commercial": {
+          "price": 0,
+          "currency": "USD",
+          "knownCosts": 0
+        },
+        "commercialValidation": {
+          "evidence": [
+            {
+              "type": "demand_context",
+              "sourceName": "Instituto Nacional de Estadística (INE)",
+              "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "economics_context",
+              "sourceName": "Eurostat",
+              "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
+              "evidenceLevel": "context"
+            },
+            {
+              "type": "demand",
+              "sourceName": "Tenders Electronic Daily (TED)",
+              "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
+              "evidenceLevel": "product"
+            },
+            {
+              "type": "economics",
+              "sourceName": "United Nations UN Comtrade",
+              "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+              "observedAt": "2026-11-28T00:48:13.697Z",
+              "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
+              "evidenceLevel": "product"
+            }
+          ]
+        },
+        "evidence": {
+          "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "sourceName": "United Nations UN Comtrade",
+          "observedAt": "2026-11-28T00:48:13.697Z",
+          "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
     },
@@ -1003,11 +1603,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-27T15:46:22.596Z",
+      "observedAt": "2026-11-28T00:48:13.697Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -1016,7 +1616,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -1024,7 +1624,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -1032,7 +1632,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/826889-2026",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Laboratóriumi reagensek – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spānija – Laboratorijas reaģenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. An Spáinn – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ισπανία – Αντιδραστήρια εργαστηρίων – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. España – Reactivos de laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hispaania – Laboratooriumireaktiivid – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanje – Laboratoriumreagentia – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanja – Laboratorioreagenssit – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hiszpania – Odczynniki laboratoryjne – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španjolska – Laboratorijski reagensi – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španělsko – Laboratorní činidla – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spania – Reactivi de laborator – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanha – Reagentes de laboratório – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španielsko – Laboratórne činidlá – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espagne – Réactifs de laboratoire – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanja – Reaġenti tal-laboratorju – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laborreagenzien – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ispanija – Laboratoriniai reagentai – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spagna – Reattivi per laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Иcпaния – Лабораторни реактиви – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španija – Laboratorijski reagenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spain – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes.. Publication 826889-2026; buyer Gerencia de la Empresa Municipal de Aguas y Saneamiento de Murcia S.A.; published 2026-11-27+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -1040,7 +1640,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -1057,7 +1657,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -1266,7 +1866,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-27T15:46:22.596Z"
+          "checkedAt": "2026-11-28T00:48:13.697Z"
         },
         "commercial": {
           "price": 0,
@@ -1279,7 +1879,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -1287,7 +1887,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -1295,7 +1895,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/826889-2026",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Laboratóriumi reagensek – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spānija – Laboratorijas reaģenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. An Spáinn – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ισπανία – Αντιδραστήρια εργαστηρίων – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. España – Reactivos de laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hispaania – Laboratooriumireaktiivid – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanje – Laboratoriumreagentia – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanja – Laboratorioreagenssit – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Hiszpania – Odczynniki laboratoryjne – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španjolska – Laboratorijski reagensi – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španělsko – Laboratorní činidla – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laboratoriereagenser – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spania – Reactivi de laborator – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espanha – Reagentes de laboratório – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španielsko – Laboratórne činidlá – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Espagne – Réactifs de laboratoire – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanja – Reaġenti tal-laboratorju – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spanien – Laborreagenzien – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Ispanija – Laboratoriniai reagentai – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spagna – Reattivi per laboratorio – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Иcпaния – Лабораторни реактиви – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Španija – Laboratorijski reagenti – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes. Spain – Laboratory reagents – Suministro de reactivos, materiales, kits de determinación, gases y servicio de calibración y mantenimiento de equipos analíticos para los laboratorios de EMUASA - 4 Lotes.. Publication 826889-2026; buyer Gerencia de la Empresa Municipal de Aguas y Saneamiento de Murcia S.A.; published 2026-11-27+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -1303,7 +1903,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Articles of plastics, other: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -1312,7 +1912,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-27T15:46:22.596Z",
+          "observedAt": "2026-11-28T00:48:13.697Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 392690: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
@@ -1331,11 +1931,11 @@
         "type": "api",
         "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
       },
-      "observedAt": "2026-11-27T15:46:22.596Z",
+      "observedAt": "2026-11-28T00:48:13.697Z",
       "evidence": {
         "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
         "sourceName": "United Nations UN Comtrade",
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
       },
       "commercialValidation": {
@@ -1344,7 +1944,7 @@
             "type": "demand_context",
             "sourceName": "Instituto Nacional de Estadística (INE)",
             "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
             "evidenceLevel": "context"
           },
@@ -1352,7 +1952,7 @@
             "type": "economics_context",
             "sourceName": "Eurostat",
             "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
             "evidenceLevel": "context"
           },
@@ -1360,7 +1960,7 @@
             "type": "demand",
             "sourceName": "Tenders Electronic Daily (TED)",
             "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
             "evidenceLevel": "product"
           },
@@ -1368,7 +1968,7 @@
             "type": "economics",
             "sourceName": "United Nations UN Comtrade",
             "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-            "observedAt": "2026-11-27T15:46:22.596Z",
+            "observedAt": "2026-11-28T00:48:13.697Z",
             "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
             "evidenceLevel": "product"
           }
@@ -1385,7 +1985,7 @@
           "type": "api",
           "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
         },
-        "observedAt": "2026-11-27T15:46:22.596Z",
+        "observedAt": "2026-11-28T00:48:13.697Z",
         "originalData": {
           "imports": {
             "typeCode": "C",
@@ -1594,7 +2194,7 @@
         "legal": {
           "status": "unknown",
           "reason": "Trade-flow data does not itself establish product-level legal clearance. This opportunity is an informational market signal, requires dedicated legal review, and must not be presented as legal or regulatory clearance.",
-          "checkedAt": "2026-11-27T15:46:22.596Z"
+          "checkedAt": "2026-11-28T00:48:13.697Z"
         },
         "commercial": {
           "price": 0,
@@ -1607,7 +2207,7 @@
               "type": "demand_context",
               "sourceName": "Instituto Nacional de Estadística (INE)",
               "sourceUrl": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75808",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Spanish retail-index context: Total Nacional. Cifra de negocio a precios constantes. General. Comercio al por menor, excepto de vehículos de motor y motocicletas. Índice.; latest observed value 111.695. This is target-market context, not product-level demand proof.",
               "evidenceLevel": "context"
             },
@@ -1615,7 +2215,7 @@
               "type": "economics_context",
               "sourceName": "Eurostat",
               "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Official Eurostat HICP context for ES; latest returned index value 128.28. This is macroeconomic context, not product-level cost or profitability proof.",
               "evidenceLevel": "context"
             },
@@ -1623,7 +2223,7 @@
               "type": "demand",
               "sourceName": "Tenders Electronic Daily (TED)",
               "sourceUrl": "https://ted.europa.eu/en/notice/-/detail/771411-2026",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Active EU public-procurement notice matched to the evaluated product: Spanyolország – Bútorok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spānija – Mēbeles – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas An Spáinn – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ισπανία – Έπιπλα – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas España – Mobiliario – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hispaania – Mööbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanje – Meubilair – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanja – Huonekalut – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Hiszpania – Meble – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španjolska – Namještaj – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španělsko – Nábytek – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Møbler – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spania – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espanha – Mobiliário – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španielsko – Nábytok – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Espagne – Mobilier – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanja – Għamara – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spanien – Möbel – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Ispanija – Baldai – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spagna – Mobili – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Иcпaния – Мебелировка – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Španija – Pohištvo – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas Spain – Furniture – Suministro de equipamiento CADIG Torrijos, Centro de Día y viviendas. Publication 771411-2026; buyer Delegación Provincial de la Consejería de Bienestar Social en Toledo; published 2026-11-06+01:00. This is procurement demand evidence, not guaranteed private-market demand or profitability.",
               "evidenceLevel": "product"
             },
@@ -1631,7 +2231,7 @@
               "type": "economics",
               "sourceName": "United Nations UN Comtrade",
               "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-              "observedAt": "2026-11-27T15:46:22.596Z",
+              "observedAt": "2026-11-28T00:48:13.697Z",
               "summary": "Product-level UN Comtrade trade-flow evidence for Other made-up textile articles: the evaluated origin/target route has observed import/export value and quantity data for the selected periods. This is market-economics evidence, not a profitability guarantee.",
               "evidenceLevel": "product"
             }
@@ -1640,7 +2240,7 @@
         "evidence": {
           "sourceUrl": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
           "sourceName": "United Nations UN Comtrade",
-          "observedAt": "2026-11-27T15:46:22.596Z",
+          "observedAt": "2026-11-28T00:48:13.697Z",
           "summary": "Official UN Comtrade trade-flow signal for HS 630790: available import/export evidence was observed for the evaluated periods. This is market evidence, not legal clearance, retail demand or profitability evidence."
         }
       }
